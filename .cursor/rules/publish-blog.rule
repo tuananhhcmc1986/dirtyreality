@@ -1,40 +1,88 @@
 When user asks to publish a draft:
 
-1. Identify the draft file location under drafts/
+SOURCE:
+drafts/<category>/<filename>.md
+
+TARGET:
+docs/<category>/posts/<slug>.html
+
+
+STEPS:
+
+1. Detect category from folder name:
+
+drafts/mes → docs/mes/posts
+drafts/dms → docs/dms/posts
+drafts/ba → docs/ba/posts
+drafts/linh-tinh → docs/linh-tinh/posts
+
+
+2. Generate slug from filename:
+
+Rules:
+
+lowercase
+remove Vietnamese accents
+replace spaces with hyphen
+ascii only
 
 Example:
-drafts/mes/why-mes-fails.md
 
-2. Extract category from folder name:
-mes → docs/mes/posts/
-dms → docs/dms/posts/
-ba → docs/ba/posts/
-linh-tinh → docs/linh-tinh/posts/
+"mes không thất bại vì công nghệ.md"
 
-3. Convert markdown into HTML using template:
+→ mes-khong-that-bai-vi-cong-nghe.html
+
+
+3. Convert markdown to HTML:
+
+paragraph → <p>
+line break → new paragraph
+preserve headings if exist
+
+
+4. Apply template:
+
 templates/post-template.html
 
-4. Replace template variables:
-{{TITLE}} = first line
-{{DATE}} = current year
-{{CONTENT}} = converted markdown paragraphs
+Replace variables:
 
-5. Save output as:
-docs/<category>/posts/<same filename>.html
+{{TITLE}}
+{{DATE}} = current year
+{{CATEGORY}}
+{{CONTENT}}
+
+
+5. Save file:
+
+docs/<category>/posts/<slug>.html
+
 
 6. Update category index:
+
 docs/<category>/index.html
 
-Insert inside:
+Insert BEFORE:
 
-<!-- POSTS START -->
-<!-- POSTS END -->
-
-format:
-
-<div class="post">
-<a href="posts/<filename>.html">{{TITLE}}</a>
-<div class="meta">{{DATE}}</div>
 </div>
 
-7. Do not modify drafts folder.
+inside:
+
+<div class="posts">
+
+
+Format:
+
+<div class="post-item">
+    <a href="posts/<slug>.html">
+        {{TITLE}}
+    </a>
+</div>
+
+<div class="post-year">
+    {{DATE}}
+</div>
+
+
+7. DO NOT modify drafts folder
+
+8. DO NOT modify other categories
