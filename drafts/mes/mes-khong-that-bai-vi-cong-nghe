@@ -1,0 +1,377 @@
+# MES không thất bại vì công nghệ
+## Nó thất bại vì cách BA hiểu (và né) nhà máy
+
+Bài này không nói về best practice.  
+Bài này nói về thứ xảy ra lúc 2 giờ sáng, khi không còn ai để diễn cho đẹp.
+
+---
+
+## 1. Dự án MES này không thất bại. Nó bị chính cách làm BA giết chết.
+
+Nhìn trên giấy tờ, đây là một dự án MES không có lý do gì để chết.
+
+Giải pháp chọn đúng.  
+Vendor có kinh nghiệm.  
+BA làm đủ bài: workshop, interview, flow, requirement, traceability.  
+UAT ký.  
+Go-live đúng kế hoạch.
+
+Không thiếu bước.  
+Không sai quy trình.
+
+Và chính vì thế, nó chết.
+
+Không chết ồn ào.  
+Không sập hệ thống.  
+Không trễ deadline.
+
+Nó chết theo cách nguy hiểm nhất: chết trong im lặng.
+
+Operator vẫn đăng nhập.  
+Vẫn thao tác.  
+Vẫn nhập dữ liệu.
+
+Nhưng là:
+
+- Nhập cho xong  
+- Nhập để khỏi bị hỏi  
+- Nhập cái hệ thống cần, không phải cái nhà máy sống bằng  
+
+Ca trưởng quay lại ghi chép tay vì “cho nhanh”.  
+Supervisor giữ một file Excel riêng để “phòng thân”.
+
+Những quyết định thật — quyết định cứu ca, cứu tiến độ — diễn ra hoàn toàn ngoài MES.
+
+Hệ thống vẫn chạy.  
+Dashboard vẫn xanh.
+
+Chỉ có một thứ không chạy: **nhà máy không sống bằng nó.**
+
+Ba tháng sau, trong phòng họp, những câu quen thuộc bắt đầu lặp lại:
+
+> “Chắc operator chưa quen.”  
+> “Phải training thêm.”  
+> “Hay UI chưa đủ thân thiện.”
+
+Không ai hỏi câu khó chịu nhất:
+
+> Nếu mọi thứ đều làm đúng, vì sao nhà máy vẫn không dùng?
+
+Câu trả lời không nằm ở công nghệ.  
+Nó nằm ở một chỗ khó chấp nhận hơn nhiều:
+
+**MES chết vì cách BA hiểu nhà máy — hay chính xác hơn, vì BA tưởng rằng mình đã hiểu.**
+
+---
+
+## 2. Operator và trưởng ca không chống MES. Họ chỉ đang bảo vệ chính mình.
+
+BA thường giải thích việc operator “né MES” bằng những lý do rất… lịch sự:
+
+- Ngại thay đổi  
+- Thiếu kỷ luật  
+- Chưa được đào tạo đủ  
+
+Nghe êm tai.  
+Và sai hoàn toàn.
+
+Sự thật đơn giản hơn nhiều:
+
+**Operator và trưởng ca không chống hệ thống.  
+Họ chống bất kỳ thứ gì đụng tới cơm của họ.**
+
+Operator không được trả lương để làm dữ liệu đẹp.
+
+Họ không được trả tiền cho:
+
+- Traceability  
+- Audit trail  
+- Data completeness  
+
+Họ được trả tiền cho:
+
+- Sản lượng  
+- Ca hoàn thành  
+- Không lỗi  
+- Không bị gọi tên  
+
+MES yêu cầu họ:
+
+- Dừng lại để nhập dữ liệu  
+- Nhập đúng thời điểm  
+- Nhập đủ trường  
+- Chấp nhận hệ thống ghi lại mọi sai lệch  
+
+Với BA, đó là “kỷ luật vận hành”.  
+Với operator, đó là rủi ro trực tiếp.
+
+Rủi ro gì?
+
+- Nhập sai → bị hỏi  
+- Nhập chậm → ảnh hưởng tiến độ  
+- Nhập đúng nhưng lộ lỗi → bị quy trách nhiệm  
+
+Nếu MES không làm giảm những rủi ro đó,  
+operator sẽ tự giảm rủi ro bằng cách lách hệ thống.
+
+Không phải vì họ chống đối.  
+Mà vì họ không ngu.
+
+Trưởng ca sống bằng kết quả, không sống bằng báo cáo.
+
+MES mang tới:
+
+- Minh bạch  
+- Log  
+- Timestamp  
+- Audit trail  
+
+Nhưng với trưởng ca, MES cũng mang theo:
+
+- Ít vùng đệm hơn  
+- Ít không gian “chữa cháy” hơn  
+- Mọi quyết định ngầm đều có nguy cơ thành vi phạm  
+
+Một quyết định đúng hôm nay  
+có thể trở thành lỗi quy trình ngày mai.
+
+Trưởng ca hiểu rất rõ:
+
+**MES không giúp họ sống sót qua ca.  
+Nó chỉ giúp người khác đánh giá họ sau ca.**
+
+---
+
+## 3. Câu chuyện lúc 2 giờ sáng: Khi MES trở thành công cụ “làm xiếc”
+
+Giờ nói lý thuyết đủ rồi.  
+Đây là thực tế bẩn dưới shopfloor.
+
+### Bối cảnh
+
+Máy đóng gói số 4 bị lệch cảm biến.  
+Cứ 10 sản phẩm thì đá văng 2 sản phẩm đạt chuẩn vào thùng phế.
+
+2 giờ sáng.  
+Ca còn 4 tiếng là bàn giao.  
+Sản lượng mới đạt 60%.
+
+---
+
+### 3.1 Kịch bản MES trong mơ (thứ BA viết trong requirement)
+
+- Operator phát hiện lỗi → nhấn Stop trên MES  
+- Chọn lý do: “Lỗi thiết bị – cảm biến lệch”  
+- Hệ thống gửi notification cho Bảo trì  
+- Kỹ thuật xuống thay sensor, ký xác nhận điện tử  
+- Máy chạy lại  
+
+Data sạch.  
+Minh bạch.  
+OEE giảm nhưng đúng quy trình.
+
+Slide đẹp.  
+Audit gật đầu.
+
+---
+
+### 3.2 Thực tế tại xưởng (nơi cơm áo gạo tiền quyết định)
+
+Trưởng ca nhìn đồng hồ.  
+Mồ hôi hột.
+
+Nếu dừng máy chờ bảo trì:
+
+- Ca này móm sản lượng  
+- Cả tổ mất KPI thưởng tháng  
+- Trưởng ca sáng mai bị “hỏi thăm”  
+
+Quyết định ngầm:
+
+> “Tháo mẹ cái cảm biến ra, chạy manual.  
+> Thằng Tèo đứng canh, lệch thì gạt tay.  
+> Đừng bấm dừng máy trên MES, cứ để nó báo Running.”
+
+---
+
+### 3.3 Cú lừa mang tên “Dữ liệu sạch”
+
+Dashboard giám đốc:
+
+- Máy chạy 100% thời gian  
+- Sản lượng hoàn thành: 10.000 sản phẩm  
+- Không một lệnh dừng  
+- Không một lỗi kỹ thuật  
+
+**XANH LÈ.**
+
+Thực tế:
+
+- 500 con lỗi được “phù phép”  
+- Một phần tuồn kho  
+- Một phần đi thẳng ra sọt rác  
+- Không qua bất kỳ khai báo nào  
+
+---
+
+### 3.4 Cái bẫy MES không bao giờ thấy
+
+#### A. Scrap allowance
+
+BOM nói:
+
+- 1 sản phẩm = 1kg nhựa  
+- Hao hụt cho phép = 5%
+
+Máy tốt chỉ hao 1%.  
+4% còn lại là vùng đệm để chôn lỗi.
+
+Dashboard vẫn xanh.  
+Công ty vẫn mất tiền.
+
+---
+
+#### B. Backflushing
+
+MES trừ kho theo thành phẩm báo cáo, không theo thực tế.
+
+500 con lỗi biến mất vào:
+
+**Inventory variance.**
+
+Hợp thức hóa.  
+Không dấu vết.
+
+---
+
+#### C. Sự im lặng đồng thuận
+
+Kho biết.  
+QA biết.
+
+Nhưng:
+
+- QA báo → sản lượng giảm → QA bị gọi họp  
+- Kho báo → trưởng ca mất thưởng → mất quan hệ  
+
+Thế là tất cả im lặng.
+
+---
+
+### 3.5 Hậu quả: MES chết lâm sàng
+
+Traceability là rác.  
+Predictive maintenance là rác.
+
+Dashboard đẹp.  
+Niềm tin chết.
+
+---
+
+### 3.6 Bài học cho BA
+
+MES là máy ảnh.
+
+Nếu người cầm máy sợ bị phạt,  
+họ sẽ:
+
+- Che ống kính  
+- Chỉnh filter  
+- Chụp cho đẹp  
+
+MES thấy thế giới hoàn hảo.  
+Nhà máy mục ruỗng bên dưới.
+
+---
+
+## 4. Anti-pattern #1: Chuẩn hóa là quyết định chính trị, không phải kỹ thuật
+
+Chuẩn hóa quyết định:
+
+- Ai mất quyền  
+- Ai mất vùng an toàn  
+- Ai phải gánh rủi ro  
+
+Chuẩn hóa quá sớm = án tử.
+
+---
+
+## 5. Anti-pattern #2: Vẽ flow cho một vận hành chưa tồn tại
+
+Flow đẹp không sống nổi trong ca xấu.
+
+Ngoại lệ sẽ giết flow đầu tiên.
+
+---
+
+## 6. Anti-pattern #3: Mang ERP mindset xuống shopfloor
+
+ERP sống bằng:
+
+- Batch  
+- Báo cáo  
+- Xử lý sau  
+
+Shopfloor sống bằng:
+
+- Real-time  
+- Quyết định tức thì  
+- Dữ liệu xấu nhưng kịp thời  
+
+MES là hệ thần kinh.  
+Không phải sổ cái.
+
+---
+
+## 7. BA MES thực sự nên làm gì
+
+BA MES tồn tại để giữ MES sống sót.
+
+BA MES phải:
+
+- Bắt đầu từ quyền lợi, không phải quy trình  
+- Thiết kế vùng an toàn trước luồng  
+- Thiết kế cho ca tệ nhất  
+- Chấp nhận dữ liệu xấu nhưng sống  
+- Dám nói “chưa nên” với chuẩn hóa  
+
+MES sống được quan trọng hơn MES đúng.
+
+---
+
+## 8. Checklist bắt buộc trước khi viết requirement MES
+
+Nếu chưa trả lời được:
+
+- Ai mất tiền nếu MES nói ra sự thật  
+- Operator được lợi gì ngay trong ca  
+- Trưởng ca mất quyền gì khi làm đúng MES  
+- Dữ liệu nào cần đúng ngay  
+- Dữ liệu nào có thể đúng sau  
+- Validation nào bảo vệ hệ thống  
+- Validation nào đang hại con người  
+
+→ chưa đủ tư cách viết requirement MES.
+
+Requirement MES là cam kết chính trị.
+
+---
+
+## 9. Manifesto
+
+Đây không phải tutorial.  
+Đây không phải chuyển đổi số màu hồng.
+
+Đây là về:
+
+- Thực tế bẩn  
+- Trade-off  
+- Quyền lợi  
+- Những quyết định khó chịu  
+
+Nếu mày tìm công thức MES thành công,  
+đây không phải chỗ dành cho mày.
+
+Nếu mày từng thấy MES đúng nhưng nhà máy né,  
+mày đang ở đúng chỗ.
+

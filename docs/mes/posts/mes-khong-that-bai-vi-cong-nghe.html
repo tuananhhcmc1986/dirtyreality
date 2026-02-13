@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MES không thất bại vì công nghệ | dirtyreality</title>
+
+<link rel="stylesheet" href="../../style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+
+    <div class="site-title">
+        dirtyreality
+    </div>
+
+    <!-- Article -->
+
+    <article>
+
+        <h1 class="article-title">
+            MES không thất bại vì công nghệ
+        </h1>
+
+        <div class="article-meta">
+            2026 · MES
+        </div>
+
+        <div class="article-content">
+
+            <h2>Nó thất bại vì cách BA hiểu (và né) nhà máy</h2>
+
+            <p>Bài này không nói về best practice.<br>
+            Bài này nói về thứ xảy ra lúc 2 giờ sáng, khi không còn ai để diễn cho đẹp.</p>
+
+            <hr>
+
+            <h2>1. Dự án MES này không thất bại. Nó bị chính cách làm BA giết chết.</h2>
+
+            <p>Nhìn trên giấy tờ, đây là một dự án MES không có lý do gì để chết.</p>
+
+            <p>Giải pháp chọn đúng.<br>
+            Vendor có kinh nghiệm.<br>
+            BA làm đủ bài: workshop, interview, flow, requirement, traceability.<br>
+            UAT ký.<br>
+            Go-live đúng kế hoạch.</p>
+
+            <p>Không thiếu bước.<br>
+            Không sai quy trình.</p>
+
+            <p>Và chính vì thế, nó chết.</p>
+
+            <p>Không chết ồn ào.<br>
+            Không sập hệ thống.<br>
+            Không trễ deadline.</p>
+
+            <p>Nó chết theo cách nguy hiểm nhất: chết trong im lặng.</p>
+
+            <p>Operator vẫn đăng nhập.<br>
+            Vẫn thao tác.<br>
+            Vẫn nhập dữ liệu.</p>
+
+            <p>Nhưng là:</p>
+
+            <ul>
+            <li>Nhập cho xong</li>
+            <li>Nhập để khỏi bị hỏi</li>
+            <li>Nhập cái hệ thống cần, không phải cái nhà máy sống bằng</li>
+            </ul>
+
+            <p>Ca trưởng quay lại ghi chép tay vì "cho nhanh".<br>
+            Supervisor giữ một file Excel riêng để "phòng thân".</p>
+
+            <p>Những quyết định thật — quyết định cứu ca, cứu tiến độ — diễn ra hoàn toàn ngoài MES.</p>
+
+            <p>Hệ thống vẫn chạy.<br>
+            Dashboard vẫn xanh.</p>
+
+            <p>Chỉ có một thứ không chạy: <strong>nhà máy không sống bằng nó.</strong></p>
+
+            <p>Ba tháng sau, trong phòng họp, những câu quen thuộc bắt đầu lặp lại:</p>
+
+            <blockquote>
+            <p>"Chắc operator chưa quen."<br>
+            "Phải training thêm."<br>
+            "Hay UI chưa đủ thân thiện."</p>
+            </blockquote>
+
+            <p>Không ai hỏi câu khó chịu nhất:</p>
+
+            <blockquote>
+            <p>Nếu mọi thứ đều làm đúng, vì sao nhà máy vẫn không dùng?</p>
+            </blockquote>
+
+            <p>Câu trả lời không nằm ở công nghệ.<br>
+            Nó nằm ở một chỗ khó chấp nhận hơn nhiều:</p>
+
+            <p><strong>MES chết vì cách BA hiểu nhà máy — hay chính xác hơn, vì BA tưởng rằng mình đã hiểu.</strong></p>
+
+            <hr>
+
+            <h2>2. Operator và trưởng ca không chống MES. Họ chỉ đang bảo vệ chính mình.</h2>
+
+            <p>BA thường giải thích việc operator "né MES" bằng những lý do rất… lịch sự:</p>
+
+            <ul>
+            <li>Ngại thay đổi</li>
+            <li>Thiếu kỷ luật</li>
+            <li>Chưa được đào tạo đủ</li>
+            </ul>
+
+            <p>Nghe êm tai.<br>
+            Và sai hoàn toàn.</p>
+
+            <p>Sự thật đơn giản hơn nhiều:</p>
+
+            <p><strong>Operator và trưởng ca không chống hệ thống.<br>
+            Họ chống bất kỳ thứ gì đụng tới cơm của họ.</strong></p>
+
+            <p>Operator không được trả lương để làm dữ liệu đẹp.</p>
+
+            <p>Họ không được trả tiền cho:</p>
+
+            <ul>
+            <li>Traceability</li>
+            <li>Audit trail</li>
+            <li>Data completeness</li>
+            </ul>
+
+            <p>Họ được trả tiền cho:</p>
+
+            <ul>
+            <li>Sản lượng</li>
+            <li>Ca hoàn thành</li>
+            <li>Không lỗi</li>
+            <li>Không bị gọi tên</li>
+            </ul>
+
+            <p>MES yêu cầu họ:</p>
+
+            <ul>
+            <li>Dừng lại để nhập dữ liệu</li>
+            <li>Nhập đúng thời điểm</li>
+            <li>Nhập đủ trường</li>
+            <li>Chấp nhận hệ thống ghi lại mọi sai lệch</li>
+            </ul>
+
+            <p>Với BA, đó là "kỷ luật vận hành".<br>
+            Với operator, đó là rủi ro trực tiếp.</p>
+
+            <p>Rủi ro gì?</p>
+
+            <ul>
+            <li>Nhập sai → bị hỏi</li>
+            <li>Nhập chậm → ảnh hưởng tiến độ</li>
+            <li>Nhập đúng nhưng lộ lỗi → bị quy trách nhiệm</li>
+            </ul>
+
+            <p>Nếu MES không làm giảm những rủi ro đó,<br>
+            operator sẽ tự giảm rủi ro bằng cách lách hệ thống.</p>
+
+            <p>Không phải vì họ chống đối.<br>
+            Mà vì họ không ngu.</p>
+
+            <p>Trưởng ca sống bằng kết quả, không sống bằng báo cáo.</p>
+
+            <p>MES mang tới:</p>
+
+            <ul>
+            <li>Minh bạch</li>
+            <li>Log</li>
+            <li>Timestamp</li>
+            <li>Audit trail</li>
+            </ul>
+
+            <p>Nhưng với trưởng ca, MES cũng mang theo:</p>
+
+            <ul>
+            <li>Ít vùng đệm hơn</li>
+            <li>Ít không gian "chữa cháy" hơn</li>
+            <li>Mọi quyết định ngầm đều có nguy cơ thành vi phạm</li>
+            </ul>
+
+            <p>Một quyết định đúng hôm nay<br>
+            có thể trở thành lỗi quy trình ngày mai.</p>
+
+            <p>Trưởng ca hiểu rất rõ:</p>
+
+            <p><strong>MES không giúp họ sống sót qua ca.<br>
+            Nó chỉ giúp người khác đánh giá họ sau ca.</strong></p>
+
+            <hr>
+
+            <h2>3. Câu chuyện lúc 2 giờ sáng: Khi MES trở thành công cụ "làm xiếc"</h2>
+
+            <p>Giờ nói lý thuyết đủ rồi.<br>
+            Đây là thực tế bẩn dưới shopfloor.</p>
+
+            <h3>Bối cảnh</h3>
+
+            <p>Máy đóng gói số 4 bị lệch cảm biến.<br>
+            Cứ 10 sản phẩm thì đá văng 2 sản phẩm đạt chuẩn vào thùng phế.</p>
+
+            <p>2 giờ sáng.<br>
+            Ca còn 4 tiếng là bàn giao.<br>
+            Sản lượng mới đạt 60%.</p>
+
+            <hr>
+
+            <h3>3.1 Kịch bản MES trong mơ (thứ BA viết trong requirement)</h3>
+
+            <ul>
+            <li>Operator phát hiện lỗi → nhấn Stop trên MES</li>
+            <li>Chọn lý do: "Lỗi thiết bị – cảm biến lệch"</li>
+            <li>Hệ thống gửi notification cho Bảo trì</li>
+            <li>Kỹ thuật xuống thay sensor, ký xác nhận điện tử</li>
+            <li>Máy chạy lại</li>
+            </ul>
+
+            <p>Data sạch.<br>
+            Minh bạch.<br>
+            OEE giảm nhưng đúng quy trình.</p>
+
+            <p>Slide đẹp.<br>
+            Audit gật đầu.</p>
+
+            <hr>
+
+            <h3>3.2 Thực tế tại xưởng (nơi cơm áo gạo tiền quyết định)</h3>
+
+            <p>Trưởng ca nhìn đồng hồ.<br>
+            Mồ hôi hột.</p>
+
+            <p>Nếu dừng máy chờ bảo trì:</p>
+
+            <ul>
+            <li>Ca này móm sản lượng</li>
+            <li>Cả tổ mất KPI thưởng tháng</li>
+            <li>Trưởng ca sáng mai bị "hỏi thăm"</li>
+            </ul>
+
+            <p>Quyết định ngầm:</p>
+
+            <blockquote>
+            <p>"Tháo mẹ cái cảm biến ra, chạy manual.<br>
+            Thằng Tèo đứng canh, lệch thì gạt tay.<br>
+            Đừng bấm dừng máy trên MES, cứ để nó báo Running."</p>
+            </blockquote>
+
+            <hr>
+
+            <h3>3.3 Cú lừa mang tên "Dữ liệu sạch"</h3>
+
+            <p>Dashboard giám đốc:</p>
+
+            <ul>
+            <li>Máy chạy 100% thời gian</li>
+            <li>Sản lượng hoàn thành: 10.000 sản phẩm</li>
+            <li>Không một lệnh dừng</li>
+            <li>Không một lỗi kỹ thuật</li>
+            </ul>
+
+            <p><strong>XANH LÈ.</strong></p>
+
+            <p>Thực tế:</p>
+
+            <ul>
+            <li>500 con lỗi được "phù phép"</li>
+            <li>Một phần tuồn kho</li>
+            <li>Một phần đi thẳng ra sọt rác</li>
+            <li>Không qua bất kỳ khai báo nào</li>
+            </ul>
+
+            <hr>
+
+            <h3>3.4 Cái bẫy MES không bao giờ thấy</h3>
+
+            <h4>A. Scrap allowance</h4>
+
+            <p>BOM nói:</p>
+
+            <ul>
+            <li>1 sản phẩm = 1kg nhựa</li>
+            <li>Hao hụt cho phép = 5%</li>
+            </ul>
+
+            <p>Máy tốt chỉ hao 1%.<br>
+            4% còn lại là vùng đệm để chôn lỗi.</p>
+
+            <p>Dashboard vẫn xanh.<br>
+            Công ty vẫn mất tiền.</p>
+
+            <hr>
+
+            <h4>B. Backflushing</h4>
+
+            <p>MES trừ kho theo thành phẩm báo cáo, không theo thực tế.</p>
+
+            <p>500 con lỗi biến mất vào:</p>
+
+            <p><strong>Inventory variance.</strong></p>
+
+            <p>Hợp thức hóa.<br>
+            Không dấu vết.</p>
+
+            <hr>
+
+            <h4>C. Sự im lặng đồng thuận</h4>
+
+            <p>Kho biết.<br>
+            QA biết.</p>
+
+            <p>Nhưng:</p>
+
+            <ul>
+            <li>QA báo → sản lượng giảm → QA bị gọi họp</li>
+            <li>Kho báo → trưởng ca mất thưởng → mất quan hệ</li>
+            </ul>
+
+            <p>Thế là tất cả im lặng.</p>
+
+            <hr>
+
+            <h3>3.5 Hậu quả: MES chết lâm sàng</h3>
+
+            <p>Traceability là rác.<br>
+            Predictive maintenance là rác.</p>
+
+            <p>Dashboard đẹp.<br>
+            Niềm tin chết.</p>
+
+            <hr>
+
+            <h3>3.6 Bài học cho BA</h3>
+
+            <p>MES là máy ảnh.</p>
+
+            <p>Nếu người cầm máy sợ bị phạt,<br>
+            họ sẽ:</p>
+
+            <ul>
+            <li>Che ống kính</li>
+            <li>Chỉnh filter</li>
+            <li>Chụp cho đẹp</li>
+            </ul>
+
+            <p>MES thấy thế giới hoàn hảo.<br>
+            Nhà máy mục ruỗng bên dưới.</p>
+
+            <hr>
+
+            <h2>4. Anti-pattern #1: Chuẩn hóa là quyết định chính trị, không phải kỹ thuật</h2>
+
+            <p>Chuẩn hóa quyết định:</p>
+
+            <ul>
+            <li>Ai mất quyền</li>
+            <li>Ai mất vùng an toàn</li>
+            <li>Ai phải gánh rủi ro</li>
+            </ul>
+
+            <p>Chuẩn hóa quá sớm = án tử.</p>
+
+            <hr>
+
+            <h2>5. Anti-pattern #2: Vẽ flow cho một vận hành chưa tồn tại</h2>
+
+            <p>Flow đẹp không sống nổi trong ca xấu.</p>
+
+            <p>Ngoại lệ sẽ giết flow đầu tiên.</p>
+
+            <hr>
+
+            <h2>6. Anti-pattern #3: Mang ERP mindset xuống shopfloor</h2>
+
+            <p>ERP sống bằng:</p>
+
+            <ul>
+            <li>Batch</li>
+            <li>Báo cáo</li>
+            <li>Xử lý sau</li>
+            </ul>
+
+            <p>Shopfloor sống bằng:</p>
+
+            <ul>
+            <li>Real-time</li>
+            <li>Quyết định tức thì</li>
+            <li>Dữ liệu xấu nhưng kịp thời</li>
+            </ul>
+
+            <p>MES là hệ thần kinh.<br>
+            Không phải sổ cái.</p>
+
+            <hr>
+
+            <h2>7. BA MES thực sự nên làm gì</h2>
+
+            <p>BA MES tồn tại để giữ MES sống sót.</p>
+
+            <p>BA MES phải:</p>
+
+            <ul>
+            <li>Bắt đầu từ quyền lợi, không phải quy trình</li>
+            <li>Thiết kế vùng an toàn trước luồng</li>
+            <li>Thiết kế cho ca tệ nhất</li>
+            <li>Chấp nhận dữ liệu xấu nhưng sống</li>
+            <li>Dám nói "chưa nên" với chuẩn hóa</li>
+            </ul>
+
+            <p>MES sống được quan trọng hơn MES đúng.</p>
+
+            <hr>
+
+            <h2>8. Checklist bắt buộc trước khi viết requirement MES</h2>
+
+            <p>Nếu chưa trả lời được:</p>
+
+            <ul>
+            <li>Ai mất tiền nếu MES nói ra sự thật</li>
+            <li>Operator được lợi gì ngay trong ca</li>
+            <li>Trưởng ca mất quyền gì khi làm đúng MES</li>
+            <li>Dữ liệu nào cần đúng ngay</li>
+            <li>Dữ liệu nào có thể đúng sau</li>
+            <li>Validation nào bảo vệ hệ thống</li>
+            <li>Validation nào đang hại con người</li>
+            </ul>
+
+            <p>→ chưa đủ tư cách viết requirement MES.</p>
+
+            <p>Requirement MES là cam kết chính trị.</p>
+
+            <hr>
+
+            <h2>9. Manifesto</h2>
+
+            <p>Đây không phải tutorial.<br>
+            Đây không phải chuyển đổi số màu hồng.</p>
+
+            <p>Đây là về:</p>
+
+            <ul>
+            <li>Thực tế bẩn</li>
+            <li>Trade-off</li>
+            <li>Quyền lợi</li>
+            <li>Những quyết định khó chịu</li>
+            </ul>
+
+            <p>Nếu mày tìm công thức MES thành công,<br>
+            đây không phải chỗ dành cho mày.</p>
+
+            <p>Nếu mày từng thấy MES đúng nhưng nhà máy né,<br>
+            mày đang ở đúng chỗ.</p>
+
+        </div>
+
+    </article>
+
+    <!-- Footer -->
+
+    <div class="back">
+        <a href="../">← back</a>
+    </div>
+
+    <div class="home-link">
+        <a href="../../">home</a>
+    </div>
+
+</div>
+
+</body>
+</html>

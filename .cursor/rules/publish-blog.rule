@@ -1,0 +1,40 @@
+When user asks to publish a draft:
+
+1. Identify the draft file location under drafts/
+
+Example:
+drafts/mes/why-mes-fails.md
+
+2. Extract category from folder name:
+mes → docs/mes/posts/
+dms → docs/dms/posts/
+ba → docs/ba/posts/
+linh-tinh → docs/linh-tinh/posts/
+
+3. Convert markdown into HTML using template:
+templates/post-template.html
+
+4. Replace template variables:
+{{TITLE}} = first line
+{{DATE}} = current year
+{{CONTENT}} = converted markdown paragraphs
+
+5. Save output as:
+docs/<category>/posts/<same filename>.html
+
+6. Update category index:
+docs/<category>/index.html
+
+Insert inside:
+
+<!-- POSTS START -->
+<!-- POSTS END -->
+
+format:
+
+<div class="post">
+<a href="posts/<filename>.html">{{TITLE}}</a>
+<div class="meta">{{DATE}}</div>
+</div>
+
+7. Do not modify drafts folder.
