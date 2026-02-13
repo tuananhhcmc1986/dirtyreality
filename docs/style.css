@@ -45,3 +45,8 @@ body {
     color: #777;
     margin-top: 2px;
 }
+.nav a {
+    display:block;
+    margin-bottom:10px;
+    font-size:20px;
+}
