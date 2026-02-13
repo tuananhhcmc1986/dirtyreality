@@ -132,6 +132,7 @@ must work at:
 /dirtyreality/<category>/posts/<slug>.html
 
 
+
 STEP 12 — REPUBLISH MODE
 
 If target file already exists:
@@ -149,3 +150,71 @@ docs/<category>/index.html
 Check existing links first.
 
 Only create index entry if slug does not exist.
+
+
+
+STEP 13 — DARK MODE SUPPORT
+
+Ensure generated HTML file includes:
+
+<div class="theme-toggle" onclick="toggleTheme()">
+toggle theme
+</div>
+
+positioned immediately after:
+
+<body>
+
+and before:
+
+<div class="container">
+
+
+
+STEP 14 — THEME SCRIPT INJECTION
+
+Ensure generated HTML includes script reference:
+
+<script src="../../theme.js"></script>
+
+positioned immediately before:
+
+</body>
+
+
+
+STEP 15 — TEMPLATE INTEGRITY CHECK
+
+Ensure template:
+
+templates/post-template.html
+
+contains:
+
+theme-toggle element
+
+nav-back element
+
+theme.js script reference
+
+style.css reference
+
+If missing, inject automatically.
+
+
+
+STEP 16 — REPUBLISH TEMPLATE UPGRADE MODE
+
+When republishing existing post:
+
+overwrite entire HTML content using latest template
+
+ensure dark mode toggle exists
+
+ensure theme.js script exists
+
+ensure nav-back exists
+
+ensure no duplicate script or toggle elements
+
+preserve slug and URL

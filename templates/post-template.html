@@ -4,9 +4,8 @@
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>{{TITLE}} | DIRTY REALITY</title>
+<title>{{TITLE}} | Dirty Reality</title>
 
 <link rel="stylesheet" href="../../style.css">
 
@@ -14,131 +13,95 @@
 
 </head>
 
-
 <body>
+
+
+<!-- DARK MODE TOGGLE -->
+
+<div class="theme-toggle" onclick="toggleTheme()">
+toggle theme
+</div>
+
 
 <div class="container">
 
 
-    <!-- SITE TITLE -->
+<!-- SITE TITLE -->
 
-    <div class="site-title">
+<div class="site-title">
 
-        <a href="../../" class="home-link-main">
-            DIRTY REALITY
-        </a>
+<a href="../../">
+DIRTY REALITY
+</a>
 
-    </div>
-
-
-
-    <!-- ARTICLE -->
-
-    <article>
+</div>
 
 
-        <!-- DATE -->
+<!-- BACK NAV -->
 
-        <div class="article-meta">
+<div class="nav-back">
 
-            {{DATE}} · {{CATEGORY}}
+<a href="../">
+← back
+</a>
 
-        </div>
-
-
-
-        <!-- TITLE -->
-
-        <h1 class="article-title">
-
-            {{TITLE}}
-
-        </h1>
+</div>
 
 
+<!-- DATE -->
 
-        <!-- CONTENT -->
+<div class="article-date">
 
-        <div class="article-content">
+{{DATE}}
 
-            {{CONTENT}}
-
-        </div>
-
+</div>
 
 
-        <!-- RELATED POSTS -->
+<!-- TITLE -->
 
-        <div class="related-section">
+<h1 class="article-title">
 
-            <div class="related-title">
-                Recent posts
-            </div>
+{{TITLE}}
 
-            <div class="related-posts">
-
-                {{RELATED_POSTS}}
-
-            </div>
-
-        </div>
+</h1>
 
 
+<!-- CONTENT -->
 
-    </article>
+<div class="article-content">
 
+{{CONTENT}}
 
-
-    <!-- BACK -->
-
-    <div class="back">
-
-        <a href="../">← back</a>
-
-    </div>
+</div>
 
 
+<!-- FOOTER -->
 
-    <!-- FOOTER -->
+<div class="footer">
 
-    <footer class="footer">
-
-        <div class="footer-line">
-
-            © 2026 DIRTY REALITY
-
-        </div>
+Dirty Reality © 2026
 
 
-        <div class="footer-line">
+<div class="dmca-badge">
 
-            <a href="https://github.com/tuananhhcmc1986/dirtyreality" target="_blank">
-                GitHub
-            </a>
+<a href="//www.dmca.com/Protection/Status.aspx?ID=6bc34bde-a24b-47a4-ad74-445a2b5632be">
 
-        </div>
+<img src="https://images.dmca.com/Badges/dmca_protected_sml_120n.png?ID=6bc34bde-a24b-47a4-ad74-445a2b5632be">
 
+</a>
 
-        <div class="footer-line footer-dmca">
-
-            <a href="//www.dmca.com/Protection/Status.aspx?ID=6bc34bde-a24b-47a4-ad74-445a2b5632be"
-            title="DMCA.com Protection Status"
-            class="dmca-badge">
-
-                <img src="https://images.dmca.com/Badges/dmca_protected_sml_120n.png?ID=6bc34bde-a24b-47a4-ad74-445a2b5632be"
-                alt="DMCA.com Protection Status"/>
-
-            </a>
-
-        </div>
-
-    </footer>
+</div>
 
 
 </div>
 
 
-<script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"></script>
+</div>
+
+
+<!-- DARK MODE SCRIPT -->
+
+<script src="../../theme.js"></script>
 
 
 </body>
