@@ -113,3 +113,73 @@ body {
     margin-top: 10px;
     font-size: 14px;
 }
+/* ===== GLOBAL ===== */
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #111;
+    background: #fff;
+    margin: 0;
+}
+
+.container {
+    max-width: 720px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+/* ===== TITLE ===== */
+
+.site-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* ===== SUBTITLE ===== */
+
+.subtitle {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 40px;
+}
+
+/* ===== POSTS LIST ===== */
+
+.posts {
+    margin-bottom: 40px;
+}
+
+.post-item {
+    margin-bottom: 20px;
+}
+
+.post-item a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #111;
+}
+
+.post-item a:hover {
+    text-decoration: underline;
+}
+
+.post-year {
+    margin-top: 8px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #666;
+}
+
+/* ===== BACK LINK ===== */
+
+.back {
+    margin-top: 40px;
+}
+
+.back a {
+    text-decoration: none;
+    font-size: 16px;
+}
