@@ -181,3 +181,50 @@ CATEGORY LIST
     margin-bottom: 25px;
 
 }
+/* =========================
+FOOTER
+========================= */
+
+.footer {
+
+    margin-top: 80px;
+
+    font-size: 14px;
+
+    color: #666;
+
+}
+
+.footer-line {
+
+    margin-bottom: 10px;
+
+}
+
+.footer a {
+
+    text-decoration: none;
+
+    color: inherit;
+
+}
+
+.footer a:hover {
+
+    text-decoration: underline;
+
+}
+
+.footer-dmca {
+
+    margin-top: 15px;
+
+    opacity: 0.6;
+
+}
+
+.footer-dmca:hover {
+
+    opacity: 1;
+
+}
