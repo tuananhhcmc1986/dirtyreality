@@ -1,5 +1,5 @@
 /* =========================
-   GLOBAL
+GLOBAL
 ========================= */
 
 body {
@@ -16,28 +16,23 @@ body {
     line-height: 1.7;
 
     color: #111;
-    background: #ffffff;
+    background: #fff;
 
     margin: 0;
-
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 
 }
 
 
+
 /* =========================
-   LAYOUT CONTAINER
+LAYOUT
 ========================= */
 
 .container {
 
     max-width: 720px;
 
-    margin-top: 60px;
-    margin-bottom: 60px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 60px auto;
 
     padding-left: 20px;
     padding-right: 20px;
@@ -45,16 +40,17 @@ body {
 }
 
 
+
 /* =========================
-   SITE TITLE
+SITE TITLE
 ========================= */
 
 .site-title {
 
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 600;
 
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 
 }
 
@@ -65,101 +61,29 @@ body {
 
 }
 
-.site-title a:hover {
-
-    text-decoration: underline;
-
-}
 
 
 /* =========================
-   SUBTITLE (category pages)
+ARTICLE
 ========================= */
 
-.subtitle {
+.article-meta {
 
-    font-size: 18px;
-    color: #444;
-
-    margin-bottom: 40px;
-
-}
-
-
-/* =========================
-   POSTS LIST (category)
-========================= */
-
-.posts {
-
-    margin-bottom: 40px;
-
-}
-
-.post-item {
-
-    margin-bottom: 8px;
-
-}
-
-.post-item a {
-
-    font-size: 20px;
-
-    text-decoration: none;
-    color: #111;
-
-}
-
-.post-item a:hover {
-
-    text-decoration: underline;
-
-}
-
-.post-year {
-
-    font-size: 15px;
+    font-size: 14px;
     color: #666;
 
-    margin-bottom: 28px;
+    margin-bottom: 10px;
 
 }
-
-
-/* =========================
-   ARTICLE PAGE
-========================= */
 
 .article-title {
 
     font-size: 32px;
     font-weight: 600;
 
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 
 }
-
-.article-meta {
-
-    font-size: 15px;
-    color: #666;
-
-    margin-bottom: 40px;
-
-}
-
-.article-content {
-
-    margin-bottom: 40px;
-
-}
-
-
-/* =========================
-   PARAGRAPH
-========================= */
 
 .article-content p {
 
@@ -168,42 +92,47 @@ body {
 }
 
 
+
 /* =========================
-   HEADINGS INSIDE ARTICLE
+RELATED POSTS
 ========================= */
 
-.article-content h2 {
+.related-section {
 
-    font-size: 24px;
+    margin-top: 60px;
 
-    margin-top: 40px;
+}
+
+.related-title {
+
+    font-size: 18px;
+    font-weight: 600;
+
     margin-bottom: 15px;
 
 }
 
-.article-content h3 {
+.related-posts a {
 
-    font-size: 20px;
+    display: block;
 
-    margin-top: 30px;
     margin-bottom: 10px;
 
-}
-
-
-/* =========================
-   LINKS
-========================= */
-
-a {
-
-    color: inherit;
+    text-decoration: none;
+    color: #111;
 
 }
 
+.related-posts a:hover {
+
+    text-decoration: underline;
+
+}
+
+
 
 /* =========================
-   BACK LINK
+BACK
 ========================= */
 
 .back {
@@ -214,89 +143,41 @@ a {
 
 .back a {
 
-    font-size: 16px;
     text-decoration: none;
 
 }
 
-.back a:hover {
-
-    text-decoration: underline;
-
-}
 
 
 /* =========================
-   HOME LINK
+CATEGORY LIST
 ========================= */
 
-.home-link-main {
-
-    text-decoration: none;
-    color: inherit;
-
-}
-
-.home-link-main:hover {
-
-    text-decoration: underline;
-
-}
-
-
-/* =========================
-   IMAGES
-========================= */
-
-.article-content img {
-
-    max-width: 100%;
+.posts {
 
     margin-top: 30px;
-    margin-bottom: 30px;
 
 }
 
+.post-item {
 
-/* =========================
-   HR (separator)
-========================= */
-
-.article-content hr {
-
-    border: none;
-
-    border-top: 1px solid #ddd;
-
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 
 }
 
+.post-item a {
 
-/* =========================
-   MOBILE
-========================= */
+    font-size: 20px;
+    text-decoration: none;
+    color: #111;
 
-@media (max-width: 600px) {
+}
 
-    .container {
+.post-year {
 
-        margin-top: 30px;
-        margin-bottom: 30px;
+    font-size: 14px;
+    color: #666;
 
-    }
-
-    .site-title {
-
-        font-size: 26px;
-
-    }
-
-    .article-title {
-
-        font-size: 26px;
-
-    }
+    margin-bottom: 25px;
 
 }
