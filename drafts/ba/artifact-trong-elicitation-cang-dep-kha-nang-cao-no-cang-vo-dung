@@ -1,0 +1,149 @@
+# Artifact trong Elicitation càng đẹp, khả năng cao nó càng vô dụng
+## Một artifact sạch sẽ quá mức thường là dấu hiệu cho thấy elicitation chưa thực sự diễn ra.
+
+
+Diagram đúng notation.
+Flow không mơ hồ.
+Không có chỗ “chưa rõ”.
+Không có xung đột.
+
+Mọi thứ logic. Khớp nối. Trơn tru.
+
+Vấn đề là vận hành thực tế hiếm khi trơn tru như vậy.
+
+Artifact phục vụ elicitation sẽ bị sửa ngay trong phòng họp.
+
+Stakeholder nhìn vào và phản ứng:
+
+“Bước này không diễn ra như vậy.”
+“Quyết định này không nằm ở hệ thống.”
+“Chỗ này thực tế không tồn tại.”
+
+Những chỗ gạch xóa bắt đầu xuất hiện.
+Mũi tên bị vẽ lại.
+Vai trò bị đổi chỗ.
+
+Artifact biến dạng dần.
+Và chính trong quá trình đó, nó tiến gần hơn đến thực tế.
+
+Ngược lại, một artifact quá đẹp thường không bị chạm vào.
+
+Không phải vì nó chính xác.
+Mà vì nó tạo cảm giác đã hoàn tất.
+
+Khi một sơ đồ trông đã hoàn chỉnh, người ta có xu hướng xác nhận hơn là phản biện.
+Một sự do dự xuất hiện trước khi sửa nó.
+
+Artifact lúc này không còn là công cụ thảo luận.
+Nó trở thành một vật thể đã định hình.
+
+Artifact trong elicitation không tồn tại để được đọc và chấp nhận.
+Nó tồn tại để bị nghi ngờ.
+
+Stakeholder không cần artifact để hiểu quy trình của họ.
+Họ đã sống trong quy trình đó.
+
+Thứ họ cần là một bề mặt để chỉ ra sai lệch.
+
+Nếu artifact quá phức tạp để đọc nhanh, họ sẽ không đọc.
+Nếu artifact quá hoàn chỉnh để sửa, họ sẽ không sửa.
+
+Cả hai trường hợp đều dẫn đến cùng một kết quả:
+tài liệu tồn tại, nhưng understanding không hình thành.
+
+Sự khác biệt thường thể hiện rất rõ trong workshop.
+
+Một BA chuẩn bị nhiều ngày.
+Flow được vẽ theo BPMN chuẩn.
+Exception được liệt kê đầy đủ.
+Layout được sắp xếp cẩn thận.
+
+Workshop bắt đầu.
+
+Stakeholder nhìn vào sơ đồ.
+“Nhìn chung là đúng.”
+
+Cuộc họp kết thúc sớm.
+
+Không có nhiều chỉnh sửa.
+Không có nhiều câu hỏi.
+
+Artifact được lưu lại gần như nguyên vẹn.
+
+Sau go-live, hệ thống vận hành khác với sơ đồ.
+Những bước “đúng” trên giấy không được sử dụng như thiết kế.
+
+Artifact đúng theo cấu trúc.
+Nhưng chưa từng bị kiểm chứng thực sự.
+
+Một BA khác chuẩn bị trong thời gian ngắn hơn.
+
+Sơ đồ chỉ gồm box và arrow.
+Một vài ghi chú ngắn:
+“Ai quyết định bước này?”
+“Có ngoại lệ không?”
+
+Workshop bắt đầu.
+
+Phản ứng xuất hiện ngay lập tức.
+
+“Không có bước approve ở đây.”
+“Trưởng ca quyết định trực tiếp.”
+“Phần này diễn ra song song, không tuần tự.”
+
+Sơ đồ bị chỉnh sửa liên tục.
+Các mũi tên được vẽ lại ngay trên màn hình.
+
+Workshop kéo dài lâu hơn.
+Artifact trở nên lộn xộn hơn.
+
+Nhưng nó bắt đầu phản ánh cách hệ thống thực sự vận hành.
+
+Một artifact quá hoàn chỉnh gửi đi một thông điệp ngầm:
+
+Cấu trúc này đã được suy nghĩ kỹ.
+Khung này đã được xác nhận.
+Không cần thay đổi nhiều.
+
+Stakeholder chuyển sang trạng thái xác nhận.
+Họ tìm xem có gì sai hiển nhiên hay không.
+Nếu không thấy, họ đồng ý.
+
+Elicitation không diễn ra trong trạng thái đó.
+
+Elicitation diễn ra khi cấu trúc bị đặt dấu hỏi.
+
+Artifact càng đơn giản, càng dễ bị đặt câu hỏi.
+Artifact càng hoàn chỉnh, càng khó bị chạm vào.
+
+Notation chuẩn không tự động làm lộ misunderstanding.
+Layout đẹp không tự động làm lộ assumption sai.
+Framework đúng không tự động làm lộ conflict vận hành.
+
+Những yếu tố này chỉ khiến artifact trông chuyên nghiệp hơn.
+
+Elicitation không cần một artifact chuyên nghiệp.
+Nó cần một artifact dễ bị phá vỡ.
+
+Một sơ đồ có thể bị sửa ngay khi stakeholder nói câu đầu tiên.
+Một cấu trúc cho phép thêm, xóa, đảo vị trí mà không tạo cảm giác “làm hỏng” thứ gì đó.
+
+Artifact trong giai đoạn elicitation vốn có vòng đời ngắn.
+
+Sau đó nó sẽ được thay thế bởi:
+
+Requirement specification.
+System configuration.
+Solution design.
+
+Việc tối ưu hóa độ hoàn chỉnh của artifact ở giai đoạn này thường không làm tăng chất lượng understanding.
+Nó chỉ làm tăng độ hoàn thiện hình thức.
+
+Understanding hình thành trong conversation.
+
+Artifact chỉ đóng vai trò kích hoạt conversation đó.
+
+Khi artifact không còn được chỉnh sửa, conversation dừng lại.
+
+Và khi conversation dừng lại, elicitation cũng kết thúc —
+dù tài liệu trông có vẻ hoàn chỉnh đến đâu.
