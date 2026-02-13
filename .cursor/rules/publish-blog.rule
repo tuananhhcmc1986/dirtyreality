@@ -1,76 +1,118 @@
-When user asks to publish a draft:
+When user asks to publish a draft, follow these EXACT steps.
 
-SOURCE:
+--------------------------------------------------
+STEP 1 — Detect draft source
+--------------------------------------------------
+
+Source format:
+
 drafts/<category>/<filename>.md
-
-TARGET:
-docs/<category>/posts/<slug>.html
-
-
-STEPS:
-
-1. Detect category from folder name:
-
-drafts/mes → docs/mes/posts
-drafts/dms → docs/dms/posts
-drafts/ba → docs/ba/posts
-drafts/linh-tinh → docs/linh-tinh/posts
-
-
-2. Generate slug from filename:
-
-Rules:
-
-lowercase
-remove Vietnamese accents
-replace spaces with hyphen
-ascii only
 
 Example:
 
-"mes không thất bại vì công nghệ.md"
+drafts/mes/mes-khong-that-bai-vi-cong-nghe.md
+
+
+--------------------------------------------------
+STEP 2 — Detect category
+--------------------------------------------------
+
+Category is folder name directly under drafts:
+
+mes
+dms
+ba
+linh-tinh
+
+Target folder MUST be:
+
+docs/<category>/posts/
+
+
+Example:
+
+drafts/mes/article.md
+
+→ docs/mes/posts/article.html
+
+
+--------------------------------------------------
+STEP 3 — Generate slug
+--------------------------------------------------
+
+Convert filename to slug using rules:
+
+• lowercase
+• remove Vietnamese accents
+• replace spaces with hyphen
+• ascii only
+• extension must be .html
+
+Example:
+
+mes không thất bại vì công nghệ.md
 
 → mes-khong-that-bai-vi-cong-nghe.html
 
 
-3. Convert markdown to HTML:
+--------------------------------------------------
+STEP 4 — Convert markdown to HTML
+--------------------------------------------------
 
-paragraph → <p>
-line break → new paragraph
-preserve headings if exist
+Rules:
+
+Each paragraph → <p>...</p>
+
+Blank line → new paragraph
+
+Preserve headings if exist
 
 
-4. Apply template:
+--------------------------------------------------
+STEP 5 — Apply template
+--------------------------------------------------
+
+Use template file:
 
 templates/post-template.html
 
 Replace variables:
 
 {{TITLE}}
-{{DATE}} = current year
+{{DATE}}
 {{CATEGORY}}
 {{CONTENT}}
 
 
-5. Save file:
+--------------------------------------------------
+STEP 6 — Save output file
+--------------------------------------------------
+
+Save EXACT location:
 
 docs/<category>/posts/<slug>.html
 
 
-6. Update category index:
+Example:
+
+docs/mes/posts/mes-khong-that-bai-vi-cong-nghe.html
+
+
+--------------------------------------------------
+STEP 7 — Update category index
+--------------------------------------------------
+
+Open file:
 
 docs/<category>/index.html
 
-Insert BEFORE:
 
-</div>
-
-inside:
+Insert inside:
 
 <div class="posts">
 
 
-Format:
+Add EXACT code:
 
 <div class="post-item">
     <a href="posts/<slug>.html">
@@ -83,6 +125,44 @@ Format:
 </div>
 
 
-7. DO NOT modify drafts folder
+CRITICAL RULE:
 
-8. DO NOT modify other categories
+NEVER use:
+
+mes/posts/<slug>.html
+dms/posts/<slug>.html
+
+ONLY use:
+
+posts/<slug>.html
+
+
+--------------------------------------------------
+STEP 8 — NEVER modify other folders
+--------------------------------------------------
+
+Do NOT modify:
+
+docs/index.html
+docs/style.css
+other categories
+
+
+--------------------------------------------------
+STEP 9 — DO NOT move draft
+--------------------------------------------------
+
+Draft remains in drafts folder
+
+
+--------------------------------------------------
+STEP 10 — Result
+--------------------------------------------------
+
+Final working URL MUST be:
+
+/dirtyreality/<category>/posts/<slug>.html
+
+Example:
+
+/dirtyreality/mes/posts/mes-khong-that-bai-vi-cong-nghe.html
