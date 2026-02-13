@@ -1,0 +1,248 @@
+# Top 5 cách trưởng ca và quản đốc qua mặt MES  
+## để giữ cho ca sản xuất sống sót
+
+MES được thiết kế để ghi nhận sự thật.  
+Trưởng ca được trả lương để giữ dây chuyền chạy.
+
+Hai mục tiêu này không phải lúc nào cũng trùng nhau.
+
+Khi xung đột xảy ra, MES không bị tắt.  
+Không ai rút dây mạng.  
+Không ai xóa hệ thống.
+
+MES vẫn chạy.  
+Vẫn có log.  
+Vẫn có dashboard.
+
+Chỉ là nơi đưa ra quyết định thật không còn nằm trong đó.
+
+Dưới đây là những cách phổ biến mà trưởng ca và quản đốc điều chỉnh cách họ dùng MES.
+
+Không để phá hệ thống.  
+Chỉ để hệ thống không làm chậm ca sản xuất.
+
+---
+
+## 1. Nhập đúng format. Không nhập đúng sự thật.
+
+MES yêu cầu chọn lý do cho downtime, scrap, deviation.
+
+Danh sách có sẵn.  
+Chỉ cần chọn.
+
+Một nhà máy linh kiện điện tử.  
+Dây chuyền dừng quá 120 giây phải chọn một lý do:
+
+- Material shortage  
+- Machine fault  
+- Quality check  
+- Other  
+
+Tuần đầu sau go-live, dữ liệu tương đối sát thực tế.
+
+Đến tuần thứ ba, một mẫu hình xuất hiện.
+
+Phần lớn downtime được nhập là **“Machine fault”**.
+
+Không phải vì máy hỏng nhiều hơn.
+
+Vì đó là lựa chọn an toàn.
+
+- Chọn “Material shortage” → kho bị hỏi  
+- Chọn “Quality issue” → QA mở điều tra  
+- Chọn “Other” → trưởng ca phải giải trình  
+
+“Machine fault” không kéo theo ai ngay lập tức.
+
+MES có downtime.  
+Có lý do.  
+Có dữ liệu đầy đủ.
+
+Chỉ là lý do đó không còn phản ánh vận hành.
+
+Trưởng ca vẫn biết nguyên nhân thật.  
+Thông tin tồn tại.
+
+Nhưng nằm ngoài hệ thống.
+
+MES không bị vô hiệu hóa.  
+Chỉ được cung cấp dữ liệu không gây rủi ro.
+
+---
+
+## 2. Nhập liệu khi rủi ro đã qua
+
+MES được thiết kế cho realtime.
+
+Shopfloor không luôn hoạt động như vậy.
+
+Một nhà máy thực phẩm, mỗi batch phải xác nhận completion với timestamp.
+
+Timestamp dùng để tính hiệu suất theo ca.
+
+Ca chiều,  
+Một batch gặp lỗi nhiệt độ, 
+Xử lý nội bộ,
+Mất 40 phút.
+
+Nếu ghi nhận ngay, downtime sẽ hiển thị rõ.  
+KPI ca bị ảnh hưởng.
+
+Trưởng ca chờ.
+
+Khi batch sau chạy ổn định, completion của cả hai batch được nhập gần nhau.
+
+MES ghi nhận batch hoàn thành.
+
+Timestamp phản ánh thời điểm nhập liệu.  
+Không phản ánh thời điểm sự cố.
+
+Không có dữ liệu bị xóa.  
+Không có số nào bị sửa.
+
+Chỉ là thời điểm ghi nhận được chọn lại.
+
+MES lưu lại phiên bản đã được làm phẳng.
+
+---
+
+## 3. Quyết định diễn ra bên ngoài. MES cập nhật sau.
+
+MES có workflow cho deviation:
+
+1. Phát hiện  
+2. Ghi nhận  
+3. Phê duyệt  
+4. Xử lý  
+
+Trong một nhà máy packaging, thay đổi material phải được log và approved trước khi tiếp tục.
+
+Thực tế khác.
+
+Material thay thế được đưa vào.  
+Trưởng ca gọi QA supervisor.  
+Cuộc gọi khoảng 20 giây.
+
+> “Dùng tạm. Ghi lại sau.”
+
+Dây chuyền tiếp tục.
+
+Sau đó, MES được cập nhật.  
+Deviation đã có approval.
+
+Trong hệ thống, quy trình đầy đủ.
+
+Nhưng quyết định thực tế diễn ra qua cuộc gọi.
+
+MES trở thành nơi lưu dấu vết.  
+Không phải nơi ra quyết định.
+
+Không phải vì thiếu chức năng.
+
+Vì con người phản ứng nhanh hơn workflow.
+
+---
+
+## 4. Dùng tài khoản “an toàn” cho thao tác nhạy cảm
+
+MES có traceability đến từng user.
+
+Một nhà máy assembly.  
+Mỗi operator có account riêng.
+
+Adjustment phải truy về cá nhân.
+
+Vài tháng đầu, mọi người dùng account của mình.
+
+Sau đó xuất hiện một account chung:
+
+**`lineleader01`**
+
+Account này thuộc về vị trí.  
+Không gắn với một người cụ thể.
+
+Những thao tác nhạy cảm — đổi parameter, override cảnh báo — thường thực hiện dưới account này.
+
+MES vẫn ghi nhận user.  
+Log vẫn tồn tại.
+
+Chỉ là user đó không đại diện cho một cá nhân cụ thể.
+
+Traceability còn.  
+Accountability mờ đi.
+
+Rủi ro cá nhân giảm xuống.  
+Trách nhiệm được gom về cấp quản lý.
+
+---
+
+## 5. Duy trì một hệ thống song song
+
+Đây là cách phổ biến nhất.
+
+Song song với MES, tồn tại một hệ thống khác.
+
+Trong một nhà máy injection molding, MES ghi nhận:
+
+- Sản lượng  
+- Downtime  
+- Scrap  
+
+Song song, trưởng ca giữ một file Excel đơn giản:
+
+- Machine  
+- Operator  
+- Issue  
+- Action taken  
+- Note  
+
+File không chính thức.  
+Không audit.  
+Không theo chuẩn IT.
+
+Nhưng đó là nơi chứa thông tin vận hành thật.
+
+Ví dụ: một mold bắt đầu có dấu hiệu lệch từ tuần trước.
+
+Thông tin này nằm trong Excel.  
+Ca sau đọc lại trước khi chạy.
+
+MES có thể hiển thị downtime của mold đó.
+
+MES không hiển thị ghi chú:
+
+> “Mold này cần theo dõi sát.”
+
+MES là hệ thống báo cáo.  
+Excel là hệ thống vận hành.
+
+Hai hệ thống cùng tồn tại.
+
+Một phục vụ quản lý.  
+Một phục vụ thực tế.
+
+---
+
+## Kết
+
+MES không thất bại vì trưởng ca chống lại nó.
+
+MES gặp vấn đề khi trưởng ca phải chọn giữa:
+
+- Tuân thủ hệ thống  
+- Hoặc giữ dây chuyền ổn định  
+
+Trong lựa chọn đó, hệ thống thường đứng sau.
+
+Không vì hệ thống yếu.
+
+Mà vì trách nhiệm của trưởng ca không nằm trong MES.
+
+Trách nhiệm nằm ở dây chuyền đang chạy trước mặt họ.
+
+MES có thể ghi nhận mọi thứ.
+
+Nhưng quyết định thật luôn được đưa ra  
+ở nơi rủi ro thật tồn tại.
+
+**Không phải trong hệ thống.**
