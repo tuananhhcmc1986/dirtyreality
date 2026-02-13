@@ -5,104 +5,94 @@
 
 <meta charset="UTF-8">
 
-<title>{{TITLE}} | Dirty Reality</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>{{TITLE}} | DIRTY REALITY</title>
 
 <link rel="stylesheet" href="../../style.css">
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
+<script src="../../darkmode.js" defer></script>
+
 </head>
 
 <body>
 
-
-<!-- DARK MODE TOGGLE -->
-
-<div class="theme-toggle" onclick="toggleTheme()">
-toggle theme
-</div>
-
-
 <div class="container">
 
+    <!-- Dark mode toggle -->
+    <div class="darkmode-toggle">
+        <button onclick="toggleDarkMode()" id="darkmode-btn">
+            dark mode
+        </button>
+    </div>
 
-<!-- SITE TITLE -->
+    <!-- Site title -->
+    <div class="site-title">
+        <a href="../../">DIRTY REALITY</a>
+    </div>
 
-<div class="site-title">
+    <!-- Back navigation -->
+    <div class="nav-back">
+        <a href="../">← {{CATEGORY}}</a>
+    </div>
 
-<a href="../../">
-DIRTY REALITY
-</a>
+    <!-- Article -->
+    <article>
+
+        <!-- DATE FIRST (as requested) -->
+        <div class="article-meta">
+            {{DATE}} · {{CATEGORY}}
+        </div>
+
+        <!-- TITLE SECOND -->
+        <h1 class="article-title">
+            {{TITLE}}
+        </h1>
+
+        <!-- CONTENT -->
+        <div class="article-content">
+            {{CONTENT}}
+        </div>
+
+    </article>
+
+    <!-- RELATED POSTS -->
+    <div class="related-posts">
+
+        <div class="related-posts-title">
+            Recent in {{CATEGORY}}
+        </div>
+
+        {{RELATED_POSTS}}
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+
+        <div>
+            Dirty Reality © 2026
+        </div>
+
+        <div style="margin-top:10px;">
+
+            <a href="//www.dmca.com/Protection/Status.aspx?ID=6bc34bde-a24b-47a4-ad74-445a2b5632be"
+               title="DMCA.com Protection Status"
+               class="dmca-badge">
+
+                <img src="https://images.dmca.com/Badges/dmca_protected_sml_120n.png?ID=6bc34bde-a24b-47a4-ad74-445a2b5632be"
+                     alt="DMCA.com Protection Status" />
+
+            </a>
+
+        </div>
+
+    </div>
 
 </div>
-
-
-<!-- BACK NAV -->
-
-<div class="nav-back">
-
-<a href="../">
-← back
-</a>
-
-</div>
-
-
-<!-- DATE -->
-
-<div class="article-date">
-
-{{DATE}}
-
-</div>
-
-
-<!-- TITLE -->
-
-<h1 class="article-title">
-
-{{TITLE}}
-
-</h1>
-
-
-<!-- CONTENT -->
-
-<div class="article-content">
-
-{{CONTENT}}
-
-</div>
-
-
-<!-- FOOTER -->
-
-<div class="footer">
-
-Dirty Reality © 2026
-
-
-<div class="dmca-badge">
-
-<a href="//www.dmca.com/Protection/Status.aspx?ID=6bc34bde-a24b-47a4-ad74-445a2b5632be">
-
-<img src="https://images.dmca.com/Badges/dmca_protected_sml_120n.png?ID=6bc34bde-a24b-47a4-ad74-445a2b5632be">
-
-</a>
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-<!-- DARK MODE SCRIPT -->
-
-<script src="../../theme.js"></script>
-
 
 </body>
+
 </html>
