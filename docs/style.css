@@ -172,3 +172,20 @@
 .dmca-badge {
     margin-top: 12px;
 }
+/* =========================
+   NAVIGATION
+   ========================= */
+
+   .nav-back {
+    margin-bottom: 30px;
+}
+
+.nav-back a {
+    text-decoration: none;
+    color: #666;
+    font-size: 14px;
+}
+
+.nav-back a:hover {
+    text-decoration: underline;
+}
