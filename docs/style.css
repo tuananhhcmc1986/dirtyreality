@@ -1,251 +1,174 @@
 /* =========================
-GLOBAL
-========================= */
+   DIRTY REALITY — BASE
+   ========================= */
 
-body {
-
-    font-family: "Inter",
-                 -apple-system,
-                 BlinkMacSystemFont,
-                 "Segoe UI",
-                 Roboto,
-                 Arial,
-                 sans-serif;
-
-    font-size: 18px;
-    line-height: 1.7;
-
+   body {
+    font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    background-color: #f7f7f7;
     color: #111;
-    background: #fff;
-
     margin: 0;
-
 }
-
-
-
-/* =========================
-LAYOUT
-========================= */
 
 .container {
-
     max-width: 720px;
-
-    margin: 60px auto;
-
-    padding-left: 20px;
-    padding-right: 20px;
-
+    margin: 80px auto;
+    padding: 0 20px;
 }
 
-
-
 /* =========================
-SITE TITLE
-========================= */
+   SITE TITLE
+   ========================= */
 
 .site-title {
-
-    font-size: 28px;
+    font-size: 32px;
     font-weight: 600;
-
     margin-bottom: 40px;
-
 }
 
 .site-title a {
-
     text-decoration: none;
     color: inherit;
-
 }
-
-
 
 /* =========================
-ARTICLE
-========================= */
+   SUBTITLE
+   ========================= */
 
-.article-meta {
-
-    font-size: 14px;
-    color: #666;
-
-    margin-bottom: 10px;
-
+.subtitle {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 60px;
 }
-
-.article-title {
-
-    font-size: 32px;
-    font-weight: 600;
-
-    margin-bottom: 30px;
-
-}
-
-.article-content p {
-
-    margin-bottom: 22px;
-
-}
-
-
 
 /* =========================
-RELATED POSTS
-========================= */
+   SECTION LABEL
+   ========================= */
 
-.related-section {
-
-    margin-top: 60px;
-
-}
-
-.related-title {
-
-    font-size: 18px;
-    font-weight: 600;
-
-    margin-bottom: 15px;
-
-}
-
-.related-posts a {
-
-    display: block;
-
+.section-label {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #777;
+    margin-top: 40px;
     margin-bottom: 10px;
+}
 
+/* =========================
+   FEATURED LINK
+   ========================= */
+
+.featured-link {
+    display: inline-block;
+    font-size: 22px;
     text-decoration: none;
     color: #111;
-
+    transition: all 0.15s ease;
 }
 
-.related-posts a:hover {
-
-    text-decoration: underline;
-
+.featured-link:hover {
+    padding-left: 8px;
 }
-
-
 
 /* =========================
-BACK
-========================= */
+   LINK BLOCKS (CATEGORIES)
+   ========================= */
 
-.back {
-
-    margin-top: 40px;
-
-}
-
-.back a {
-
+.link-block {
+    display: block;
+    margin-top: 22px;
     text-decoration: none;
-
+    color: #111;
+    transition: all 0.15s ease;
 }
 
+.link-block:hover {
+    padding-left: 8px;
+}
 
+.link-title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.link-desc {
+    font-size: 14px;
+    color: #666;
+    margin-top: 4px;
+}
 
 /* =========================
-CATEGORY LIST
-========================= */
+   POSTS LIST
+   ========================= */
 
 .posts {
-
     margin-top: 30px;
-
 }
 
 .post-item {
-
-    margin-bottom: 10px;
-
+    margin-top: 20px;
 }
 
 .post-item a {
-
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: none;
     color: #111;
+    transition: all 0.15s ease;
+}
 
+.post-item a:hover {
+    padding-left: 6px;
 }
 
 .post-year {
-
-    font-size: 14px;
-    color: #666;
-
-    margin-bottom: 25px;
-
+    margin-top: 30px;
+    color: #777;
 }
+
 /* =========================
-FOOTER
-========================= */
+   ARTICLE
+   ========================= */
+
+.article-date {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 8px;
+}
+
+.article-title {
+    font-size: 34px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.article-content {
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.article-content p {
+    margin-bottom: 18px;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
 
 .footer {
-
     margin-top: 80px;
-
-    font-size: 14px;
-
-    color: #666;
-
-}
-
-.footer-line {
-
-    margin-bottom: 10px;
-
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    font-size: 13px;
+    color: #777;
 }
 
 .footer a {
-
-    text-decoration: none;
-
     color: inherit;
-
+    text-decoration: none;
 }
 
 .footer a:hover {
-
     text-decoration: underline;
-
 }
 
-.footer-dmca {
-
-    margin-top: 15px;
-
-    opacity: 0.6;
-
-}
-
-.footer-dmca:hover {
-
-    opacity: 1;
-
-}
-/* =========================
-HOMEPAGE SECTIONS
-========================= */
-
-.section {
-
-    margin-top: 50px;
-
-}
-
-.section-title {
-
-    font-size: 14px;
-
-    color: #666;
-
-    margin-bottom: 15px;
-
-    text-transform: uppercase;
-
+.dmca-badge {
+    margin-top: 12px;
 }
