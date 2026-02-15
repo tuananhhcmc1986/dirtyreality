@@ -1,0 +1,328 @@
+# CMMS trong nhà máy cũ
+## Khi tổ chức buộc phải nhìn lại chính mình
+
+Có một nghịch lý tồn tại trong nhiều nhà máy lâu năm:
+
+Máy móc có thể già hơn cả những người đang quản lý nó.  
+Nhưng dữ liệu về máy thì gần như không tồn tại.
+
+Nhà máy vẫn chạy.  
+Sản lượng vẫn đạt.  
+
+Cho đến khi có ai đó đặt một câu hỏi rất đơn giản:
+
+**“Chúng ta thực sự đang có những gì?”**
+
+Và căn phòng trở nên im lặng.
+
+---
+
+*(CMMS: Computerized Maintenance Management System – Phần mềm số hóa bảo trì bảo dưỡng máy móc thiết bị sản xuất)*
+
+---
+
+Ở nhiều nhà máy lâu năm tại Việt Nam, máy móc không chỉ là tài sản.
+
+**Nó là di sản.**  
+
+Có dây chuyền lắp từ thập niên 70,
+
+Có thiết bị đã qua nhiều lần cải tiến,
+
+Có motor thay lõi bên trong nhưng giữ nguyên vỏ ngoài.  
+
+Máy vẫn chạy,
+
+Sản lượng vẫn đạt.  
+
+Cho đến khi bắt đầu nói về CMMS.  
+
+Câu hỏi đầu tiên luôn rất đơn giản:
+
+**“Chúng ta thực sự đang có những gì?”**
+
+Và thường không ai trả lời ngay được.
+
+---
+
+## Ba phiên bản của cùng một sự thật
+
+Tài sản trong nhà máy cũ không được xây dựng như một hệ thống đồng bộ.
+
+Nó tích lũy theo thời gian.   
+
+Mỗi giai đoạn mở rộng thêm một phần.
+
+Mỗi lần sửa chữa thay một cụm.
+
+Mỗi thế hệ kỹ sư đặt một cách gọi khác.  
+
+Phòng kế toán có danh mục khấu hao.
+
+Phòng kỹ thuật có file Excel quản lý máy chính.
+
+Kho có danh sách vật tư theo tên quen dùng.  
+
+Ba danh sách này hiếm khi trùng khớp hoàn toàn.  
+
+Một motor 75kW có thể xuất hiện dưới ba tên.
+
+Một thiết bị đã tháo bỏ vẫn còn trong sổ sách.
+
+Một cụm quan trọng lại không có mã định danh chính thức.  
+
+Trước khi nói đến workflow hay dashboard, CMMS buộc tổ chức phải làm một việc cơ bản:
+
+**Chọn một phiên bản sự thật duy nhất.**  
+
+Đó không phải là bài toán phần mềm.
+
+Đó là bài toán thống nhất cách nhìn.
+
+---
+
+## Khi hồ sơ máy không tồn tại ở dạng dữ liệu
+
+Triển khai CMMS thường được hình dung là chuyển dữ liệu cũ vào hệ thống mới.
+
+Nhưng thực tế khác.  
+
+Ở nhiều nhà máy thuốc lá, xi măng, dệt nhuộm, hồ sơ kỹ thuật nằm trong:
+
+Manual cũ đã ố vàng.
+
+Bản vẽ chỉnh sửa bằng tay.
+
+Tủ tài liệu ít khi mở lại.
+
+Và trong trí nhớ của vài kỹ sư lâu năm.  
+
+Một dây chuyền có thể đã retrofit nhiều lần.
+
+PLC thay thế.
+
+Motor đổi nguồn.
+
+Cơ cấu gia công lại tại chỗ.  
+
+Thiết bị đang vận hành không còn giống cấu hình ban đầu.  
+
+Việc tạo hồ sơ không phải sao chép thông tin.
+
+Đó là tái dựng lại cấu trúc logic của một thực thể đã biến đổi qua nhiều năm.  
+
+Đội triển khai phải đi thực địa.
+
+Mở tủ điện.
+
+Chụp nameplate.
+
+Xác định quan hệ cha – con cho máy móc, cụm lớn, cụm nhỏ, vật tư phụ tùng.
+
+Quyết định đâu là equipment, đâu là component.  
+
+Một thiết bị phức tạp có thể mất hàng giờ khảo sát.
+
+Một nhà máy có thể có hàng nghìn thiết bị.  
+
+Trong khi đó, sản xuất vẫn chạy.
+
+Sự cố vẫn xảy ra.  
+
+Không có khoảng thời gian trống để dừng lại và rà soát toàn bộ.  
+
+**Vì công việc tái tạo hồ sơ không tạo ra sản lượng ngay lập tức, nó thường đứng sau ưu tiên vận hành.**
+
+---
+
+## Khi dữ liệu làm thay đổi cấu trúc phụ thuộc
+
+Khi tài sản chưa được định danh rõ ràng, tri thức trở thành tài sản cá nhân.  
+
+Trong nhiều nhà máy lâu năm, luôn có những người “giữ máy”.  
+
+Họ nhận ra tiếng rung bất thường.
+
+Họ nhớ lần đại tu năm 2008 thay chi tiết gì.
+
+Họ biết nên chỉnh ở đâu khi máy kẹt.  
+
+Kiến thức này tồn tại trong đầu họ.  
+
+Khi CMMS yêu cầu ghi root cause, mô tả sửa chữa, thời gian xử lý, kiến thức bắt đầu được chuyển thành dữ liệu có cấu trúc.  
+
+Điều đó làm giảm mức độ phụ thuộc vào một cá nhân cụ thể.
+
+Sự thay đổi này không ồn ào.
+
+Không có phản đối công khai.  
+
+Nhưng hành vi có thể thay đổi.
+
+Work order được nhập muộn.
+
+Root cause được chọn ở mức chung.
+
+Mô tả sửa chữa dừng ở “đã xử lý”.  
+
+Hệ thống có dữ liệu.
+
+Nhưng thiếu chiều sâu.
+
+**Mức độ chi tiết của thông tin phản ánh mức độ sẵn sàng chia sẻ tri thức.**
+
+---
+
+## Khi minh bạch dữ liệu đồng nghĩa với minh bạch hiệu suất
+
+Trước CMMS, nhiều nhà máy vận hành dựa trên báo cáo tổng hợp.  
+
+Downtime được tổng kết cuối tháng.
+
+Hiệu suất được đánh giá qua cảm nhận và kinh nghiệm.  
+
+Khi CMMS vào cuộc, mỗi work order có timestamp.
+
+Mỗi sự cố có người phụ trách.
+
+Thời gian phản hồi và hoàn thành được ghi lại.  
+
+Dữ liệu bắt đầu được dùng để phân tích.
+
+Và cũng bắt đầu được dùng để đánh giá.  
+
+**Ở cấp quản lý, đây là công cụ ra quyết định.**
+
+**Ở cấp vận hành, đây là thay đổi về mức độ minh bạch.**  
+
+***Mọi thay đổi liên quan đến minh bạch đều tác động đến cấu trúc tổ chức.***
+
+---
+
+## Hai cách tiếp cận. Hai kết quả.
+
+Cùng một bối cảnh máy móc cũ.
+
+Cùng một mục tiêu số hóa.
+
+***Khác biệt nằm ở cách tiếp cận.**
+
+---
+
+### Trường hợp thứ nhất
+
+**Triển khai đồng loạt toàn bộ nhà máy.**  
+
+Asset tree được xây rất chi tiết.
+
+Hàng nghìn record được tạo trong thời gian ngắn.  
+
+Đội bảo trì vừa xử lý sự cố vừa nhập liệu.
+
+Không có nhóm riêng cho asset audit.
+
+Không có giai đoạn ổn định dữ liệu trước khi đo KPI.  
+
+**Sau vài tháng:**  
+
+Báo cáo thiếu nhất quán.
+
+Dữ liệu trùng lặp hoặc thiếu.
+
+Quản lý quay lại hỏi trực tiếp thay vì xem dashboard.  
+
+Hệ thống vẫn hoạt động.  
+
+Niềm tin giảm dần.  
+
+**Nguyên nhân không nằm ở phần mềm.**
+
+**Mà ở khối lượng công việc nền tảng bị đánh giá thấp.**
+
+---
+
+### Trường hợp thứ hai
+
+**Triển khai theo phạm vi hẹp.**  
+
+Không nói về “smart factory”.
+
+Chỉ tập trung vào 20% thiết bị quan trọng nhất.  
+
+Hai line chính được đưa vào trước.
+
+Một nhóm riêng thực hiện asset audit trong sáu tháng.  
+
+Ban lãnh đạo đã làm một việc thực tế hơn:
+
+Rà soát lại toàn bộ kế hoạch bảo trì định kỳ (preventive maintenaince – PM)
+
+Tạm thời giảm bớt  các PM ít quan trọng
+
+Gộp hoặc giãn tần suất thực hiện các công việc không quá quan trọng
+
+Tập trung PM vào các thiết bị quan trọng  
+
+Nhờ vậy,
+
+Đội kỹ thuật được giảm một phần bảo trì định kỳ (preventive maintenance - PM) để có thời gian nhập liệu đầy đủ.
+
+Dự án triển khai CMMS không còn là gánh nặng cộng thêm.  
+
+Trong năm đầu, dữ liệu không dùng để đánh giá cá nhân.
+
+Chỉ dùng để hiểu thiết bị.  
+
+Sau một năm:
+
+Thiết bị gây downtime nhiều nhất được xác định rõ.
+
+Tồn kho phụ tùng được điều chỉnh.
+
+PM được tinh gọn theo dữ liệu thực tế.  
+
+Không có bước nhảy đột ngột.
+
+Chỉ có sự ổn định tăng dần.  
+
+**Khác biệt không nằm ở tuổi máy.**
+
+**Nằm ở cách tổ chức đối xử với dữ liệu nền tảng.**
+
+---
+
+## Điều thực sự bị thử thách
+
+Trong các nhà máy có thiết bị năm sáu chục năm tuổi, vấn đề không phải là máy cũ.
+
+Máy cũ có thể được duy trì bằng kinh nghiệm.  
+
+Điểm dễ đứt gãy nằm ở chỗ:
+
+Tài sản chưa được định danh thống nhất.
+
+Tri thức nằm trong cá nhân thay vì trong hệ thống.
+
+Thông tin phân mảnh giữa các phòng ban.
+
+Quyền kiểm soát dữ liệu gắn với vị trí hơn là cấu trúc.  
+
+CMMS buộc tổ chức phải làm những việc có thể trì hoãn trước đây:
+
+Xác định rõ đang có gì.
+
+Ghi lại những gì đã biết.
+
+Chuẩn hóa cách ghi nhận những gì đang làm.  
+
+Đó không chỉ là cài đặt phần mềm.
+
+Đó là thiết lập lại kỷ luật dữ liệu cho một hệ thống vốn quen vận hành bằng trí nhớ.  
+
+**Máy có thể cũ.**
+
+**Nhưng nếu trí nhớ của tổ chức không được tái dựng thành dữ liệu, mọi hệ thống phía trên chỉ là lớp giao diện mới phủ lên nền thực tế cũ.**  
+
+Khi lớp giao diện đó mất độ tin cậy, tổ chức sẽ quay lại cách cũ.
+
+Nơi thông tin nằm trong đầu người, không nằm trong hệ thống.
