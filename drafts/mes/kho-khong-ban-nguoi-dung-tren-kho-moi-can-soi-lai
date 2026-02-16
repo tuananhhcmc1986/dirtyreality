@@ -1,0 +1,326 @@
+# KHO KHÔNG BẨN  
+# NHỮNG NGƯỜI ĐỨNG TRÊN KHO MỚI CẦN SOI LẠI
+
+Nếu:
+
+- Ép giao hàng khi thành phẩm còn chưa vào rack.  
+- Dồn 4 PO vào một buổi tối vì “nhà cung cấp tiện chuyến”.  
+- Yêu cầu cấp vật tư khi QC chưa xong.  
+- Đòi dashboard tồn kho luôn xanh nhưng thay kế hoạch mỗi ngày.  
+
+Thì vấn đề không nằm ở kho.  
+
+**Kho không tự sinh ra hỗn loạn.**
+**Kho phản chiếu cách nhà máy ra quyết định.**  
+
+Ở nhiều nhà máy, cấu trúc quyền lực tạo áp lực ở phía trên  
+và chuyển hậu quả xuống phía dưới.
+
+Kho là nơi hứng phần đó.
+
+---
+
+# I. INBOUND — MUA HÀNG LINH HOẠT, KHO TRẢ GIÁ
+
+## 96 pallet. 2 dock. 1 ca tối.
+
+**Thứ Sáu, 19:40.**
+
+Bốn PO giao cùng lúc.  
+Tổng cộng 96 pallet.
+
+Dock có 2 cửa.  
+Mỗi pallet, nếu làm đúng quy trình, mất khoảng 4 phút:
+
+- Dỡ hàng  
+- Scan  
+- Lấy mẫu QC  
+- Xác nhận  
+- Gán vị trí  
+
+96 × 4 phút.  
+Hơn 6 giờ.
+
+Ca tối còn 4 tiếng.
+
+Không ai hỏi kho có xử lý nổi không.
+
+Mua hàng đã chốt giá.  
+Nhà cung cấp đã xuất hóa đơn.  
+Sản xuất đang thiếu vật tư.
+
+Kho không có nhiều lựa chọn.
+
+---
+
+## Điều thực tế xảy ra
+
+- Dỡ toàn bộ xuống bãi.  
+- Tách 12 pallet đang thiếu → đẩy thẳng xuống line.  
+- QC chưa hoàn tất → vẫn cấp.  
+- Nhập GRN (Goods Received Note) tổng.  
+- Phân batch sau.  
+- Put-away kéo dài 2–3 ngày.  
+
+Ba ngày sau:
+
+- 1 pallet lệch vị trí.  
+- 2 pallet QC fail đã tính vào tồn.  
+- 1 lô nằm sai rack.  
+
+Kế toán hỏi:
+
+> “Vì sao tồn kho không chính xác?”
+
+Không ai hỏi:
+
+> “Vì sao 96 pallet được giao cùng lúc?”
+
+---
+
+## Cấu trúc incentive
+
+- Mua hàng được đánh giá theo giá và tiến độ.  
+- Sản xuất được đánh giá theo uptime.  
+- Sales được đánh giá theo giao đúng hẹn.  
+- Kho bị đánh giá theo độ chính xác tồn.  
+
+Hệ thống khuyến khích tạo áp lực phía trên.  
+Kho xử lý phần còn lại.
+
+---
+
+# II. SPARE PARTS — AN TOÀN GIẢ ĐỊNH
+
+Kho phụ tùng thường được xem là vùng an toàn.  
+Thực tế, đó là nơi chi phí bị giấu đi.
+
+## Motor 75kW – 180 triệu – “Cho chắc”
+
+Ba năm trước, một lần máy hỏng.
+
+Quyết định được đưa ra:
+
+> “Phải có sẵn 2 motor dự phòng.”
+
+Không ai tính:
+
+- MTBF thực tế.  
+- Lead time chính xác.  
+- Khả năng sửa chữa nội bộ.  
+
+Ba motor nằm trong kho.  
+Hai năm không sử dụng.
+
+Tồn kho tăng.  
+Không ai đặt câu hỏi vì cảm giác an toàn vẫn còn.
+
+---
+
+## 02:15 sáng — Máy dừng
+
+Bảo trì hỏi:
+
+> “Motor còn không?”
+
+Excel ghi còn 1.
+
+Thực tế:
+
+- Motor đã xuất cho máy khác.  
+- Phiếu chưa cập nhật.  
+- Không có cycle count cho item critical.  
+
+Downtime 4 giờ.  
+Thiệt hại vượt giá trị motor.
+
+Kho bị hỏi:
+
+> “Vì sao không kiểm soát được?”
+
+Không ai hỏi:
+
+- Ai quyết định mức tồn?  
+- Ai rà soát spare critical định kỳ?  
+- Có mapping asset–spare không?  
+- Ai chịu trách nhiệm cuối cùng về phụ tùng?  
+
+Kho không quyết định chiến lược tồn spare.  
+Nhưng kho chịu trách nhiệm khi thiếu.
+
+---
+
+# III. OUTBOUND — DOANH THU TRƯỚC, FIFO SAU
+
+## 1.800 thùng. Xe đợi ngoài cổng.
+
+14:20 — Production hoàn thành.  
+14:35 — Sales yêu cầu giao ngay.
+
+Nếu làm đúng quy trình:
+
+1. Nhập kho thành phẩm.  
+2. Gắn batch.  
+3. Assign bin.  
+4. Tạo DO.  
+5. Pick theo FIFO.  
+
+Ít nhất 90 phút.
+
+Sales không chờ.
+
+---
+
+## Điều diễn ra
+
+- Hàng nằm ở staging.  
+- Nhập 1 dòng tổng.  
+- Xuất 1 dòng tổng.  
+- Không assign vị trí.  
+- FIFO bị bỏ qua.  
+
+Ba tháng sau, khách khiếu nại một lô.  
+
+Truy batch mất hai ngày.
+
+Nhà máy nói:
+
+> “Kho phải quản lý tốt hơn.”
+
+Nhưng ngày hôm đó, KPI giao hàng đạt 100%.
+
+---
+
+# IV. WORKAROUND KHÔNG PHẢI LỖI
+
+Kho không chủ động phá quy trình.
+
+Kho vận hành theo thứ tự ưu tiên được đặt ra:
+
+1. Line không được dừng.  
+2. Doanh thu không được trễ.  
+3. Số liệu có thể điều chỉnh sau.  
+
+Nếu thứ tự này không thay đổi,  
+bất kỳ hệ thống nào triển khai cũng chỉ thay đổi giao diện.
+
+Hành vi vẫn giữ nguyên.
+
+---
+
+# V. THIẾT KẾ WMS CHO BỐI CẢNH THỰC TẾ
+
+Sản xuất tại Việt Nam có tính linh hoạt cao:
+
+- Dồn hàng.  
+- Đổi kế hoạch.  
+- Xuất gấp.  
+
+Đó là thực tế.
+
+Thiết kế WMS cần phản ánh điều đó.
+
+Câu hỏi không phải là:
+
+> Làm sao để không ai bypass?
+
+Mà là:
+
+> Làm sao để bypass không phá vỡ toàn bộ hệ thống?
+
+---
+
+## 1. Linh hoạt có kiểm soát
+
+Override cần:
+
+- Phân cấp quyền rõ ràng.  
+- Reason code bắt buộc.  
+- Gắn user và phòng ban.  
+- Báo cáo tần suất theo tháng.  
+
+Nếu Sales ép giao gấp nhiều lần, dashboard phải phản ánh đúng nguồn phát sinh.  
+
+Không đổ chung cho kho.
+
+---
+
+## 2. Receiving Buffer Logic
+
+Inbound dồn cục là điều thường thấy.
+
+Hệ thống cần:
+
+- Location riêng cho hàng chưa hoàn tất quy trình.  
+- Không tính vào tồn khả dụng chuẩn.  
+- Có timestamp theo dõi.  
+
+Hàng nằm quá thời hạn phải được cảnh báo.  
+Không reconcile thì không đóng kỳ.
+
+---
+
+## 3. Cross-docking hợp lệ
+
+Cấm tuyệt đối thường dẫn đến xuất “ngoài hệ thống”.
+
+Thay vì cấm, cần thiết kế flow chính thức:
+
+- Production confirm → inventory tại STAGING.  
+- Nếu có SO phù hợp → allocate tự động.  
+- Bắt buộc scan và gắn batch.  
+
+Cross-docking cần được quản lý, không bị đẩy ra ngoài quy trình.
+
+---
+
+## 4. Đo nguyên nhân, không chỉ hậu quả
+
+Hệ thống nên đo được:
+
+- % inbound vượt capacity.  
+- % provisional posting.  
+- % override theo phòng ban.  
+- Thời gian reconcile trung bình.  
+- % xuất không theo FIFO do override.  
+
+Khi số liệu chỉ ra nguồn phát sinh, vấn đề được nhìn đúng vị trí.
+
+---
+
+## 5. Thiết kế theo năng lực thực tế
+
+- Nhân sự thay đổi liên tục.  
+- Ca đêm ít người.  
+- Trình độ IT không đồng đều.  
+
+Vì vậy:
+
+- UI cần đơn giản.  
+- Scan ít bước.  
+- Flow ngắn gọn.  
+
+Quy trình quá phức tạp trong tình huống gấp thường dẫn đến quay lại Excel.
+
+---
+
+# VẬY THÌ SAO?
+
+Kho không “bẩn” vì nhân viên kho thiếu năng lực.
+
+Kho phản ánh:
+
+- Ưu tiên tốc độ hơn kỷ luật.  
+- Thưởng doanh thu nhưng phạt tồn sai.  
+- Yêu cầu linh hoạt nhưng không chấp nhận hệ quả của linh hoạt.  
+
+Nếu cấu trúc ra quyết định không thay đổi,  
+WMS chỉ làm một việc:
+
+**Ghi lại sự hỗn loạn rõ ràng hơn.**
+
+Kho vẫn sẽ làm điều mà nó luôn được yêu cầu:
+
+- Giữ line chạy.  
+- Giữ doanh thu.  
+- Điều chỉnh số liệu sau.
