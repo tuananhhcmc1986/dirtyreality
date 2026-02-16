@@ -1,0 +1,256 @@
+# Elicitation Không Thất Bại Vì Stakeholder. Nó Thất Bại Vì BA.
+
+Đọc câu này mà thấy khó chịu thì tốt.
+
+Phần lớn BA không fail vì thiếu thông minh.  
+Họ fail vì hời hợt.  
+
+**Và người hời hợt hiếm khi tự biết mình hời hợt.**
+
+Bài này không dành cho BA thích được khen “dễ làm việc”.  
+Không dành cho người tự hào vì tài liệu dày 40 trang.  
+Không dành cho người nghĩ rằng điền đúng template là đã làm nghề.
+
+Nếu mày tin elicitation fail vì stakeholder mơ hồ, vì user khó, vì sếp áp lực, vì deadline dí — dừng lại ở đây.
+Cook nhẹ.
+
+Stakeholder không có nghĩa vụ phải phân tích thay cho mày.  
+Họ không có nghĩa vụ phải tự bóc tách assumption.  
+Họ không có nghĩa vụ phải giữ cho cuộc họp đúng cấu trúc.
+
+Đó là việc của mày.
+
+Requirement sai, đa số không phải vì họ nói sai.
+Mà vì mày nghe nông.
+
+Elicitation không phải là hỏi cho đủ câu.  
+Nó là đào cho đến khi không còn chỗ để né.
+
+**Nếu mày không đủ cứng để làm việc đó, đừng gọi mình là BA.**
+
+---
+
+## 1. The Solution First Trap
+
+### Khi mày lao vào giải pháp như một đứa thiếu kiên nhẫn
+
+“Chỉ cần thêm cái này.”  
+“Cho tôi report giống Excel.”  
+“Thêm một field là xong.”
+
+Mày ghi lại.
+
+Không hỏi vì sao.  
+Không hỏi họ đang cố giải quyết cái gì.  
+Không hỏi vấn đề gốc nằm ở đâu.
+
+Mày thấy mình hiệu quả vì có output nhanh.
+
+Thực tế, mày đang xây trên nền chưa được định nghĩa.
+
+Solution luôn nằm ở tầng trên.  
+Problem mới là móng.
+
+Mày bỏ qua cái móng.
+
+**Nếu mày nói về solution trước khi bóc trần problem, mày không phân tích.**  
+**Mày đang xây nhà khi chưa biết đất có lún không.**
+
+---
+
+## 2. The Authority Gravity Trap
+
+### Khi mày co người trước quyền lực
+
+Sếp nói trước.  
+Cả phòng im.  
+Mày cũng im.
+
+Mày ghi lại như thể đó là requirement chính thức.
+
+Không challenge.  
+Không hỏi lại.  
+Không xác thực với người vận hành.
+
+Mày gọi đó là “tôn trọng”.
+
+Thực chất là sợ.
+
+Requirement không đúng vì người có chức vụ nói nó đúng.  
+Requirement đúng vì nó phản ánh thực tế.
+
+**Nếu mày không dám đặt câu hỏi khi logic chưa rõ chỉ vì người nói có chức cao, mày không chuyên nghiệp.**  
+**Mày đang biến nỗi sợ của mình thành rủi ro của dự án.**
+
+---
+
+## 3. The Comfort Agreement Trap
+
+### Khi mày nghiện cảm giác phòng họp êm ái
+
+Session trôi chảy.  
+Ai cũng gật đầu.  
+Không ai khó chịu.
+
+Mày ra về với cảm giác thành công.
+
+**Nhưng requirement thật luôn đụng vào lợi ích.**  
+Đụng vào KPI.  
+Đụng vào trách nhiệm.  
+Đụng vào vùng an toàn của ai đó.
+
+Chạm vào mà không có phản ứng, chỉ có hai khả năng:
+
+- Hoặc vấn đề mày đang bàn quá nông.  
+- Hoặc mày chưa chạm đúng chỗ.
+
+**Nếu elicitation của mày không tạo ra ma sát, mày chưa đào đủ sâu.**  
+**Mày chỉ đang giữ không khí dễ chịu thay vì tìm sự thật.**
+
+---
+
+## 4. The Over-Detail Illusion
+
+### Khi mày dùng độ dày để che sự nông cạn của mình
+
+25 trang note.  
+Diagram chi chít.  
+Flow từ A đến Z.
+
+Nhìn rất chuyên nghiệp.
+
+Nhưng khi bị hỏi:
+
+“Cốt lõi vấn đề là gì?”
+
+Mày trả lời vòng vo.
+
+Chi tiết không đồng nghĩa với hiểu sâu.  
+Độ dài không đồng nghĩa với chất lượng.
+
+Nếu mày không tách được:
+
+- Rule  
+- Exception  
+- Boundary  
+- Dependency  
+
+Thì mày chưa phân tích.  
+Mày chỉ đang ghi lại câu chuyện họ kể.
+
+**Nếu mày cần cả đống giấy để giải thích thứ mày không thể nói rõ logic của nó, mày chưa hiểu nó.**  
+**Và nếu mày chưa hiểu mà vẫn viết requirement, đó là cẩu thả.**
+
+---
+
+## 5. The Hidden Assumption Trap
+
+### Khi mày giả vờ mình đã hiểu (nhưng thật ra là đ**)
+
+“Làm như cũ.”
+“Chuẩn theo quy trình.”
+“Cái này ai cũng biết.”
+
+Mày không hỏi thêm.
+
+Vì sợ trông ngu.  
+Vì sợ mất thời gian.  
+Vì nghĩ mình hiểu rồi.
+
+Không.  
+Mày đang đoán.
+
+Assumption không được định nghĩa sẽ phá vỡ logic phía sau.
+
+Dev hiểu một kiểu.  
+Test hiểu một kiểu.  
+Stakeholder hiểu một kiểu.
+
+Mày đứng giữa, ngạc nhiên khi mọi thứ lệch.
+
+**Nếu mày để assumption trôi qua vì ngại hỏi, đừng tự nhận là nạn nhân khi hệ thống fail.**  
+**Mày là mắt xích làm nó lệch ngay từ đầu.**
+
+---
+
+## 6. The Time Pressure Compression
+
+### Khi mày bán rẻ tiêu chuẩn vì deadline
+
+“Chốt nhanh.”  
+“Refine sau.”  
+“Giờ cần tài liệu.”
+
+Mày cắt bớt câu hỏi.  
+Mày bỏ qua ambiguity.  
+Mày tự an ủi: “Sau này làm rõ.”
+
+Không có “sau này”.
+
+Chỉ có change request.  
+Chỉ có blame.  
+Chỉ có escalation.
+
+Requirement mơ hồ hôm nay là chi phí ngày mai.
+
+**Nếu mày hy sinh clarity để giữ timeline đẹp, mày không đang bảo vệ dự án.**  
+**Mày đang chuyển rủi ro sang tương lai và hy vọng nó không quay lại đập vào mặt mình.**  
+**Bớt ảo tưởng. Khi nó đập, mày sẽ không né được đâu.**
+
+---
+
+# Đừng Tự Thương Hại
+
+**Mày không phải nạn nhân.**  
+
+Mày không bị stakeholder “làm khó”.
+
+Khi requirement sai vì assumption mơ hồ.  
+Khi build xong mới lòi ra hiểu nhầm.  
+Khi UAT biến thành chiến trường.
+
+Đó không phải xui.
+
+Đó là hệ quả.
+
+BA không fail vì thiếu IQ.  
+BA fail vì cho phép mình làm ở mức “đủ dùng”.
+
+**Và “đủ dùng” trong elicitation là con đường ngắn nhất dẫn đến thất bại có hệ thống.**
+
+---
+
+# 10 Câu Hỏi Mày Phải Tự Soi Sau Mỗi Session
+
+Không phải để ghi báo cáo.  
+Để bóc trần chính mình.
+
+1. Mày có thực sự hiểu problem, hay chỉ hiểu solution họ đề xuất?  
+2. Có assumption nào được định nghĩa rõ ràng, không còn mơ hồ chưa?  
+3. Có conflict nào được đưa ra và xử lý chưa, hay tất cả chỉ gật đầu?  
+4. Mày có challenge người quyền lực nhất phòng khi logic chưa rõ không?  
+5. Có ai im lặng vì dynamic quyền lực mà mày bỏ qua không?  
+6. Mày có né câu hỏi nào vì sợ làm phòng họp căng không?  
+7. Mày có thể mô tả problem mà không nhắc đến solution không?  
+8. Nếu requirement này sai, có phải vì mày không đào đến gốc không?  
+9. Mày tự hào vì tài liệu dày, hay vì logic rõ và chặt?  
+10. Nếu hệ thống build đúng 100% theo tài liệu của mày mà vẫn fail, mày có dám nói “lỗi của tao” không?
+
+Nếu hơn ba câu làm mày chần chừ, mày chưa làm đủ.
+
+**Elicitation không thất bại vì stakeholder.**
+
+**Nó thất bại vì mày chấp nhận làm việc ở mức hời hợt rồi gọi đó là “hoàn thành”.**
+
+Mày có thể tiếp tục viết những tài liệu trông rất chuyên nghiệp.  
+Flow đẹp. Template chuẩn.
+
+Nhưng rỗng.
+
+Rồi khi dự án đổ vỡ, mày sẽ nói:
+
+“Em đã ghi đúng những gì họ nói.”
+
+Đúng.
+
+Và đó chính là bằng chứng cho thấy mày đã không làm phần việc của mình.
