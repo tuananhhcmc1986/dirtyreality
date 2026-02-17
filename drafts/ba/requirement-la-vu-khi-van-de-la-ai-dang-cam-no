@@ -1,0 +1,255 @@
+# REQUIREMENT LÀ VŨ KHÍ VẤN ĐỀ LÀ AI ĐANG CẦM NÓ
+
+##BA không hiểu quyền lực  
+##chỉ là người viết lại chiến thắng của kẻ khác.
+
+Người ta dạy mày cách viết requirement.
+
+Dạy cách elicitation.  
+Dạy cách đặt câu hỏi mở.  
+Dạy cách “neutral” trong workshop.
+
+Không ai dạy mày một điều khó chịu hơn:
+
+**Requirement là nơi quyền lực được đóng gói thành logic.**
+
+Mỗi khi ai đó nói:
+
+“Đây là business need.”
+
+Câu đó nghe như sự thật khách quan.  
+Nghe như thứ tồn tại độc lập với lợi ích, xung đột và vị thế.
+
+Nhưng “need” không tự sinh ra.
+
+Nó được định nghĩa.  
+Và người đủ quyền định nghĩa nó thường là người đang nắm lợi thế trong cấu trúc hiện tại.
+
+Khoảnh khắc mày viết nó thành requirement,  
+mày không chỉ ghi chép.
+
+Mày hợp thức hóa một cách nhìn về thực tại.
+
+Nếu mày nghĩ requirement là trung tính,  
+mày đang làm nghề mà không hiểu mình đang tham gia vào cái gì.
+
+BA không chỉ làm việc với chức năng.
+
+BA tham gia vào việc định nghĩa cái gì được coi là đúng,  
+cái gì được coi là chuẩn,  
+và ai phải thích nghi với chuẩn đó.
+
+Đó là lý do tao lôi Nietzsche, Marx và Foucault vào.
+
+Không phải để làm màu triết học.
+
+Mà vì ba gã này cho mày ba lăng kính để mổ quyền lực – thứ luôn hiện diện trong mọi requirement dù mày có nhìn thấy hay không.
+
+Nietzsche: bóc động cơ phía sau ngôn ngữ đạo đức. Khi ai đó nói “vì lợi ích chung”, ông hỏi: ý chí quyền lực nào đang ẩn dưới lớp từ ngữ đẹp?
+
+Marx: bóc cấu trúc lợi ích. Ai hưởng lợi? Ai gánh rủi ro? Giá trị được phân bổ lại như thế nào?
+
+Foucault: bóc cơ chế. Hệ thống này sẽ tạo ra loại hành vi nào? Nó sẽ kỷ luật con người ra sao, kể cả khi không ai ra lệnh?
+
+Ba lăng kính.  
+Ba tầng quyền lực.
+
+Và BA luôn đứng giữa chúng.
+
+---
+
+## Tầng 1 – Nietzsche: Requirement là narrative thắng thế
+
+Ở tầng đầu tiên, quyền lực xuất hiện dưới dạng câu chuyện.
+
+Một stakeholder nói:
+
+“Vì lợi ích công ty, chúng ta cần siết quy trình.”
+
+Nghe hợp lý.  
+Nghe đạo đức.
+
+Nhưng Nietzsche không hỏi nó đúng hay sai.
+
+Ông hỏi:
+
+Ai nói?  
+Họ được gì khi chuẩn mực mới được thiết lập?  
+Ai mất quyền linh hoạt khi “chuẩn hóa” xảy ra?
+
+Ngôn ngữ “vì tập thể” thường là lớp vỏ lịch sự của dịch chuyển quyền lực.
+
+Requirement ở tầng này là narrative đã thắng.
+
+BA nếu không nhìn ra điều đó sẽ ghi lại câu chuyện mạnh nhất trong phòng  
+và gọi đó là sự thật.
+
+---
+
+## Tầng 2 – Marx: Requirement là hệ quả của incentive
+
+Giả sử không ai cố tình thao túng.
+
+Marx vẫn sẽ hỏi:
+
+Hệ thống đang thưởng cái gì?
+
+Management nói:
+
+“Chúng ta phải tối ưu hiệu suất.”
+
+Nếu KPI của họ gắn với lợi nhuận,  
+còn áp lực dồn xuống tầng vận hành,  
+thì yêu cầu đó không phải cảm xúc cá nhân.
+
+Nó là phản xạ của cấu trúc lợi ích.
+
+Hệ thống thưởng điều gì,  
+con người sẽ tối ưu điều đó.
+
+Requirement ở tầng này không phải ý kiến ngẫu nhiên.
+
+Nó là sản phẩm của incentive.
+
+BA nếu không đọc được cấu trúc lợi ích  
+sẽ tưởng mình đang cải tiến hệ thống.
+
+Thực ra mày đang làm cho một cấu trúc phân bổ giá trị vận hành hiệu quả hơn.
+
+---
+
+## Tầng 3 – Foucault: Requirement tạo ra loại con người nào?
+
+Tầng sâu nhất không nằm ở động cơ hay lợi ích trước mắt.
+
+Nó nằm ở cơ chế.
+
+Một dashboard KPI realtime.  
+Một workflow bắt buộc.  
+Một validation không cho bypass.
+
+Không ai ép buộc trực diện.
+
+Nhưng khi mọi thao tác được ghi lại,  
+mọi sai lệch có timestamp,  
+mọi hành vi đều có thể truy vết,
+
+con người bắt đầu tự điều chỉnh.
+
+Foucault gọi đó là quyền lực vận hành qua hệ thống.
+
+Requirement lúc này không phản ánh thực tế.
+
+Nó sản xuất ra thực tế.
+
+Nó định nghĩa “nhân viên tốt” là ai.  
+Nó làm biến mất những hành vi không còn phù hợp với cấu trúc mới.
+
+BA không chỉ viết tài liệu.
+
+BA tham gia thiết kế cơ chế kỷ luật.
+
+---
+
+## Ba tầng chồng lên nhau trong một project thật
+
+Triển khai MES.
+
+Bề mặt: chuyển đổi số.  
+Minh bạch sản lượng.  
+Chuẩn hóa thao tác.
+
+Ở tầng Nietzsche:  
+Quyền định nghĩa “đúng – sai” chuyển từ kinh nghiệm cá nhân sang dữ liệu.
+
+Ở tầng Marx:  
+Năng suất tăng, nhưng lợi ích và rủi ro phân bổ thế nào?
+
+Ở tầng Foucault:  
+Hệ thống tạo ra một loại công nhân mới – phù hợp với số liệu là chuẩn.
+
+Ba tầng vận hành cùng lúc.
+
+Và BA đứng ở giao điểm đó.
+
+Không phải vì mày muốn.
+
+Mà vì nghề này đặt mày vào đó.
+
+---
+
+## Vậy mày đối diện với nó như thế nào? – Không Ngây Thơ, Không Tự Lừa Mình
+
+Requirement không ồn ào.
+
+Nó không gây scandal.
+
+Nó chỉ âm thầm thay đổi cấu trúc.
+
+Thêm một KPI.  
+Thêm một rule.  
+Thêm một validation “để đảm bảo đúng”.
+
+Không ai bị tấn công trực diện.
+
+Chỉ có một số người bắt đầu phải thích nghi.  
+Một số người mất vùng linh hoạt.  
+Một số người bị đo nhiều hơn trước.
+
+Và tất cả đều được ghi lại trong tài liệu mày viết.
+
+Vấn đề không phải né quyền lực.
+
+Mày không né được.
+
+BA không đứng ngoài cấu trúc quyền lực.  
+BA luôn ở trong nó.
+
+Vấn đề là: mày có nhìn thấy nó không.
+
+Khi mày nhìn thấy narrative, incentive và cơ chế đang vận hành,  
+mày không còn ngây thơ.
+
+Mày hiểu mỗi requirement là một dịch chuyển.  
+Mày biết ai sẽ chịu tác động.  
+Mày biết đâu là trade-off thật sự.
+
+Và khi đó, mày có hai lựa chọn:
+
+Hoặc nhắm mắt làm cho xong.  
+Hoặc làm với ý thức rõ ràng.
+
+Chính trực không phải là chống lại quyền lực.
+
+Chính trực là không tự lừa mình rằng mình trung lập.
+
+Là dám nói:  
+“Requirement này sẽ siết tầng vận hành.”  
+“Trade-off này đang đẩy rủi ro về phía này.”  
+“Cấu trúc này sẽ tạo ra loại hành vi như thế.”
+
+Có thể mày không thay đổi được toàn bộ hệ thống.
+
+Nhưng mày có thể:
+
+Đặt câu hỏi khó đúng lúc.  
+Làm rõ trade-off thay vì che nó bằng ngôn ngữ đẹp.  
+Không biến narrative thành chân lý mà không thử thách nó.
+
+Mỗi dự án là một lần mày va vào cấu trúc quyền lực.
+
+Nếu mày nhìn đủ sâu,  
+mỗi lần như vậy mày mạnh hơn.
+
+Không phải vì mày kiểm soát được cuộc chơi.
+
+Mà vì mày hiểu cuộc chơi.
+
+Requirement là vũ khí.
+
+Nó luôn phục vụ một cấu trúc nào đó.
+
+BA yếu sẽ cầm nó mà không biết mình đang phục vụ ai.
+
+BA mạnh sẽ biết mình đang ở đâu trong cấu trúc đó –  
+và chọn cách chơi để không đánh mất chính mình.
