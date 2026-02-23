@@ -1,0 +1,262 @@
+# ĐỪNG DÙNG SƯƠNG MÙ ĐỂ CHE VIỆC MÀY CHƯA HIỂU RÕ
+
+Một tài liệu đủ rõ không cần tác giả đứng cạnh.
+
+Nó tự đứng được.
+
+Nếu người đọc phải hỏi thêm:  
+“Ý anh là sao?”  
+“Trường hợp này xử lý thế nào?”
+
+Thì vấn đề không nằm ở người đọc.
+
+Vấn đề là hành vi của hệ thống chưa được đóng đinh.
+
+Sự phụ thuộc đó thường được xây bằng một thứ rất tiện lợi:
+
+Sương mù.
+
+⸻
+
+## GIAI ĐOẠN NGUY HIỂM NHẤT KHÔNG PHẢI LÀ JUNIOR
+
+Junior hỏi khi chưa biết.
+
+Senior commit khi đã biết.
+
+Nguy hiểm nhất là khoảng giữa.
+
+Biết đủ để nói về:
+- chuẩn hóa  
+- tối ưu hóa  
+- chuyển đổi  
+
+Nhưng chưa đủ chắc để trả lời dứt điểm:
+- Rule chính xác là gì.  
+- Khi nào nó áp dụng.  
+- Khi nào nó không.  
+
+Và ở khoảng giữa đó, một phản xạ hình thành:
+
+Không đóng đinh. Giữ khoảng trống.
+
+Không phải vì hệ thống phức tạp.
+
+Mà vì bản thân chưa chạm tới lõi.
+
+⸻
+
+## SƯƠNG MÙ KHÔNG XUẤT HIỆN NGẪU NHIÊN
+
+Không ai cố tình viết mơ hồ.
+
+Sương mù xuất hiện khi có thứ mày chưa dám hoặc chưa thể xác định rõ.
+
+Nó thường mang ba chức năng cụ thể.
+
+⸻
+
+### 1. Tránh phải cam kết vào hành vi kiểm chứng được
+
+So sánh hai câu:
+
+Rõ:
+
+Nếu đơn hàng chưa được duyệt trước 15:00, hệ thống tự động hủy và chuyển trạng thái về “Nháp”.
+
+Sương mù:
+
+Hệ thống đảm bảo quy trình phê duyệt được kiểm soát nhằm hạn chế rủi ro.
+
+Câu thứ hai không thể test.  
+Không thể sai.  
+Và vì không thể sai, nó cũng không thể đúng.
+
+Nó không định nghĩa hành vi. Nó trì hoãn việc phải định nghĩa hành vi.
+
+⸻
+
+### 2. Che việc chưa xác định được rule thực sự
+
+Ví dụ:
+
+Hệ thống cho phép điều chỉnh linh hoạt số liệu để phù hợp thực tế vận hành.
+
+Câu này tồn tại vì bốn câu hỏi chưa được trả lời:
+- Ai được sửa?  
+- Sửa cái gì?  
+- Trong bao lâu?  
+- Sửa xong có để lại dấu vết không?  
+
+Nếu bốn câu hỏi này chưa có câu trả lời, vấn đề không nằm ở câu chữ.
+
+Vấn đề là rule chưa tồn tại.
+
+Sương mù không giải quyết khoảng trống đó.
+
+Nó chỉ che nó lại.
+
+⸻
+
+### 3. Tạo cảm giác kiểm soát mà không cần xác định điểm kiểm soát
+
+Những câu kiểu:
+- chuẩn hóa quy trình  
+- tăng minh bạch  
+- đảm bảo kiểm soát  
+
+Nghe có vẻ mạnh.
+
+Nhưng hệ thống không vận hành bằng ý định.
+
+Nó vận hành bằng điều kiện và hậu quả.
+
+Một requirement chỉ có ý nghĩa khi nó trả lời được:
+- Điều gì kích hoạt hành vi.  
+- Hành vi cụ thể là gì.  
+- Khi nào hành vi bị từ chối.  
+- Ai chịu trách nhiệm cho quyết định đó.  
+
+Nếu không, requirement đó chỉ là định hướng.
+
+Không phải định nghĩa.
+
+⸻
+
+## PHỨC TẠP KHÔNG NẰM Ở CÂU CHỮ
+
+Phức tạp thật sự nằm ở việc ép reality thành rule rõ ràng.
+
+Stakeholder nói: “Cho phép sửa nếu cần.”
+
+Câu đó không thể implement.
+
+Mày phải ép nó thành một dạng có thể kiểm chứng:
+- sửa trong vòng 15 phút  
+- sửa tối đa 1 lần  
+- chỉ supervisor được sửa  
+- mọi sửa đổi đều được log  
+
+Nếu mày chưa ép được tới đó, mày chưa có requirement.
+
+Mày mới chỉ có mong muốn.
+
+⸻
+
+## MỘT REQUIREMENT KHÔNG TEST ĐƯỢC LÀ MỘT REQUIREMENT CHƯA TỒN TẠI
+
+Dev không build intention.
+
+Dev build condition và outcome.
+
+Requirement phải cho phép viết được test kiểu này:
+
+Given: đơn hàng chưa được duyệt  
+When: đến 15:00  
+Then: hệ thống tự động hủy  
+
+Nếu không thể viết Given–When–Then, thì hệ thống không thể hành xử nhất quán.
+
+Nó sẽ hành xử theo interpretation.
+
+Và interpretation luôn khác nhau giữa các bên.
+
+⸻
+
+## CLARITY KHÔNG CHỈ LÀ VIẾT RÕ. NÓ LÀ VIẾT ĐÚNG CHO NGƯỜI SẼ DÙNG NÓ.
+
+Một rule có thể rõ trong đầu mày, nhưng vẫn trở thành sương mù khi truyền đi sai layer.
+
+Vì mỗi layer cần một dạng clarity khác nhau.
+
+Dev cần biết hệ thống sẽ làm gì.
+
+Stakeholder cần biết hệ thống sẽ thay đổi điều gì.
+
+Tester cần biết khi nào hệ thống được coi là đúng.
+
+Nếu mày đưa abstraction cho dev, họ không build được.
+
+Nếu mày đưa logic chi tiết cho stakeholder, họ không quyết định được.
+
+Không phải vì họ không đủ giỏi.
+
+Mà vì mày chưa tách đúng layer của reality mà mỗi người cần nhìn thấy.
+
+Clarity không phải là nói tất cả mọi thứ.
+
+Clarity là loại bỏ mọi thứ không cần thiết cho hành động của người đọc.
+
+Nếu tài liệu buộc người đọc phải tự suy ra phần họ cần,
+
+Thì mày chưa làm rõ.
+
+Mày đã đẩy việc đó sang họ.
+
+Và mỗi người sẽ suy ra một version khác nhau của hệ thống.
+
+⸻
+
+## SƯƠNG MÙ KHÔNG BẢO VỆ MÀY. NÓ CHỈ TRÌ HOÃN THỜI ĐIỂM MÀY BỊ KIỂM TRA.
+
+Trong giai đoạn viết tài liệu, sương mù giúp mày tránh bị bắt lỗi.
+
+Trong giai đoạn build, dev sẽ hỏi lại.
+
+Trong giai đoạn UAT, stakeholder sẽ hiểu theo cách riêng của họ.
+
+Trong production, hệ thống sẽ hành xử theo cách không ai dự đoán trước.
+
+Và lúc đó, ambiguity không còn là vấn đề ngôn từ.
+
+Nó trở thành vấn đề vận hành.
+
+⸻
+
+## PRECISION KHÔNG PHẢI LÀ VIẾT DÀI HƠN
+
+Precision là giới hạn interpretation.
+
+Một câu precise làm giảm số cách mà nó có thể được hiểu.
+
+Một câu mơ hồ làm tăng số cách mà nó có thể được hiểu.
+
+Càng nhiều interpretation, càng nhiều failure mode.
+
+Requirement không cần nghe thông minh.
+
+Nó cần loại bỏ khả năng hiểu sai.
+
+⸻
+
+## MỘT TÀI LIỆU RÕ RÀNG KHÔNG CHỨNG MINH MÀY GIỎI VIẾT
+
+Nó chứng minh mày đã ép reality thành rule cụ thể.
+
+Điều này có cái giá của nó.
+
+Khi mày viết rõ, mày không còn chỗ để rút lui.
+
+Hệ thống sẽ hành xử đúng như câu chữ của mày.
+
+Và nếu câu chữ đó sai, nó sẽ sai một cách nhất quán.
+
+Đó là lý do nhiều người chọn giữ sương mù.
+
+Không phải vì họ muốn hệ thống đúng.
+
+Mà vì sương mù cho phép họ không phải chịu trách nhiệm khi hệ thống sai.
+
+Nhưng hệ thống không quan tâm mày an toàn đến đâu.
+
+Nó chỉ quan tâm:
+
+Rule có tồn tại không.
+
+Và rule đó có được truyền đi mà không bị biến dạng không.
+
+Nếu không,
+
+Thì tất cả những gì mày viết  
+chỉ là một lớp sương đủ dày  
+để che việc mày chưa chạm tới sự thật.
