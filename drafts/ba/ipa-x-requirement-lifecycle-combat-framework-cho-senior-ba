@@ -1,0 +1,365 @@
+# IPA x Requirement Lifecycle: Combat Framework cho Senior BA  
+### Ngừng viết requirement “đúng”. Hãy bắt đầu quản lý kỳ vọng, quyền lực và nỗi sợ.
+
+---
+
+# 1. REQUIREMENT ĐẸP KHÔNG CỨU ĐƯỢC DỰ ÁN
+
+Dự án không chết vì thiếu một field.
+
+Nó chết vì những cuộc chiến giữ ghế.  
+Nó chết vì những màn né trách nhiệm.  
+Nó chết vì những bản báo cáo được tô hồng để chiều lòng Sponsor.
+
+Nhưng BA vẫn miệt mài viết spec thật chi tiết.  
+Flow rõ. Acceptance criteria đủ. Traceability sạch.
+
+Rồi dự án vẫn vỡ.
+
+Requirement không chỉ là tài liệu kỹ thuật.  
+Nó là công cụ tái phân phối lợi ích trong tổ chức.
+
+Junior BA hỏi:
+
+> “Requirement này đã đủ chi tiết chưa?”
+
+Senior BA hỏi:
+
+> “Requirement này đang phục vụ cấu trúc quyền lực nào?”  
+> “Ai sẽ mất lợi ích nếu nó thành công?”
+
+Nếu mày không hỏi câu thứ hai, mày chỉ là thư ký cao cấp.
+
+---
+
+# 2. IPA – NHÌN TỔ CHỨC NHƯ NÓ VỐN DĨ
+
+IPA không phải framework để điền vào template.  
+Nó là cách nhìn thẳng vào cách tổ chức vận hành thật sự.
+
+---
+
+## Incentive – Tiền, Ghế và Nỗi Sợ
+
+Incentive không nằm trên giấy khen.  
+Nó nằm ở túi tiền, ở cái ghế sếp đang ngồi, và ở nỗi sợ bị lộ những mảng quy trình lem nhem mà automation sắp phơi bày.
+
+Có thể là:
+
+- Revenue.
+- Cost saving.
+- Bonus.
+- Tránh bị blame.
+- Giữ quyền kiểm soát.
+
+Không hiểu P&L → không đọc được động cơ thật.
+
+---
+
+## Power – Ai Thực Sự Chống Lưng?
+
+Power không nằm ở title.
+
+Nó nằm ở:
+
+- Ai nắm budget.
+- Ai có quyền dừng dự án.
+- Ai có thể làm sponsor đổi ý.
+- Ai được gọi trước khi quyết định được công bố.
+
+Đừng nhầm người có micro là người có quyền.
+
+---
+
+## Alignment – Đồng Thuận Hay Chỉ Là Lịch Sự?
+
+- Approval ≠ Budget.
+- Gật đầu ≠ Resource.
+- Im lặng ≠ Đồng ý.
+
+Alignment thật luôn đi kèm cam kết cụ thể.
+
+---
+
+# 3. BUSINESS ACUMEN – LỚP PHỦ KINH TẾ TRÊN CHÍNH TRỊ
+
+Mỗi requirement phải đi qua 4 câu hỏi:
+
+1. Nó tác động đến revenue thế nào?
+2. Nó thay đổi cost structure ra sao?
+3. Nó làm tăng hay giảm risk exposure?
+4. Nó làm thay đổi political capital của ai?
+
+Nếu không chạm ít nhất một trong bốn, khả năng cao đó là vanity feature.
+
+IPA không có business acumen chỉ là drama nội bộ được phân tích bài bản.
+
+---
+
+# 4. COMBAT MATRIX – REQUIREMENT DI CHUYỂN QUA 5 ĐIỂM NỔ
+
+Requirement luôn đi qua 5 stage:
+
+1. Agenda Setting  
+2. Elicitation  
+3. Analysis & Validation  
+4. Approval & Prioritization  
+5. Implementation & Change  
+
+Ở mỗi stage, Senior BA phải soi đủ 3 trục:
+
+- Incentive  
+- Power  
+- Alignment  
+
+Và sau đó mới quyết định hành động.
+
+---
+
+# 5. HEATMAP – RADAR SINH TỒN
+
+IPA chỉ mạnh khi mày đo được rủi ro.
+
+## Bảng Heatmap (Ví dụ thực tế)
+
+| Stage \ Trục | Incentive (0–2) | Power (0–2) | Alignment (0–2) | Tổng Stage |
+|--------------|-----------------|-------------|-----------------|------------|
+| Agenda       | 0               | 1           | 1               | 2          |
+| Elicitation  | 1               | 2           | 2               | 5 🔴       |
+| Analysis     |                 |             |                 |            |
+| Approval     |                 |             |                 |            |
+| Implementation |               |             |                 |            |
+
+---
+
+## Cách chấm điểm
+
+0 – Clear  
+1 – Suspicious  
+2 – High Risk  
+
+Stage > 4 → Danger Zone.
+
+Power liên tục = 2 → Cảnh báo Ghost Power.
+
+---
+
+## Ghost Power – Dự Án Không Ai Thật Sự Đứng Sau
+
+Dự án có sponsor trên giấy.
+
+Nhưng khi có biến:
+
+- Không ai bảo vệ.
+- Budget bị rút.
+- Quyết định bị trì hoãn.
+- Và BA bị hỏi đầu tiên.
+
+Ghost Power không ồn ào.  
+Nó làm dự án chết từ từ.
+
+---
+
+# 6. CHIẾN THUẬT TÁC CHIẾN TỪNG GIAI ĐOẠN
+
+Soi IPA chỉ là bước đầu.  
+Senior BA phải biết xoay chuyển.
+
+---
+
+## 1. Agenda Setting – Chặn Rủi Ro Từ Trứng Nước
+
+### Soi IPA
+
+**Incentive:** Bottom-line hay vanity?  
+**Power:** Sponsor thật hay mượn danh?  
+**Alignment:** Có stakeholder nào bị bypass?
+
+### Move: The Business Case Filter
+
+Nếu Incentive mờ nhạt + Power yếu → đừng viết spec.
+
+Yêu cầu một Business Case 1 trang có:
+
+- Mục tiêu rõ.
+- Con số cam kết.
+- Người chịu trách nhiệm.
+
+Nếu họ không dám viết 1 trang bảo vệ ý tưởng,  
+họ sẽ không dám bảo vệ dự án khi có biến.
+
+---
+
+## 2. Elicitation – Workshop Không Phải Nơi Sự Thật Xuất Hiện
+
+### Soi IPA
+
+**Incentive:** Ai sợ thay đổi?  
+**Power:** Hidden veto là ai?  
+**Alignment:** Ai đồng ý nhưng không commit?
+
+### Move: The Corridor Talk
+
+Hẹn 1:1. Đi cafe. Đi ăn trưa.
+
+Sự thật không nói ra trong workshop đông người.  
+Nó xuất hiện khi không có micro và không có khán giả.
+
+Bẻ lái rủi ro chính trị ở hành lang dễ hơn gấp 10 lần trong phòng họp.
+
+---
+
+## 3. Analysis & Validation – Khóa Chặt Trách Nhiệm
+
+### Soi IPA
+
+**Incentive:** Ai bị đe dọa khi logic rõ ràng?  
+**Power:** Ai có thể delay vô hạn?  
+**Alignment:** Im lặng là đồng ý hay chống ngầm?
+
+### Move: The Accountability Traceability
+
+Đừng hỏi “OK chưa?”
+
+Gắn hậu quả vào logic.
+
+Ví dụ:
+
+> “Theo flow này, dữ liệu phòng anh sẽ hiển thị trên dashboard tổng. Em confirm lại với anh để đảm bảo đúng kỳ vọng nhé?”
+
+Sau đó, xác nhận qua email/Jira.
+
+Paper Trail biến sự im lặng thành cam kết.
+
+---
+
+## 4. Approval – Đừng Xin Duyệt, Hãy Ép Chọn
+
+### Soi IPA
+
+**Incentive:** Ai được lợi nếu go-live?  
+**Power:** Ai ký và ai cho phép ký?  
+**Alignment:** Có commit resource không?
+
+### Move: The Trade-off Map
+
+Đưa 2–3 lựa chọn kèm hệ quả.
+
+Option A: Nhanh, rủi ro cao.  
+Option B: Chậm hơn, an toàn hơn.
+
+BA cung cấp bản đồ.  
+Người có Power chọn đường.
+
+Nếu mày chọn thay họ, mày sẽ chịu thay họ.
+
+---
+
+## 5. Implementation – Giảm Ma Sát Trước Khi Hệ Thống Phản Kháng
+
+### Soi IPA
+
+**Incentive:** User có bị thêm việc?  
+**Power:** Ops có thể phá adoption?  
+**Alignment:** Buy-in thật hay comply?
+
+### Move: The Adoption Buffer
+
+Thiết kế giai đoạn chuyển tiếp:
+
+- Chạy song song hệ cũ.
+- Tính năng “chiều lòng” user.
+- KPI adoption rõ ràng.
+
+Một hệ thống hoàn hảo vẫn sẽ chết nếu user cảm thấy bị đe dọa.
+
+---
+
+# 7. BIẾT CHỌN TRẬN – KHÔNG PHẢI LÚC NÀO CŨNG DÙNG IPA
+
+Không phải ticket nào cũng cần Heatmap.
+
+Nếu:
+
+- Impact thấp.
+- Stakeholder ít.
+- Power rõ.
+- Trust cao.
+
+Đừng over-analyze.
+
+Senior BA biết trận nào đáng đánh.
+
+---
+
+# 8. SURVIVAL PROTOCOL – THINK BRUTAL, SPEAK DIPLOMATIC
+
+Trong chính trị doanh nghiệp, ai hỏi trước là người cầm lái.  
+Nhưng hỏi sao để người ta tự nguyện “khai” mà vẫn thấy được tôn trọng – đó là bản lĩnh.
+
+---
+
+## Ba Câu Hỏi Sát Thủ (Để Nghĩ)
+
+- Nếu dự án fail, ai bị trảm đầu tiên?
+- Tính năng này tăng tiền hay giúp ai đó ngủ ngon?
+- Nếu bỏ feature này, ai sẽ nhảy dựng lên?
+
+---
+
+## Ba Câu Hỏi Thảo Mai (Để Hỏi)
+
+> “Để em đảm bảo mình đang phục vụ đúng kỳ vọng nhất, theo anh/chị thì bên nào sẽ review kết quả này kỹ nhất để em chủ động trao đổi sát sao hơn ạ?”
+
+> “Để em sắp xếp thứ tự ưu tiên hợp lý, anh/chị giúp em hiểu tính năng này đang giúp phòng mình tháo gỡ áp lực cụ thể nào trong giai đoạn này được không ạ?”
+
+> “Trong trường hợp tài nguyên có giới hạn và mình cần giãn tiến độ, theo anh/chị thì bộ phận nào sẽ chịu ảnh hưởng vận hành nhiều nhất để em cân nhắc kỹ rủi ro ạ?”
+
+Mềm. Nhưng đọc cứng.
+
+---
+
+## Low Visibility, High Impact
+
+Có những thay đổi lớn nên được đặt tên nhỏ.
+
+- “Chuẩn hóa quy trình.”
+- “Tối ưu báo cáo.”
+- “Cải thiện trải nghiệm nội bộ.”
+
+Đôi khi, cách tốt nhất để thông qua một thay đổi mang tính cách mạng là đặt cho nó một cái tên nhàm chán nhất có thể.
+
+---
+
+## Skin in the Game
+
+Không ai dám đứng tên chịu trách nhiệm → Alignment giả.
+
+---
+
+## Exit Mindset – Không Bỏ Chạy, Mà Bảo Vệ Narrative
+
+Exit không phải bỏ dự án.  
+Exit là chuẩn bị phao cứu sinh trước khi tàu nghiêng.
+
+- Gửi email cảnh báo rủi ro sớm.
+- Document trade-off rõ ràng.
+- Lưu lại các mốc escalation.
+
+Khi sự cố xảy ra, mày không giải thích bằng trí nhớ.  
+Mày giải thích bằng lịch sử.
+
+---
+
+# 9. IPA KHÔNG PHẢI FRAMEWORK – NÓ LÀ RADAR SINH TỒN
+
+Senior BA không phải người viết spec đẹp nhất.
+
+Họ là người:
+
+- Thấy incentive trước khi conflict nổ.
+- Thấy power trước khi sponsor biến mất.
+- Thấy misalignment trước khi dự án sụp.
+
+Viết requirement đúng giúp mày làm tốt công việc.  
+Đọc được IPA giúp mày sống sót lâu dài.

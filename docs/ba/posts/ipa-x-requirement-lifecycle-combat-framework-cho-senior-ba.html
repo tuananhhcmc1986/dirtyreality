@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>IPA x Requirement Lifecycle: Combat Framework cho Senior BA | DIRTY REALITY</title>
+
+<link rel="stylesheet" href="../../style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<script src="../../theme.js" defer></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Dark mode toggle -->
+    <div class="darkmode-toggle">
+        <button onclick="toggleTheme()" id="darkmode-btn">
+            dark mode
+        </button>
+    </div>
+
+    <!-- Site title -->
+    <div class="site-title">
+        <a href="../../">DIRTY REALITY</a>
+    </div>
+
+    <!-- Back navigation -->
+    <div class="nav-back">
+        <a href="../">← BA</a>
+    </div>
+
+    <!-- Article -->
+    <article>
+
+        <!-- DATE FIRST (as requested) -->
+        <div class="article-meta">
+            23/02/2026 · BA
+        </div>
+
+        <!-- TITLE SECOND -->
+        <h1 class="article-title">
+            IPA x Requirement Lifecycle: Combat Framework cho Senior BA
+        </h1>
+
+        <!-- CONTENT -->
+        <div class="article-content">
+
+            <p><strong>Ngừng viết requirement "đúng". Hãy bắt đầu quản lý kỳ vọng, quyền lực và nỗi sợ.</strong></p>
+
+            <h2>1. REQUIREMENT ĐẸP KHÔNG CỨU ĐƯỢC DỰ ÁN</h2>
+
+            <p>Dự án không chết vì thiếu một field.</p>
+
+            <p>Nó chết vì những cuộc chiến giữ ghế.<br>
+            Nó chết vì những màn né trách nhiệm.<br>
+            Nó chết vì những bản báo cáo được tô hồng để chiều lòng Sponsor.</p>
+
+            <p>Nhưng BA vẫn miệt mài viết spec thật chi tiết.<br>
+            Flow rõ. Acceptance criteria đủ. Traceability sạch.</p>
+
+            <p>Rồi dự án vẫn vỡ.</p>
+
+            <p>Requirement không chỉ là tài liệu kỹ thuật.<br>
+            Nó là công cụ tái phân phối lợi ích trong tổ chức.</p>
+
+            <p>Junior BA hỏi:</p>
+            <blockquote><p>"Requirement này đã đủ chi tiết chưa?"</p></blockquote>
+
+            <p>Senior BA hỏi:</p>
+            <blockquote><p>"Requirement này đang phục vụ cấu trúc quyền lực nào?"<br>
+            "Ai sẽ mất lợi ích nếu nó thành công?"</p></blockquote>
+
+            <p>Nếu mày không hỏi câu thứ hai, mày chỉ là thư ký cao cấp.</p>
+
+            <h2>2. IPA – NHÌN TỔ CHỨC NHƯ NÓ VỐN DĨ</h2>
+
+            <p>IPA không phải framework để điền vào template.<br>
+            Nó là cách nhìn thẳng vào cách tổ chức vận hành thật sự.</p>
+
+            <h3>Incentive – Tiền, Ghế và Nỗi Sợ</h3>
+
+            <p>Incentive không nằm trên giấy khen.<br>
+            Nó nằm ở túi tiền, ở cái ghế sếp đang ngồi, và ở nỗi sợ bị lộ những mảng quy trình lem nhem mà automation sắp phơi bày.</p>
+
+            <p>Có thể là:</p>
+            <ul>
+                <li>Revenue.</li>
+                <li>Cost saving.</li>
+                <li>Bonus.</li>
+                <li>Tránh bị blame.</li>
+                <li>Giữ quyền kiểm soát.</li>
+            </ul>
+
+            <p>Không hiểu P&L → không đọc được động cơ thật.</p>
+
+            <h3>Power – Ai Thực Sự Chống Lưng?</h3>
+
+            <p>Power không nằm ở title.</p>
+
+            <p>Nó nằm ở:</p>
+            <ul>
+                <li>Ai nắm budget.</li>
+                <li>Ai có quyền dừng dự án.</li>
+                <li>Ai có thể làm sponsor đổi ý.</li>
+                <li>Ai được gọi trước khi quyết định được công bố.</li>
+            </ul>
+
+            <p>Đừng nhầm người có micro là người có quyền.</p>
+
+            <h3>Alignment – Đồng Thuận Hay Chỉ Là Lịch Sự?</h3>
+
+            <p>Approval ≠ Budget.<br>
+            Gật đầu ≠ Resource.<br>
+            Im lặng ≠ Đồng ý.</p>
+
+            <p>Alignment thật luôn đi kèm cam kết cụ thể.</p>
+
+            <h2>3. BUSINESS ACUMEN – LỚP PHỦ KINH TẾ TRÊN CHÍNH TRỊ</h2>
+
+            <p>Mỗi requirement phải đi qua 4 câu hỏi:</p>
+            <ol>
+                <li>Nó tác động đến revenue thế nào?</li>
+                <li>Nó thay đổi cost structure ra sao?</li>
+                <li>Nó làm tăng hay giảm risk exposure?</li>
+                <li>Nó làm thay đổi political capital của ai?</li>
+            </ol>
+
+            <p>Nếu không chạm ít nhất một trong bốn, khả năng cao đó là vanity feature.</p>
+
+            <p>IPA không có business acumen chỉ là drama nội bộ được phân tích bài bản.</p>
+
+            <h2>4. COMBAT MATRIX – REQUIREMENT DI CHUYỂN QUA 5 ĐIỂM NỔ</h2>
+
+            <p>Requirement luôn đi qua 5 stage:</p>
+            <ol>
+                <li>Agenda Setting</li>
+                <li>Elicitation</li>
+                <li>Analysis &amp; Validation</li>
+                <li>Approval &amp; Prioritization</li>
+                <li>Implementation &amp; Change</li>
+            </ol>
+
+            <p>Ở mỗi stage, Senior BA phải soi đủ 3 trục:</p>
+            <ul>
+                <li>Incentive</li>
+                <li>Power</li>
+                <li>Alignment</li>
+            </ul>
+
+            <p>Và sau đó mới quyết định hành động.</p>
+
+            <h2>5. HEATMAP – RADAR SINH TỒN</h2>
+
+            <p>IPA chỉ mạnh khi mày đo được rủi ro.</p>
+
+            <h3>Bảng Heatmap (Ví dụ thực tế)</h3>
+
+            <table>
+                <thead>
+                    <tr><th>Stage \ Trục</th><th>Incentive (0–2)</th><th>Power (0–2)</th><th>Alignment (0–2)</th><th>Tổng Stage</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Agenda</td><td>0</td><td>1</td><td>1</td><td>2</td></tr>
+                    <tr><td>Elicitation</td><td>1</td><td>2</td><td>2</td><td>5 🔴</td></tr>
+                    <tr><td>Analysis</td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td>Approval</td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td>Implementation</td><td></td><td></td><td></td><td></td></tr>
+                </tbody>
+            </table>
+
+            <h3>Cách chấm điểm</h3>
+
+            <p>0 – Clear<br>
+            1 – Suspicious<br>
+            2 – High Risk</p>
+
+            <p>Stage &gt; 4 → Danger Zone.</p>
+
+            <p>Power liên tục = 2 → Cảnh báo Ghost Power.</p>
+
+            <h3>Ghost Power – Dự Án Không Ai Thật Sự Đứng Sau</h3>
+
+            <p>Dự án có sponsor trên giấy.</p>
+
+            <p>Nhưng khi có biến:</p>
+            <ul>
+                <li>Không ai bảo vệ.</li>
+                <li>Budget bị rút.</li>
+                <li>Quyết định bị trì hoãn.</li>
+                <li>Và BA bị hỏi đầu tiên.</li>
+            </ul>
+
+            <p>Ghost Power không ồn ào.<br>
+            Nó làm dự án chết từ từ.</p>
+
+            <h2>6. CHIẾN THUẬT TÁC CHIẾN TỪNG GIAI ĐOẠN</h2>
+
+            <p>Soi IPA chỉ là bước đầu.<br>
+            Senior BA phải biết xoay chuyển.</p>
+
+            <h3>1. Agenda Setting – Chặn Rủi Ro Từ Trứng Nước</h3>
+
+            <p><strong>Soi IPA</strong></p>
+            <p><strong>Incentive:</strong> Bottom-line hay vanity?<br>
+            <strong>Power:</strong> Sponsor thật hay mượn danh?<br>
+            <strong>Alignment:</strong> Có stakeholder nào bị bypass?</p>
+
+            <p><strong>Move: The Business Case Filter</strong></p>
+
+            <p>Nếu Incentive mờ nhạt + Power yếu → đừng viết spec.</p>
+
+            <p>Yêu cầu một Business Case 1 trang có:</p>
+            <ul>
+                <li>Mục tiêu rõ.</li>
+                <li>Con số cam kết.</li>
+                <li>Người chịu trách nhiệm.</li>
+            </ul>
+
+            <p>Nếu họ không dám viết 1 trang bảo vệ ý tưởng,<br>
+            họ sẽ không dám bảo vệ dự án khi có biến.</p>
+
+            <h3>2. Elicitation – Workshop Không Phải Nơi Sự Thật Xuất Hiện</h3>
+
+            <p><strong>Soi IPA</strong></p>
+            <p><strong>Incentive:</strong> Ai sợ thay đổi?<br>
+            <strong>Power:</strong> Hidden veto là ai?<br>
+            <strong>Alignment:</strong> Ai đồng ý nhưng không commit?</p>
+
+            <p><strong>Move: The Corridor Talk</strong></p>
+
+            <p>Hẹn 1:1. Đi cafe. Đi ăn trưa.</p>
+
+            <p>Sự thật không nói ra trong workshop đông người.<br>
+            Nó xuất hiện khi không có micro và không có khán giả.</p>
+
+            <p>Bẻ lái rủi ro chính trị ở hành lang dễ hơn gấp 10 lần trong phòng họp.</p>
+
+            <h3>3. Analysis &amp; Validation – Khóa Chặt Trách Nhiệm</h3>
+
+            <p><strong>Soi IPA</strong></p>
+            <p><strong>Incentive:</strong> Ai bị đe dọa khi logic rõ ràng?<br>
+            <strong>Power:</strong> Ai có thể delay vô hạn?<br>
+            <strong>Alignment:</strong> Im lặng là đồng ý hay chống ngầm?</p>
+
+            <p><strong>Move: The Accountability Traceability</strong></p>
+
+            <p>Đừng hỏi "OK chưa?"</p>
+
+            <p>Gắn hậu quả vào logic.</p>
+
+            <p>Ví dụ:</p>
+            <blockquote><p>"Theo flow này, dữ liệu phòng anh sẽ hiển thị trên dashboard tổng. Em confirm lại với anh để đảm bảo đúng kỳ vọng nhé?"</p></blockquote>
+
+            <p>Sau đó, xác nhận qua email/Jira.</p>
+
+            <p>Paper Trail biến sự im lặng thành cam kết.</p>
+
+            <h3>4. Approval – Đừng Xin Duyệt, Hãy Ép Chọn</h3>
+
+            <p><strong>Soi IPA</strong></p>
+            <p><strong>Incentive:</strong> Ai được lợi nếu go-live?<br>
+            <strong>Power:</strong> Ai ký và ai cho phép ký?<br>
+            <strong>Alignment:</strong> Có commit resource không?</p>
+
+            <p><strong>Move: The Trade-off Map</strong></p>
+
+            <p>Đưa 2–3 lựa chọn kèm hệ quả.</p>
+
+            <p>Option A: Nhanh, rủi ro cao.<br>
+            Option B: Chậm hơn, an toàn hơn.</p>
+
+            <p>BA cung cấp bản đồ.<br>
+            Người có Power chọn đường.</p>
+
+            <p>Nếu mày chọn thay họ, mày sẽ chịu thay họ.</p>
+
+            <h3>5. Implementation – Giảm Ma Sát Trước Khi Hệ Thống Phản Kháng</h3>
+
+            <p><strong>Soi IPA</strong></p>
+            <p><strong>Incentive:</strong> User có bị thêm việc?<br>
+            <strong>Power:</strong> Ops có thể phá adoption?<br>
+            <strong>Alignment:</strong> Buy-in thật hay comply?</p>
+
+            <p><strong>Move: The Adoption Buffer</strong></p>
+
+            <p>Thiết kế giai đoạn chuyển tiếp:</p>
+            <ul>
+                <li>Chạy song song hệ cũ.</li>
+                <li>Tính năng "chiều lòng" user.</li>
+                <li>KPI adoption rõ ràng.</li>
+            </ul>
+
+            <p>Một hệ thống hoàn hảo vẫn sẽ chết nếu user cảm thấy bị đe dọa.</p>
+
+            <h2>7. BIẾT CHỌN TRẬN – KHÔNG PHẢI LÚC NÀO CŨNG DÙNG IPA</h2>
+
+            <p>Không phải ticket nào cũng cần Heatmap.</p>
+
+            <p>Nếu:</p>
+            <ul>
+                <li>Impact thấp.</li>
+                <li>Stakeholder ít.</li>
+                <li>Power rõ.</li>
+                <li>Trust cao.</li>
+            </ul>
+
+            <p>Đừng over-analyze.</p>
+
+            <p>Senior BA biết trận nào đáng đánh.</p>
+
+            <h2>8. SURVIVAL PROTOCOL – THINK BRUTAL, SPEAK DIPLOMATIC</h2>
+
+            <p>Trong chính trị doanh nghiệp, ai hỏi trước là người cầm lái.<br>
+            Nhưng hỏi sao để người ta tự nguyện "khai" mà vẫn thấy được tôn trọng – đó là bản lĩnh.</p>
+
+            <h3>Ba Câu Hỏi Sát Thủ (Để Nghĩ)</h3>
+            <ul>
+                <li>Nếu dự án fail, ai bị trảm đầu tiên?</li>
+                <li>Tính năng này tăng tiền hay giúp ai đó ngủ ngon?</li>
+                <li>Nếu bỏ feature này, ai sẽ nhảy dựng lên?</li>
+            </ul>
+
+            <h3>Ba Câu Hỏi Thảo Mai (Để Hỏi)</h3>
+            <blockquote><p>"Để em đảm bảo mình đang phục vụ đúng kỳ vọng nhất, theo anh/chị thì bên nào sẽ review kết quả này kỹ nhất để em chủ động trao đổi sát sao hơn ạ?"</p></blockquote>
+            <blockquote><p>"Để em sắp xếp thứ tự ưu tiên hợp lý, anh/chị giúp em hiểu tính năng này đang giúp phòng mình tháo gỡ áp lực cụ thể nào trong giai đoạn này được không ạ?"</p></blockquote>
+            <blockquote><p>"Trong trường hợp tài nguyên có giới hạn và mình cần giãn tiến độ, theo anh/chị thì bộ phận nào sẽ chịu ảnh hưởng vận hành nhiều nhất để em cân nhắc kỹ rủi ro ạ?"</p></blockquote>
+
+            <p>Mềm. Nhưng đọc cứng.</p>
+
+            <h3>Low Visibility, High Impact</h3>
+
+            <p>Có những thay đổi lớn nên được đặt tên nhỏ.</p>
+            <ul>
+                <li>"Chuẩn hóa quy trình."</li>
+                <li>"Tối ưu báo cáo."</li>
+                <li>"Cải thiện trải nghiệm nội bộ."</li>
+            </ul>
+
+            <p>Đôi khi, cách tốt nhất để thông qua một thay đổi mang tính cách mạng là đặt cho nó một cái tên nhàm chán nhất có thể.</p>
+
+            <h3>Skin in the Game</h3>
+
+            <p>Không ai dám đứng tên chịu trách nhiệm → Alignment giả.</p>
+
+            <h3>Exit Mindset – Không Bỏ Chạy, Mà Bảo Vệ Narrative</h3>
+
+            <p>Exit không phải bỏ dự án.<br>
+            Exit là chuẩn bị phao cứu sinh trước khi tàu nghiêng.</p>
+            <ul>
+                <li>Gửi email cảnh báo rủi ro sớm.</li>
+                <li>Document trade-off rõ ràng.</li>
+                <li>Lưu lại các mốc escalation.</li>
+            </ul>
+
+            <p>Khi sự cố xảy ra, mày không giải thích bằng trí nhớ.<br>
+            Mày giải thích bằng lịch sử.</p>
+
+            <h2>9. IPA KHÔNG PHẢI FRAMEWORK – NÓ LÀ RADAR SINH TỒN</h2>
+
+            <p>Senior BA không phải người viết spec đẹp nhất.</p>
+
+            <p>Họ là người:</p>
+            <ul>
+                <li>Thấy incentive trước khi conflict nổ.</li>
+                <li>Thấy power trước khi sponsor biến mất.</li>
+                <li>Thấy misalignment trước khi dự án sụp.</li>
+            </ul>
+
+            <p>Viết requirement đúng giúp mày làm tốt công việc.<br>
+            Đọc được IPA giúp mày sống sót lâu dài.</p>
+
+        </div>
+
+    </article>
+
+    <!-- RELATED POSTS -->
+    <div class="related-posts">
+
+        <div class="related-posts-title">
+            Recent in BA
+        </div>
+
+        <a href="ba-khong-thieu-framework-ho-thieu-business-acument.html">BA Không Thiếu Framework. Họ Thiếu Business Acumen.</a><br>
+        <a href="dung-dung-suong-mu-de-che-mot-viec-may-chua-hieu-ro.html">ĐỪNG DÙNG SƯƠNG MÙ ĐỂ CHE VIỆC MÀY CHƯA HIỂU RÕ</a><br>
+        <a href="requirement-la-vu-khi-van-de-la-ai-dang-cam-no.html">REQUIREMENT LÀ VŨ KHÍ VẤN ĐỀ LÀ AI ĐANG CẦM NÓ</a><br>
+        <a href="automate-workflow-cho-ba-voi-ai.html">Automated Workflow Cho BA Với AI</a><br>
+        <a href="elicitation-khong-that-bai-vi-stakeholders-no-that-bai-vi-ba.html">Elicitation Không Thất Bại Vì Stakeholder. Nó Thất Bại Vì BA.</a>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+
+        <div>
+            Dirty Reality © 2026
+        </div>
+
+        <div style="margin-top:10px;">
+
+            <a href="//www.dmca.com/Protection/Status.aspx?ID=6bc34bde-a24b-47a4-ad74-445a2b5632be"
+               title="DMCA.com Protection Status"
+               class="dmca-badge">
+
+                <img src="https://images.dmca.com/Badges/dmca_protected_sml_120n.png?ID=6bc34bde-a24b-47a4-ad74-445a2b5632be"
+                     alt="DMCA.com Protection Status" />
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="../../theme.js"></script>
+
+</body>
+
+</html>
