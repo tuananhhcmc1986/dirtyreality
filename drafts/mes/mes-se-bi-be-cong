@@ -1,0 +1,263 @@
+# MES SẼ BỊ BẺ CONG
+
+## VẤN ĐỀ LÀ MÀY CÓ DÁM NHẬN MÌNH GÓP PHẦN VÀO ĐÓ KHÔNG
+
+Blueprint của mày không sai.  
+Nhà máy của họ không ngu.  
+Phần mềm không tệ.  
+
+Nhưng sáu tháng sau:
+
+- Số liệu đẹp một cách quá tay.  
+- Excel vẫn tồn tại song song.  
+- Downtime luôn “có lý do”.  
+- Scrap được “xem lại” trước khi lên dashboard.  
+
+Và mày nói: adoption chưa tốt.  
+
+Không.  
+
+MES của mày đang bị bẻ cong để khớp với cấu trúc quyền lực sẵn có.  
+
+Và mày góp phần tạo ra độ cong đó.  
+
+---
+
+## I. MES KHÔNG ĐO DỮ LIỆU  
+
+## NÓ ĐO MỨC ĐỘ TỔ CHỨC CHỊU ĐƯỢC SỰ THẬT  
+
+Khi OEE thấp, ai bị gọi lên?  
+Khi downtime kéo dài, ai phải giải trình?  
+Khi scrap tăng, tiền thưởng của ai biến mất?  
+
+Nếu rủi ro dồn về một phía,  
+dữ liệu sẽ không bao giờ trung thực.  
+
+Không cần họp kín.  
+Không cần sửa số lộ liễu.  
+
+Chỉ cần một môi trường nơi nói thật đồng nghĩa với tự bắn vào chân mình.  
+
+Thế là đủ để con số tự học cách “ngoan”.  
+
+---
+
+## II. MÀY THIẾT KẾ NHƯ THỂ QUYỀN LỰC KHÔNG TỒN TẠI  
+
+Mày bật dashboard real-time.  
+Mày bật audit log chi tiết.  
+Mày bật hard stop.  
+
+Mày gọi đó là best practice.  
+
+Nhưng mày có hỏi:
+
+- Người dừng máy có được bảo vệ không?  
+- Người ghi đúng downtime có bị xem là làm xấu báo cáo không?  
+- Lãnh đạo có chấp nhận nhìn số xấu mà không cần tìm một cái tên để chịu trận không?  
+
+Nếu câu trả lời là lấp lửng,  
+
+Thì hệ thống của mày không phải công cụ cải tiến.  
+
+Nó là công cụ tạo áp lực.  
+
+Và khi con người bị đặt dưới áp lực mà không có vùng an toàn,  
+họ không cải tiến.  
+
+Họ thích nghi để sống sót.  
+
+---
+
+## III. ĐỪNG ĐỔ LỖI CHO USER — SỬA CẤU TRÚC TRƯỚC  
+
+User không chống MES.  
+
+User chống rủi ro cá nhân.  
+
+Đừng hỏi họ có thích hệ thống không.  
+
+Hỏi thẳng:
+
+- Nếu nhập downtime thật, KPI của họ có tụt không?  
+- Nếu ghi scrap đúng, họ có bị đánh giá là “quản lý kém” không?  
+- Nếu dừng máy theo đúng quy định, họ có bị trách vì làm chậm sản xuất không?  
+
+Nếu câu trả lời là “có khả năng”,  
+
+Thì việc nhập trễ, nhập mềm, nhập có chọn lọc  
+không còn là lỗi đạo đức.  
+
+Đó là hành vi hợp lý.  
+
+Muốn thay đổi hành vi, mày phải chạm vào ba thứ cụ thể:
+
+1. **KPI có đang phạt sự trung thực không?**  
+   Nếu sản lượng được thưởng nhưng tính minh bạch không được bảo vệ,  
+   mày đang khuyến khích che giấu.  
+
+2. **Có cơ chế bảo vệ người báo vấn đề không?**  
+   Nếu người báo lỗi thường xuyên bị gọi lên nhắc nhở,  
+   lần sau họ sẽ báo ít hơn.  
+
+3. **Lỗi được xử lý bằng cơ chế hay bằng con người?**  
+   Nếu mỗi sự cố kết thúc bằng việc tìm ai đó để chịu trách nhiệm,  
+   MES chỉ giúp tìm mục tiêu nhanh hơn.  
+
+Adoption không phải vấn đề.  
+
+Cấu trúc mới là vấn đề.  
+
+---
+
+## IV. THIẾT KẾ KHÁC ĐI — ĐỪNG CHỈ NÓI KHÁC  
+
+Nếu tổ chức chưa chịu nổi sự thật toàn phần,  
+đừng ép họ nuốt nó ngay ngày đầu.  
+
+### 1. ĐỪNG KHÓA SỐ NGAY LẬP TỨC  
+
+Đừng lock dữ liệu ngay khi hết ca.  
+
+Tạo một vùng rà soát có kiểm soát:
+
+- Ai sửa  
+- Sửa khi nào  
+- Sửa bao nhiêu  
+
+Minh bạch nhưng không phơi bày tức thì.  
+
+Nếu không có vùng đệm,  
+người ta sẽ nhập “an toàn” ngay từ đầu.  
+
+An toàn không phải chính xác.  
+Nó là ít rủi ro.  
+
+---
+
+### 2. TRIỂN KHAI MINH BẠCH THEO TẦNG  
+
+Không phải ai cũng cần thấy toàn bộ KPI chi tiết ngay lập tức.  
+
+Bắt đầu ở phạm vi line.  
+Sau đó mở lên plant.  
+Sau cùng mới là cross-functional full view.  
+
+Minh bạch phải đi kèm khả năng chịu trách nhiệm.  
+
+Nếu chưa chịu nổi trách nhiệm,  
+minh bạch chỉ tạo ra chính trị.  
+
+---
+
+### 3. SOFT TRƯỚC, HARD SAU  
+
+Trước khi bật hard stop, hỏi rõ:  
+
+Nếu máy dừng vì lỗi nhỏ nhưng đúng quy định,  
+có chấp nhận mất sản lượng không?  
+
+Nếu OEE tụt vì ghi đúng downtime,  
+có chấp nhận số xấu không?  
+
+Nếu câu trả lời vòng vo,  
+đừng bật hard stop.  
+
+Bắt đầu bằng cảnh báo.  
+Ghi nhận lý do.  
+Phân tích xu hướng.  
+
+Hard stop chỉ có ý nghĩa  
+khi người tuân thủ không bị thiệt.  
+
+---
+
+### 4. TÁCH PHÂN TÍCH LỖI KHỎI ĐÁNH GIÁ CÁ NHÂN  
+
+Muốn học thật, phải có không gian an toàn.  
+
+Nếu mỗi buổi review downtime đều kết thúc bằng  
+“line này dạo này yếu quá”,  
+
+Thì lần sau sẽ không còn ai nói thật.  
+
+Đo:
+
+- Thời gian phát hiện lỗi  
+- Thời gian phản ứng  
+- Mức độ cải thiện sau xử lý  
+
+Đừng chỉ đo ai làm sai.  
+
+---
+
+## V. BA CHECKPOINT TRƯỚC GO-LIVE — THIẾU MỘT CÁI, ĐỪNG MỞ  
+
+### 1. Risk Check  
+
+Nếu ngày mai số liệu thật xuất hiện:
+
+- Ai mất tiền?  
+- Ai mất điểm?  
+- Ai mất mặt?  
+
+Nếu chỉ một tầng chịu rủi ro,  
+hệ thống sẽ bị chỉnh lại để phân tán rủi ro đó.  
+
+---
+
+### 2. Power Check  
+
+Ai có quyền yêu cầu “xem lại số”?  
+
+Nếu một người có thể gọi IT xuống và nói  
+“chỉnh lại cho hợp lý”,  
+
+Thì kiến trúc của mày chỉ là đề xuất.  
+
+Không phải luật.  
+
+---
+
+### 3. Governance Check  
+
+Khi lỗi lớn xảy ra:
+
+- Có quy trình xử lý rõ ràng không?  
+- Hay sẽ họp và tìm một người để chịu trận?  
+
+Nếu tổ chức vẫn xử lý vấn đề bằng cách tìm người,  
+MES chỉ giúp họ làm điều đó nhanh hơn và chính xác hơn.  
+
+---
+
+## MES KHÔNG THẤT BẠI VÌ THIẾU TÍNH NĂNG
+
+MES không thất bại vì thiếu tính năng.  
+
+Nó thất bại khi mày thiết kế như thể:
+
+- Không có nỗi sợ.  
+- Không có chính trị.  
+- Không có quyền lực tác động lên dữ liệu.  
+
+Nhưng những thứ đó luôn tồn tại.  
+
+Nếu mày không thiết kế có tính đến chúng,  
+chúng sẽ thiết kế lại hệ thống của mày.  
+
+Và khi hệ thống bị bẻ cong,  
+đừng hỏi tại sao user không hợp tác.  
+
+Hỏi xem mày đã né chạm vào cấu trúc bao nhiêu lần.  
+
+Câu hỏi không phải:  
+
+MES có đủ module không?  
+
+Câu hỏi là:  
+
+Mày có đủ can đảm để đụng vào cấu trúc thật của tổ chức —  
+hay chỉ đủ dũng khí để bàn giao project  
+và chuyển sang dự án tiếp theo?  
