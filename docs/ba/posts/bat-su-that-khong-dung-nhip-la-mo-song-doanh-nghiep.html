@@ -296,26 +296,43 @@ Mày đang kích hoạt phản vệ.</strong></p>
             <p>Trục X: Mức độ minh bạch.<br>
 Trục Y: Mức độ hoảng loạn.</p>
 
-            <div style="border:2px solid currentColor; border-radius:10px; padding:20px; font-family:monospace; background:transparent; color:inherit;">
-
-            <p>Mức hoảng loạn (Panic)<br>
-            ^<br>
-            |                         *<br>
-            |                        *   ← Spike<br>
-            |                      *<br>
-            |                  *<br>
-            |              *<br>
-            |          *<br>
-            |      *<br>
-            |   *<br>
-            | *<br>
-            +----------------------------------------><br>
-                      Mức độ minh bạch (Transparency)</p>
-
-            <p>Phase 1        Phase 2          Phase 3<br>
-            (Trung tính)   (So sánh)        (Trách nhiệm)</p>
-
-            </div>
+            <figure class="transparency-panic-chart" aria-label="Biểu đồ minh bạch và hoảng loạn" style="border:2px solid currentColor; border-radius:10px; padding:1rem; margin:1em 0;">
+            <svg viewBox="0 0 420 240" xmlns="http://www.w3.org/2000/svg" style="max-width:100%; height:auto; display:block;">
+            <svg viewBox="0 0 420 240" xmlns="http://www.w3.org/2000/svg" style="max-width:100%; height:auto;">
+              <defs>
+                <marker id="spike-dot" markerWidth="8" markerHeight="8" refX="4" refY="4">
+                  <circle cx="4" cy="4" r="4" fill="currentColor"/>
+                </marker>
+              </defs>
+              <!-- Y axis -->
+              <line x1="50" y1="20" x2="50" y2="200" stroke="currentColor" stroke-width="1"/>
+              <polyline points="48,22 50,20 52,22" fill="none" stroke="currentColor" stroke-width="1"/>
+              <text x="20" y="25" font-size="11" fill="currentColor" text-anchor="middle" transform="rotate(-90, 20, 25)">Mức hoảng loạn (Panic)</text>
+              <!-- X axis -->
+              <line x1="50" y1="200" x2="400" y2="200" stroke="currentColor" stroke-width="1"/>
+              <polyline points="398,198 400,200 398,202" fill="none" stroke="currentColor" stroke-width="1"/>
+              <text x="225" y="230" font-size="11" fill="currentColor" text-anchor="middle">Mức độ minh bạch (Transparency)</text>
+              <!-- Phase labels -->
+              <text x="120" y="215" font-size="10" fill="currentColor" text-anchor="middle">Phase 1</text>
+              <text x="120" y="225" font-size="9" fill="currentColor" text-anchor="middle">(Trung tính)</text>
+              <text x="225" y="215" font-size="10" fill="currentColor" text-anchor="middle">Phase 2</text>
+              <text x="225" y="225" font-size="9" fill="currentColor" text-anchor="middle">(So sánh)</text>
+              <text x="330" y="215" font-size="10" fill="currentColor" text-anchor="middle">Phase 3</text>
+              <text x="330" y="225" font-size="9" fill="currentColor" text-anchor="middle">(Trách nhiệm)</text>
+              <!-- Line: low panic -> rise -> spike -> (curve follows ASCII: bottom-left going up to spike) -->
+              <polyline
+                points="60,190 100,170 140,150 180,120 220,85 260,55 280,45 300,60 340,75 380,90"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <!-- Spike point (highlight) -->
+              <circle cx="280" cy="45" r="6" fill="none" stroke="currentColor" stroke-width="2"/>
+              <text x="300" y="35" font-size="10" fill="currentColor">← Spike</text>
+            </svg>
+            </figure>
 
             <p>Ban đầu minh bạch tăng.</p>
 
