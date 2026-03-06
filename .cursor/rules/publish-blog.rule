@@ -218,3 +218,33 @@ ensure nav-back exists
 ensure no duplicate script or toggle elements
 
 preserve slug and URL
+
+
+
+STEP 17 — SUBSCRIPTION BOX INTEGRITY
+
+Ensure the following script is present after {{CONTENT}}:
+<script async data-uid="5312ad6631" src="https://dirty-reality.kit.com/5312ad6631/index.js"></script>
+
+If missing during "REPUBLISH TEMPLATE UPGRADE MODE", re-inject it.
+
+
+
+STEP 18 — UPDATE RSS FEED
+
+Edit file: 
+feed.xml
+
+Insert inside <channel> (sau <lastBuildDate>):
+
+<item>
+    <title>{{TITLE}}</title>
+    <link>https://yourdomain.com/dirtyreality/{{CATEGORY}}/posts/{{SLUG}}.html</link>
+    <pubDate>{{DATE_RSS_FORMAT}}</pubDate>
+    <guid>https://yourdomain.com/dirtyreality/{{CATEGORY}}/posts/{{SLUG}}.html</guid>
+    <description>Bài viết mới nhất trong chuyên mục {{CATEGORY}}</description>
+</item>
+
+Note: 
+- Limit feed to latest 10 items.
+- [cite_start]If slug already exists in feed.xml, update the existing <item> instead of creating duplicate[cite: 3].

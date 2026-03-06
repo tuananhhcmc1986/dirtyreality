@@ -1077,3 +1077,24 @@ html {
 }
 
 }
+
+/* =========================
+   KIT SUBSCRIPTION BOX FIX
+   ========================= */
+
+   .kit-subscription-wrapper {
+    margin-top: 24px;
+    margin-bottom: 40px;
+    min-height: 150px; /* Tránh giật trang khi script load */
+}
+
+/* Đảm bảo form hiển thị tốt trên nền tối */
+[data-theme="dark"] .formkit-form {
+    background: var(--bg) !important;
+    border-color: var(--border) !important;
+}
+
+[data-theme="dark"] .formkit-header, 
+[data-theme="dark"] .formkit-subheader {
+    color: var(--text) !important;
+}
