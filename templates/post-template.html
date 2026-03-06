@@ -13,52 +13,39 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
-<script src="../../darkmode.js" defer></script>
-
 </head>
 
 <body>
 
+<div class="theme-toggle" onclick="toggleTheme()">
+toggle theme
+</div>
+
 <div class="container">
-
-    <!-- Dark mode toggle -->
-    <div class="darkmode-toggle">
-        <button onclick="toggleDarkMode()" id="darkmode-btn">
-            dark mode
-        </button>
-    </div>
-
-    <!-- Site title -->
     <div class="site-title">
         <a href="../../">DIRTY REALITY</a>
     </div>
 
-    <!-- Back navigation -->
     <div class="nav-back">
         <a href="../">← {{CATEGORY}}</a>
     </div>
 
-    <!-- Article -->
     <article>
 
-        <!-- DATE FIRST (as requested) -->
         <div class="article-meta">
             {{DATE}} · {{CATEGORY}}
         </div>
 
-        <!-- TITLE SECOND -->
         <h1 class="article-title">
             {{TITLE}}
         </h1>
 
-        <!-- CONTENT -->
         <div class="article-content">
             {{CONTENT}}
         </div>
 
     </article>
 
-    <!-- RELATED POSTS -->
     <div class="related-posts">
 
         <div class="related-posts-title">
@@ -69,7 +56,6 @@
 
     </div>
 
-    <!-- Footer -->
     <div class="footer">
 
         <div>
@@ -92,6 +78,8 @@
     </div>
 
 </div>
+
+<script src="../../theme.js"></script>
 
 </body>
 
