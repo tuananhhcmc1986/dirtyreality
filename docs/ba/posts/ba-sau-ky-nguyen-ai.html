@@ -33,7 +33,7 @@ toggle theme
     <article>
 
         <div class="article-meta">
-            06/03/2026 · BA
+            07/03/2026 · BA
         </div>
 
         <h1 class="article-title">
@@ -41,611 +41,780 @@ toggle theme
         </h1>
 
         <div class="article-content">
-            <h2>Hoặc Tiến Hóa Lên Functional Architecture — Hoặc Bị Thay Thế</h2>
-
-<p>Đừng tự huyễn hoặc mình bằng danh xưng "Analyst" nghe cho sang.<br>
-Nếu công việc mỗi ngày của mày chỉ là nghe rồi chép lại thành User Story, thì mày không phải chuyên gia.</p>
-
-<p>Mày chỉ là một API chạy bằng cơm.</p>
-
-<p>Một lớp middleware cồng kềnh đang chờ ngày bị AI rút phích cắm.</p>
-
-<p>Suốt gần hai mươi năm qua, nghề BA bị hiểu sai thành một nghề viết lách.<br>
-Mày tự hào vì BRD dày cộm?</p>
-
-<p>Xin lỗi.<br>
-Đó chỉ là "xác của tri thức".</p>
-
-<p>AI có thể rặn ra đống đó trong vài giây với chi phí rẻ mạt.<br>
-Thứ có giá trị thật sự không phải document.<br>
-Thứ có giá trị là sự hiểu hệ thống.</p>
-
-<p>Và sự thật khó chịu là:<br>
-Phần lớn BA đang dùng sự hời hợt để khỏa lấp khoảng trống đó.</p>
-
-<p>Trong kỷ nguyên AI, mày chỉ có hai lựa chọn.<br>
-Tiếp tục làm thợ viết requirement — rồi bị đào thải như một dòng code rác.<br>
-Hoặc tiến hóa lên Functional Architecture.<br>
-Nơi mày thiết kế logic.<br>
-Thiết kế dependency.<br>
-Thiết kế sự đánh đổi của hệ thống.</p>
-
-<p>Câu hỏi rất đơn giản.<br>
-Mày là người thiết kế quyết định của hệ thống.<br>
-Hay chỉ là thư ký dự án chờ đợt layoff tiếp theo.</p>
-
-<h2>Nghề BA Đã Bị Hiểu Sai Gần Hai Thập Kỷ</h2>
-
-<p>Tao nói thẳng.<br>
-Nghề Business Analyst đã bị hiểu sai gần hai mươi năm.<br>
-Trong rất nhiều công ty, mô tả công việc BA nghe rất quen:</p>
-
-<ul><li>viết requirement</li><li>refine backlog</li><li>làm cầu nối giữa business và IT</li><li>tổ chức workshop</li></ul>
-
-<p>Nghe hợp lý.</p>
-
-<p>Nhưng nếu nhìn kỹ, tất cả những thứ đó chỉ là <strong>hoạt động vận hành</strong>.<br>
-Không phải <strong>bản chất của nghề</strong>.</p>
-
-<p>Theo thời gian, BA bị biến thành một dây chuyền sản xuất artifact.</p>
-
-<ul><li>BRD</li><li>User Story</li><li>Acceptance Criteria</li><li>Process Diagram</li></ul>
-
-<p>Artifact trở thành trung tâm.<br>
-Và điều đó tạo ra một hiểu lầm cực kỳ nguy hiểm.</p>
-
-<p>BA tạo ra document.</p>
-
-<p><strong>Sai.</strong></p>
-
-<p>Document không phải giá trị.<br>
-Document chỉ là <strong>xác của tri thức</strong>.</p>
-
-<p>Thứ có giá trị thật sự là <strong>sự hiểu hệ thống</strong>.<br>
-AI đang bóc trần sự thật này.</p>
-
-<h2>Nếu Công Việc Của Mày Là Viết Document — AI Sẽ Làm Tốt Hơn</h2>
-
+            <h2>BA Sau Kỷ Nguyên AI</h2>
+<h3>Hoặc Tiến Hóa Lên Functional Architecture — Hoặc Bị Thay Thế</h3>
+<h3>Thesis Của Bài Này</h3>
+<p><strong>OLD WORLD</strong></p>
+<div class="flow-diagram">
+<p>Requirement</p>
+<p>↓</p>
+<p>Document</p>
+<p>↓</p>
+<p>Human Interpretation</p>
+<p>↓</p>
+<p>Development</p>
+</div>
+<p><strong>AI-NATIVE WORLD</strong></p>
+<div class="flow-diagram">
+<p>Requirement</p>
+<p>↓</p>
+<p>Knowledge Node</p>
+<p>↓</p>
+<p>Knowledge System</p>
+<p>↓</p>
+<p>AI Reasoning</p>
+<p>↓</p>
+<p>Decision Support</p>
+</div>
+<p>Nếu requirement chỉ là document, AI sẽ thay thế BA.</p>
+<p>Nếu requirement trở thành <strong>knowledge node</strong>, BA trở thành <strong>kiến trúc sư của tri thức hệ thống</strong>.</p>
+<p>Toàn bộ bài này nói về một sự chuyển hóa duy nhất.</p>
+<p><strong>Requirement → Knowledge Node</strong></p>
+<h2>Đừng Tự Huyễn Hoặc Bằng Danh Xưng "Analyst"</h2>
+<p>Nếu công việc mỗi ngày của mày chỉ là:</p>
+<ul><li>nghe stakeholder nói</li><li>viết lại thành user story</li><li>ném cho dev</li></ul>
+<p>thì mày không phải analyst.</p>
+<p>Mày chỉ là <strong>API chạy bằng cơm</strong>.</p>
+<p>Một lớp middleware sống tạm giữa business và developer.</p>
+<p>Trong kỹ thuật có một quy luật rất rõ.</p>
+<blockquote><p>Middleware luôn là thứ bị thay thế đầu tiên.</p></blockquote>
+<p>Suốt gần hai mươi năm qua, nghề BA bị hiểu sai thành <strong>nghề viết lách</strong>.</p>
+<p>Mày tự hào vì viết được bản spec dày 80 trang?</p>
+<p>Xin lỗi.</p>
+<p>Đó chỉ là <strong>xác của tri thức</strong>.</p>
+<p>AI có thể tạo ra đống đó trong vài giây.</p>
+<p>Thứ có giá trị thật sự không phải document.</p>
+<p>Thứ có giá trị là <strong>sự hiểu hệ thống</strong>.</p>
+<p>Và sự thật khó chịu là:</p>
+<p>phần lớn BA ngoài kia <strong>không hiểu hệ thống</strong>.</p>
+<p>Họ chỉ đang <strong>viết lại những thứ họ chưa hiểu</strong>.</p>
+<h2>Nếu Chỉ Để Viết — AI Làm Tốt Hơn Mày</h2>
 <p>AI có thể:</p>
-
-<ul><li>generate requirement</li><li>generate test case</li><li>generate diagram</li><li>summarize meeting</li></ul>
-
-<p>Trong vài giây.<br>
-Không mệt.<br>
-Không complain.<br>
-Không cần salary review.</p>
-
-<p>Nếu công việc chính của mày là viết document, AI chắc chắn sẽ làm việc đó tốt hơn.<br>
-Nhanh hơn.<br>
-Rẻ hơn.<br>
-Ít drama hơn.<br>
-Đó không phải dự đoán.<br>
-Đó là logic.</p>
-
-<h2>Diagram: Sự Dịch Chuyển Của Nghề BA</h2>
-
-<p>Traditional BA (Documentation)<br>
-│<br>
-▼<br>
-AI Automation<br>
-│<br>
-▼<br>
-Artifact Becomes Commodity<br>
-│<br>
-▼<br>
-BA Identity Crisis<br>
-│<br>
-▼<br>
-System-Level BA<br>
-│<br>
-▼<br>
-Functional Architecture Thinking<br>
-│<br>
-▼<br>
-System Intelligence BA</p>
-
+<ul><li>generate requirement</li><li>generate diagram</li><li>generate test case</li><li>summarize meeting</li></ul>
+<p>Trong vài giây.</p>
+<p>Không mệt.</p>
+<p>Không drama.</p>
+<p>Không cần salary review.</p>
+<p>Nếu công việc chính của mày là viết document, AI chắc chắn sẽ làm tốt hơn.</p>
+<p>Nhanh hơn. Rẻ hơn. Ít drama hơn.</p>
+<p>Đó không phải prediction.</p>
+<p>Đó là <strong>logic</strong>.</p>
+<h2>Sự Dịch Chuyển Của Nghề BA</h2>
+<p><strong>Traditional BA</strong> (Document Writer)</p>
+<div class="flow-diagram">
+<p>↓</p>
+<p>AI Automation</p>
+<p>↓</p>
+<p>Artifacts become commodity</p>
+<p>↓</p>
+<p>BA Identity Crisis</p>
+<p>↓</p>
+<p>System-Level BA</p>
+<p>↓</p>
+<p>Functional Architecture Thinking</p>
+<p>↓</p>
+<p>System Intelligence BA</p>
+</div>
 <p>Artifact đang trở thành commodity.</p>
-
-<p><strong>Thứ còn lại có giá trị là system intelligence.</strong></p>
-
-<h2>Phần Lớn BA Thực Ra Đang Là Human Middleware</h2>
-
-<p>Workflow BA trong nhiều công ty trông rất quen.</p>
-
-<p>Meeting<br>
-↓<br>
-Write Requirement<br>
-↓<br>
-Refine Document<br>
-↓<br>
-Backlog<br>
-↓<br>
-Development</p>
-
-<p>Stakeholder nói.<br>
-BA viết lại.<br>
-Developer đọc.<br>
-Nếu nói thẳng ra, BA đang làm một vai trò rất quen trong kỹ thuật.</p>
-
+<p>Thứ còn lại có giá trị là <strong>system intelligence</strong>.</p>
+<h2>Phần Lớn BA Thực Ra Là Human Middleware</h2>
+<p>Workflow BA trong nhiều công ty trông như thế này.</p>
+<div class="flow-diagram">
+<p>Meeting</p>
+<p>↓</p>
+<p>Write Requirement</p>
+<p>↓</p>
+<p>Refine Document</p>
+<p>↓</p>
+<p>Backlog</p>
+<p>↓</p>
+<p>Development</p>
+</div>
+<p>Stakeholder nói.</p>
+<p>BA viết lại.</p>
+<p>Developer đọc.</p>
+<p>Nếu nói thẳng ra:</p>
 <p>Stakeholder → BA → Developer</p>
-
-<p>Đó chính là middleware.<br>
-Một lớp trung gian chuyển dữ liệu giữa hai hệ thống.</p>
-
-<p>Trong kỹ thuật, middleware có một số phận rất rõ ràng.</p>
-
-<p>Middleware luôn là thứ bị thay thế đầu tiên.</p>
-
-<p>Khi API đủ tốt, middleware biến mất.<br>
-Khi automation đủ tốt, middleware biến mất.<br>
-Nếu BA chỉ làm nhiệm vụ dịch lời nói thành document, thì mày đang làm một <strong>API chạy bằng cơm</strong>.</p>
-
-<p><strong>Và API chạy bằng cơm luôn là thứ bị tự động hóa sớm nhất.</strong></p>
-
+<p>Đó chính là <strong>middleware</strong>.</p>
+<p>Trong kỹ thuật:</p>
+<ul><li>khi API đủ tốt → middleware biến mất</li><li>khi automation đủ tốt → middleware biến mất</li></ul>
+<p>Nếu BA chỉ làm nhiệm vụ <strong>dịch lời nói thành document</strong>, thì mày đang làm một <strong>API chạy bằng cơm</strong>.</p>
 <h2>Bottleneck Của Software Đã Dịch Chuyển</h2>
-
-<p>Hai mươi năm trước, bottleneck nằm ở development.</p>
-
-<p>Idea<br>
-↓<br>
-Development<br>
-↓<br>
-Market</p>
-
-<p>Ngày nay bottleneck nằm ở chỗ khác.</p>
-
-<p>Idea<br>
-↓<br>
-Market Fit<br>
-↓<br>
-Distribution</p>
-
-<p>Build software ngày càng dễ.<br>
-Nhưng biết nên build cái gì ngày càng khó.</p>
-
+<p>Hai mươi năm trước:</p>
+<div class="flow-diagram">
+<p>Idea</p>
+<p>↓</p>
+<p>Development</p>
+<p>↓</p>
+<p>Market</p>
+</div>
+<p>Ngày nay:</p>
+<div class="flow-diagram">
+<p>Idea</p>
+<p>↓</p>
+<p>Market Fit</p>
+<p>↓</p>
+<p>Distribution</p>
+</div>
+<p>Build software ngày càng dễ.</p>
+<p>Nhưng biết <strong>nên build cái gì</strong> ngày càng khó.</p>
 <p>Và đó là nơi BA thật sự nên tồn tại.</p>
-
 <h2>Một Change Request Nhỏ Có Thể Làm Run Cả Hệ Thống</h2>
-
-<p>Khoảng tám tháng trước, team tao nhận một change request từ khách hàng.<br>
-Yêu cầu rất đơn giản.</p>
-
-<p><strong>Trước khi nhập kho NVL phải hoàn thành biên bản kiểm nghiệm.</strong></p>
-
+<p>Khoảng tám tháng trước, team tao nhận một change request.</p>
+<p>Yêu cầu:</p>
+<p>Trước khi nhập kho NVL phải hoàn thành <strong>biên bản kiểm nghiệm</strong>.</p>
 <p>Trước đó:</p>
-
-<p>Nhập kho NVL<br>
-↓<br>
-Kiểm nghiệm sau</p>
-
+<div class="flow-diagram">
+<p>Nhập kho NVL</p>
+<p>↓</p>
+<p>Kiểm nghiệm sau</p>
+</div>
 <p>Khách hàng muốn đổi thành:</p>
-
-<p>Kiểm nghiệm NVL<br>
-↓<br>
-Nhập kho</p>
-
-<p>Nghe nhỏ.<br>
-Chỉ đảo thứ tự hai bước.<br>
-<strong>Nhưng NVL đầu vào là điểm bắt đầu của cả chuỗi sản xuất.</strong></p>
-
-<p>NVL nhập kho<br>
-↓<br>
-Sản xuất<br>
-↓<br>
-Thành phẩm<br>
-↓<br>
-Kho thành phẩm<br>
-↓<br>
-Báo cáo<br>
-↓<br>
-Traceability</p>
-
+<div class="flow-diagram">
+<p>Kiểm nghiệm NVL</p>
+<p>↓</p>
+<p>Nhập kho</p>
+</div>
+<p>Nghe rất nhỏ.</p>
+<p>Chỉ đảo thứ tự hai bước.</p>
+<p>Nhưng NVL đầu vào là <strong>điểm bắt đầu của cả chuỗi sản xuất</strong>.</p>
+<div class="flow-diagram">
+<p>NVL nhập kho</p>
+<p>↓</p>
+<p>Sản xuất</p>
+<p>↓</p>
+<p>Thành phẩm</p>
+<p>↓</p>
+<p>Kho thành phẩm</p>
+<p>↓</p>
+<p>Báo cáo</p>
+<p>↓</p>
+<p>Traceability</p>
+</div>
 <p>Một thay đổi ở đầu chuỗi có thể làm run cả hệ thống.</p>
-
 <h2>Ba Ngày Chỉ Để Hiểu Impact</h2>
-
-<p>Để đánh giá change request đó, team BA của tao mất gần ba ngày.</p>
-
-<p>Không phải để viết spec.<br>
-Chỉ để trả lời một câu hỏi.<br>
-<strong>Nếu rule này thay đổi, hệ thống nào sẽ bị ảnh hưởng?</strong></p>
-
+<p>Để đánh giá change request đó, team BA mất gần <strong>ba ngày</strong>.</p>
+<p>Không phải để viết spec.</p>
+<p>Chỉ để trả lời một câu hỏi.</p>
+<blockquote><p>Nếu rule này thay đổi, hệ thống sẽ bị ảnh hưởng như thế nào?</p></blockquote>
 <p>Team phải kiểm tra:</p>
-
 <ul><li>inventory</li><li>production workflow</li><li>reporting</li><li>batch traceability</li><li>quality control</li></ul>
-
-<p>System knowledge nằm rải rác khắp nơi.</p>
-
-<ul><li>spec</li><li>diagram</li><li>đầu BA</li><li>đầu dev</li></ul>
-
-<p>Tụi tao phải reconstruct lại hệ thống bằng tay.</p>
-
+<p>Tri thức hệ thống nằm rải rác khắp nơi.</p>
+<ul><li>document</li><li>diagram</li><li>đầu BA</li><li>đầu dev</li></ul>
+<p>Tụi tao phải <strong>reconstruct lại hệ thống bằng tay</strong>.</p>
 <p>Ba ngày.</p>
-
 <p>Chỉ để hiểu chuyện gì sẽ xảy ra.</p>
-
-<h2>Vấn Đề Không Nằm Ở Requirement — Mà Ở Cách Lưu Tri Thức</h2>
-
-<p>Requirement không phải vấn đề.<br>
-Requirement vẫn đúng.</p>
-
-<p>Vấn đề nằm ở cách requirement được lưu trữ.<br>
-Requirement tồn tại dưới dạng document.</p>
-
-<p>Document:</p>
-
-<ul><li>không biết dependency</li><li>không biết impact</li><li>không biết logic hệ thống</li></ul>
-
-<p>Nó chỉ là text.</p>
-
-<p>Document không có khả năng reasoning.</p>
-
-<h2>Từ Tribal Knowledge Đến System Intelligence</h2>
-
-<p>Sau nhiều incidents kiểu đó tụi tao nhận ra một điều rất khó chịu.</p>
-
-<p>Tri thức hệ thống không nằm trong một hệ thống.<br>
-Nó nằm rải rác:</p>
-
-<ul><li>document</li><li>diagram</li><li>meeting</li><li>đầu của từng người</li></ul>
-
-<p>Muốn hiểu hệ thống, tụi tao phải ghép trí nhớ của cả team lại với nhau.</p>
-
-<p>Đó không phải knowledge system.<br>
-Đó là tribal knowledge.<br>
-Và tribal knowledge luôn là một quả bom hẹn giờ.</p>
-
-<p>Từ đó tụi tao bắt đầu nghĩ đến một framework khác.<br>
-System Intelligence BA Framework (SIBA)</p>
-
-<p>Nguyên tắc của nó rất đơn giản.</p>
-
-<p><strong>Requirement không phải document.</strong><br>
-<strong>Requirement là structured knowledge node.</strong></p>
-
-<h2>Từ Framework Đến Hệ Thống Chạy Thật</h2>
-
-<p>Framework thì ai cũng nói được.<br>
-PowerPoint thì ai cũng vẽ được.</p>
-
-<p>Nhưng biến nó thành một <strong>hệ thống chạy được trong team</strong> là chuyện khác.</p>
-
-<p>Tụi tao mất gần sáu tháng để làm điều đó.<br>
-Trong sáu tháng đó tụi tao phải giải quyết:</p>
-
-<ul><li>requirement structure</li><li>repository design</li><li>AI prompt orchestration</li><li>dependency detection</li><li>impact analysis</li></ul>
-
-<p>Không có tool sẵn.<br>
-Không có framework sẵn.</p>
-
-<p>Chỉ có một vấn đề rất rõ.<br>
-<strong>Team không thể tiếp tục mất ba ngày chỉ để hiểu impact của một change request.</strong></p>
-
-<p>Cuối cùng tụi tao build một hệ thống nội bộ.</p>
-
-<p>Tên của nó là:<br>
-BA-OS — Business Analysis Operating System</p>
-
+<h2>Vấn Đề Không Nằm Ở Requirement</h2>
+<p>Requirement không phải vấn đề.</p>
+<p>Requirement vẫn đúng.</p>
+<p>Vấn đề nằm ở <strong>cách tri thức được lưu trữ</strong>.</p>
+<p>Tri thức hệ thống nằm rải rác:</p>
+<ul><li>document</li><li>meeting</li><li>diagram</li><li>đầu từng người</li></ul>
+<p>Muốn hiểu hệ thống, tụi tao phải <strong>ghép trí nhớ của cả team lại</strong>.</p>
+<p>Đó không phải knowledge system.</p>
+<p>Đó là <strong>tribal knowledge</strong>.</p>
+<p>Và tribal knowledge luôn là một <strong>quả bom hẹn giờ</strong>.</p>
+<h2>Insight Quan Trọng Nhất</h2>
+<p>Requirement không phải document.</p>
+<p>Requirement là <strong>knowledge node</strong>.</p>
+<p>Một requirement luôn gắn với:</p>
+<p>entity process business rule data dependency decision</p>
+<p>Khi requirement được cấu trúc như vậy, nó không còn là document.</p>
+<p>Nó trở thành <strong>structured knowledge</strong>.</p>
+<p>Và structured knowledge có một đặc tính cực kỳ quan trọng.</p>
+<blockquote><p>AI có thể reasoning trên nó.</p></blockquote>
+<h2>Requirement → Knowledge Node</h2>
+<p>Nếu requirement chỉ là paragraph, AI không hiểu gì cả.</p>
+<p>Nếu requirement là node trong hệ thống tri thức:</p>
+<p>AI có thể:</p>
+<ul><li>tìm dependency</li><li>phát hiện conflict</li><li>phân tích impact</li></ul>
+<p>Requirement lúc này trở thành <strong>machine-readable knowledge</strong>.</p>
 <h2>BA-OS: Khi Requirement Trở Thành Node Tri Thức</h2>
-
-<p>Workflow của BA-OS trông như thế này.</p>
-
-<p>Stakeholder Input<br>
-↓<br>
-AI Requirement Extraction<br>
-↓<br>
-Context Retrieval<br>
-↓<br>
-Requirement Structuring<br>
-↓<br>
-AI Stress Testing<br>
-↓<br>
-Conflict Detection<br>
-↓<br>
-Repository Commit<br>
-↓<br>
-Impact Analysis</p>
-
-<p>Requirement không còn là document.<br>
-Requirement trở thành node tri thức.</p>
-
+<p>Từ insight đó tụi tao build một hệ thống nội bộ.</p>
+<p>Tên của nó là: <strong>BA-OS — Business Analysis Operating System</strong></p>
+<p>Workflow của BA-OS:</p>
+<div class="flow-diagram">
+<p>Stakeholder Input</p>
+<p>↓</p>
+<p>AI Requirement Extraction</p>
+<p>↓</p>
+<p>Context Retrieval</p>
+<p>↓</p>
+<p>Requirement Structuring</p>
+<p>↓</p>
+<p>AI Stress Testing</p>
+<p>↓</p>
+<p>Conflict Detection</p>
+<p>↓</p>
+<p>Repository Commit</p>
+<p>↓</p>
+<p>Impact Analysis</p>
+</div>
+<p>Requirement không còn là document. Requirement trở thành <strong>node tri thức</strong>.</p>
 <h2>Impact Analysis: Từ Ba Ngày Xuống Vài Phút</h2>
-
 <p>Nếu change request NVL xảy ra sau khi BA-OS tồn tại:</p>
-
-<p>Change Request<br>
-↓<br>
-Requirement Update<br>
-↓<br>
-Dependency Scan<br>
-↓<br>
-Impact Report</p>
-
-<p>Impact analysis từ ba ngày.<br>
-Xuống vài phút.</p>
-
-<p><strong>Không phải vì AI thông minh hơn con người.</strong><br>
-<strong>Mà vì tri thức đã được cấu trúc đúng cách.</strong></p>
-
+<div class="flow-diagram">
+<p>Change Request</p>
+<p>↓</p>
+<p>Requirement Update</p>
+<p>↓</p>
+<p>Dependency Scan</p>
+<p>↓</p>
+<p>Impact Report</p>
+</div>
+<p>Impact analysis từ ba ngày.</p>
+<p>Xuống vài phút.</p>
+<p>Không phải vì AI thông minh hơn con người.</p>
+<p>Mà vì tri thức đã được <strong>cấu trúc đúng cách</strong>.</p>
 <h2>Hit-List: Những BA Sẽ Biến Mất</h2>
-
-<p>AI không giết BA.<br>
-AI chỉ giết một số loại BA.</p>
-
-<p><strong>Human Middleware</strong><br>
-Stakeholder → Document → Dev<br>
-API chạy bằng cơm.</p>
-
-<p><strong>Jira BA</strong><br>
-Sống trong ticket.</p>
-
-<p><strong>Workshop Addict</strong><br>
-Meeting nhiều.<br>
-System understanding ít.</p>
-
-<p><strong>Business-Blind BA</strong><br>
-Không hiểu business model.</p>
-
+<p>AI không giết BA.</p>
+<p>AI chỉ giết một số loại BA.</p>
+<h4>Human Middleware</h4>
+<p>Stakeholder → Document → Dev</p>
+<p>API chạy bằng cơm.</p>
+<h4>Jira BA</h4>
+<p>Sống trong ticket.</p>
+<h4>Workshop Addict</h4>
+<p>Meeting nhiều. System understanding ít.</p>
+<h4>Business-Blind BA</h4>
+<p>Không hiểu business model.</p>
 <h2>Bộ Skill BA Phải Có Trong Thời AI</h2>
-
-<p>Nếu mày còn muốn làm BA 10 năm nữa, mày cần bộ skill mới đắp lên những cái skills đang có.</p>
-
-<p><strong>Business Acumen</strong><br>
-Hiểu:</p>
-
+<h3>Business Acumen</h3>
+<p>Hiểu:</p>
 <ul><li>revenue model</li><li>growth engine</li><li>strategic objective</li></ul>
-
-<p><strong>System Thinking</strong><br>
-Thấy được:</p>
-
+<h3>System Thinking</h3>
+<p>Thấy được:</p>
 <ul><li>dependency</li><li>cascading impact</li><li>system boundary</li></ul>
-
-<p><strong>Functional Architecture Literacy</strong><br>
-BA không cần biết database là SQL hay NoSQL.<br>
-Nhưng BA phải biết:</p>
-
+<h3>Functional Architecture Literacy</h3>
+<p>BA không cần biết database là SQL hay NoSQL.</p>
+<p>Nhưng BA phải biết:</p>
 <ul><li>entity nào tồn tại</li><li>entity nào phụ thuộc entity nào</li><li>module nào chiếm dụng dữ liệu nào</li></ul>
-
-<p>Mày không cần biết bảng database tên gì.<br>
-Nhưng mày phải biết:<br>
-thay đổi dữ liệu nào sẽ làm hệ thống sập.</p>
-
-<p><strong>Decision Framing</strong><br>
-AI có thể generate option.<br>
-Nhưng option không phải quyết định.<br>
-AI có thể đưa ra 100 phương án.<br>
-Nhưng khi hệ thống sập, AI không đứng trong phòng họp.<br>
-BA đứng đó.<br>
-BA nói:<br>
-Chúng ta chọn phương án này.<br>
-AI cung cấp dữ liệu.<br>
-BA chịu trách nhiệm.</p>
-
+<h3>Decision Framing</h3>
+<p>AI có thể generate option.</p>
+<p>Nhưng option không phải quyết định.</p>
+<p>AI có thể đưa ra 100 phương án.</p>
+<p>Nhưng khi hệ thống sập, AI không đứng trong phòng họp.</p>
+<p>BA đứng đó.</p>
+<p>BA nói:</p>
+<blockquote><p>Chúng ta chọn phương án này.</p></blockquote>
+<p>AI cung cấp dữ liệu.</p>
+<p>BA chịu trách nhiệm.</p>
 <h2>Dirty Reality</h2>
-
-<p>AI không giết nghề BA.<br>
-AI chỉ giết:<br>
-<strong>Documentation BA</strong></p>
-
+<p>AI không giết nghề BA.</p>
+<p>AI chỉ giết: <strong>Documentation BA</strong></p>
 <h2>Câu Hỏi Cuối</h2>
-
-<p>Nếu AI có thể viết requirement tốt hơn mày.<br>
-<strong>Mày còn mang lại giá trị gì cho hệ thống?</strong></p>
-
-<hr>
-
-<h2>Bonus — Chỉ Dành Cho Người Thật Sự Quan Tâm</h2>
-
-<p>Nếu mày đọc tới đây mà vẫn còn hứng thú.<br>
-Có thể mày thật sự muốn hiểu hệ thống đó trông như thế nào.<br>
-Phần dưới đây không dành cho tất cả mọi người.<br>
-Nếu mày chỉ muốn viết user story cho xong sprint, mày có thể dừng ở đây.<br>
-Phần còn lại là blueprint cho những người muốn biến Business Analysis thành một hệ thống tri thức có thể reasoning.<br>
-Toàn bộ nội dung dưới đây là spec thực tế của hệ thống BA-OS tụi tao đã build và đang dùng.</p>
-
-<h2>AI-Native Business Analysis Operating System (BA-OS)</h2>
-
-<h3>Purpose</h3>
-
-<p>This document defines the operating system for Business Analysis used by the BA team.<br>
-The system combines:</p>
-
-<ul><li>structured requirement engineering</li><li>AI reasoning</li><li>semantic knowledge retrieval</li><li>repository governance</li><li>human-in-the-loop validation</li></ul>
-
-<p>The objective is to transform requirements from documents into a reasoning system.</p>
-
-<h3>Core Objectives</h3>
-
-<p>The BA-OS is designed to achieve four strategic outcomes.</p>
-
-<p>1. <strong>Speed</strong>: Accelerate requirement analysis and specification generation.<br>
-2. <strong>Quality</strong>: Reduce ambiguity, hidden assumptions, and requirement defects.<br>
-3. <strong>Knowledge Retention</strong>: Preserve domain knowledge across projects and time.<br>
-4. <strong>Reasoning</strong>: Enable AI to analyze, compare, and reason over requirements.</p>
-
-<h3>High-Level System Architecture</h3>
-
-<p>Stakeholder Input<br>
-↓<br>
-Elicitation Capture<br>
-↓<br>
-AI Requirement Extraction<br>
-↓<br>
-Context Retrieval (RAG)<br>
-↓<br>
-Requirement Structuring<br>
-↓<br>
-Specification Drafting<br>
-↓<br>
-AI Stress Testing<br>
-↓<br>
-Conflict &amp; Dependency Scan<br>
-↓<br>
-Repository Commit<br>
-↓<br>
-Embedding Pipeline<br>
-↓<br>
-Vector Knowledge Layer<br>
-↓<br>
-Impact Analysis &amp; Knowledge Reuse</p>
-
-<h3>Repository Architecture</h3>
-
-<p>`spec-repo/`</p>
-
-<ul><li>`01_raw_inputs/`: meeting_transcripts/, stakeholder_notes/</li><li>`02_analysis/`: requirement_extraction/, elicitation_questions/</li><li>`03_requirements/`: REQ-xxx.md</li><li>`04_specs/`: module_specs/</li><li>`05_data_models/`: DATA-xxx.md</li><li>`06_ui_flows/`: UIF-xxx.md</li><li>`07_decisions/`: DEC-xxx.md</li><li>`08_rules/`: RULE-xxx.md</li></ul>
-
-<h3>Artifact ID Convention</h3>
-
-<table><tbody><tr><th>Artifact</th><th>Prefix</th><th>Example</th></tr><tr><td><strong>Requirement</strong></td><td>REQ</td><td>REQ-142</td></tr><tr><td><strong>Data Entity</strong></td><td>DATA</td><td>DATA-INV-02</td></tr><tr><td><strong>UI Flow</strong></td><td>UIF</td><td>UIF-033</td></tr><tr><td><strong>Business Rule</strong></td><td>RULE</td><td>RULE-021</td></tr><tr><td><strong>Decision</strong></td><td>DEC</td><td>DEC-014</td></tr></tbody></table>
-
-<p><em>IDs enable full traceability.</em></p>
-
-<h3>Requirement Structure Standard</h3>
-
-<p>Each requirement is stored as an atomic node.</p>
-
-<p><strong>REQ-142</strong><br>
-Version: 1.1<br>
-Type: Business Rule</p>
-
-<p><strong>Context</strong><br>
-When creating shipment orders.</p>
-
-<p><strong>Rule</strong><br>
-Shipment must not be created if available_stock &lt; reserved_stock.</p>
-
-<p><strong>Entities</strong><br>
-Shipment, Inventory</p>
-
-<p><strong>Data Fields</strong><br>
-available_stock, reserved_stock</p>
-
-<p><strong>Dependencies</strong><br>
-Inventory Service</p>
-
-<p><strong>Related Artifacts</strong><br>
-UIF-033, DATA-INV-02</p>
-
-<h3>Requirement Versioning</h3>
-
-<p>Versioning must occur at the requirement level, not only document level.<br>
-Example: REQ-142 v1.0, REQ-142 v1.1, REQ-142 v2.0<br>
-Benefits: traceability, change reasoning, historical knowledge.</p>
-
-<h3>Stage 1 — Stakeholder Elicitation</h3>
-
-<p>Objective: Capture domain knowledge from stakeholders.<br>
-Input: meetings, workshops, process walkthroughs.<br>
-Output: Meeting transcripts or structured notes.</p>
-
-<h3>Stage 2 — AI Requirement Extraction</h3>
-
-<p><strong>Prompt Template</strong><br>
-Act as a senior business analyst. Analyze the following stakeholder conversation.<br>
-Tasks:</p>
-
-<p>1. Extract explicit requirements<br>
-2. Identify implicit assumptions<br>
-3. Detect ambiguities<br>
-4. Generate clarification questions<br>
-5. Detect possible requirement conflicts</p>
-
-<p>Output: Extracted Requirements, Assumptions, Ambiguities, Clarification Questions, Potential Conflicts.<br>
-<em>Human BA validates the result.</em></p>
-
-<h3>Stage 3 — Context Retrieval (RAG Layer)</h3>
-
-<p>Before analyzing new requirements, retrieve related knowledge.<br>
-Pipeline: `Draft Requirement` → `Vector Search` → `Retrieve Related Requirements` → `Attach Context to Prompt`.</p>
-
-<h3>Stage 4 — Requirement Structuring</h3>
-
-<p>Convert extracted requirements into structured format. Key components: context, rule, entities, data fields, dependencies. Structured requirements enable AI reasoning.</p>
-
-<h3>Stage 5 — Specification Drafting</h3>
-
-<p>Requirements are expanded into module specifications. Standard sections: Functional Requirements, Process Flow, Business Rules, Data Requirements, Integration Points, Exception Handling.</p>
-
-<h3>Stage 6 — Requirement Stress Testing</h3>
-
-<p>Before committing specifications, run AI stress tests. Prompt: Act as a system architect. Stress test the following requirements. Identify: ambiguities, missing edge cases, logical contradictions, data integrity risks, operational failure scenarios.</p>
-
-<h3>Stage 7 — Conflict Detection</h3>
-
-<p>Conflict detection occurs in three layers.</p>
-
-<p>1. <strong>Layer 1 — Semantic Similarity</strong>: Vector search finds similar requirements.<br>
-2. <strong>Layer 2 — Structural Filtering</strong>: Filter by entity, module, data fields.<br>
-3. <strong>Layer 3 — AI Reasoning</strong>: AI evaluates logical contradictions.</p>
-
-<h3>Stage 8 — Dependency Detection</h3>
-
-<p>Dependencies are identified between requirements, services, data entities, UI flows.<br>
-Example: REQ-142 `depends_on` Inventory Service.</p>
-
-<h3>Stage 9 — Repository Governance</h3>
-
-<p>Process: `BA review` → `AI validation` → `Lead BA approval` → `Repository commit`. Version history is automatically recorded.</p>
-
-<h3>Stage 10 — Embedding Pipeline</h3>
-
-<p>Each atomic requirement becomes an embedding. 1 requirement = 1 embedding.<br>
-Metadata example: requirement_id, version, module, entity, data_fields, status.</p>
-
-<h3>Stage 11 — Vector Knowledge Layer</h3>
-
-<p>Vector database enables semantic retrieval. Capabilities: similar requirement search, cross-spec comparison, knowledge reuse, dependency discovery.</p>
-
-<h3>Stage 12 — Impact Analysis</h3>
-
-<p>Requirement changes trigger impact detection. Pipeline: `Requirement change` → `Vector similarity search` → `Related requirement detection` → `AI reasoning` → `Impact report`.</p>
-
-<h3>Stage 13 — Decision Log</h3>
-
-<p>Architectural decisions are stored explicitly.<br>
-<strong>DEC-014</strong><br>
-<em>Context</em>: Inventory validation conflict discovered.<br>
-<em>Decision</em>: Shipment must validate reserved stock.<br>
-<em>Rationale</em>: Prevent overselling.<br>
-Decision logs preserve reasoning history.</p>
-
-<h3>Stage 14 — Knowledge Graph Layer (Future)</h3>
-
-<p>Requirements can form a graph structure.<br>
-Nodes: Requirement, Entity, Process, UI Flow, System.<br>
-Edges: depends_on, produces, consumes, conflicts_with.<br>
-Graph + vector search enables advanced reasoning.</p>
-
-<h3>BA Role Model</h3>
-
-<ul><li><strong>BA</strong>: stakeholder elicitation, requirement structuring, AI prompt orchestration, specification drafting.</li><li><strong>Senior BA</strong>: requirement quality control, conflict detection, dependency analysis, domain rule governance.</li><li><strong>Lead BA</strong>: repository governance, architecture decisions, AI workflow improvement, knowledge system maintenance.</li></ul>
-
-<h3>AI Layer Responsibilities</h3>
-
-<ul><li><strong>AI performs</strong>: requirement extraction, ambiguity detection, clarification generation, conflict detection, stress testing, impact analysis.</li><li><strong>Human BA performs</strong>: judgment, domain interpretation, decision making, governance.</li></ul>
-
-<h3>Spec Repository CI Pipeline</h3>
-
-<p>The spec repository behaves similarly to a code repository.<br>
-Pipeline: `Spec Commit` → `AI Requirement Stress Test` → `Conflict Scan` → `Dependency Detection` → `Impact Analysis` → `Approval`.</p>
-
-<h3>Prompt Library</h3>
-
-<ul><li><strong>Extraction Prompt</strong>: Extract requirements from conversation. Identify ambiguity and assumptions.</li><li><strong>Stress Test Prompt</strong>: Challenge requirement logic. Identify edge cases and operational failures.</li><li><strong>Conflict Detection Prompt</strong>: Compare two requirements. Determine whether they conflict logically.</li><li><strong>Impact Analysis Prompt</strong>: Analyze how requirement changes affect related modules.</li></ul>
-
-<h3>Long-Term Evolution</h3>
-
-<p>As the repository grows, the system becomes a Requirement Intelligence Platform. Capabilities evolve toward automated requirement reasoning, organizational domain memory, predictive dependency detection, AI-assisted architecture governance.</p>
-
-<h3>Final Principle</h3>
-
-<p>Requirements are not documents.<br>
-Requirements are structured knowledge.</p>
-
-<p><strong>Khi được cấu trúc đúng cách, chúng trở thành một hệ thống tri thức mà AI có thể reasoning trên đó.</strong></p>
+<p>Nếu AI có thể viết requirement tốt hơn mày.</p>
+<p><strong>&gt; Mày còn mang lại giá trị gì cho hệ thống?</strong></p>
+<h2>Bonus — Khi Requirement Trở Thành Hạ Tầng Tri Thức</h2>
+<p>Nếu mày đọc tới đây, có lẽ mày đã nhận ra một điều.</p>
+<p>Vấn đề của nghề BA không phải là viết requirement.</p>
+<p>Vấn đề là <strong>tri thức của hệ thống không nằm trong một hệ thống nào cả</strong>.</p>
+<p>Nó nằm rải rác:</p>
+<ul><li>trong document</li><li>trong diagram</li><li>trong meeting</li><li>trong code</li><li>trong đầu từng người</li></ul>
+<p>Muốn hiểu hệ thống, team phải <strong>ghép trí nhớ của nhiều người lại với nhau</strong>.</p>
+<p>Đó không phải knowledge system.</p>
+<p>Đó là <strong>tribal knowledge</strong>.</p>
+<h2>Software Có System Architecture — Nhưng Không Có Knowledge Architecture</h2>
+<p>Hầu hết hệ thống phần mềm có:</p>
+<ul><li>system architecture</li><li>data architecture</li><li>service architecture</li></ul>
+<p>Nhưng gần như không có thứ gọi là:</p>
+<p><strong>knowledge architecture</strong>.</p>
+<p>Tri thức của hệ thống thường tồn tại dưới dạng:</p>
+<ul><li>document</li><li>wiki page</li><li>diagram</li></ul>
+<p>Những thứ này chỉ là <strong>ảnh chụp của tri thức</strong>.</p>
+<p>Chúng không biết dependency. Chúng không biết impact. Chúng không biết logic quan hệ.</p>
+<p>Chúng chỉ là text.</p>
+<h2>AI Không Thể Reasoning Trên Document</h2>
+<p>AI rất giỏi đọc text.</p>
+<p>Nhưng AI <strong>không thể reasoning trên document</strong>.</p>
+<p>Document không có cấu trúc logic.</p>
+<p>Document không có relation.</p>
+<p>Document không có dependency graph.</p>
+<p>AI có thể tóm tắt document.</p>
+<p>Nhưng AI không thể <strong>hiểu hệ thống từ document</strong>.</p>
+<h2>Requirement Phải Trở Thành Knowledge Node</h2>
+<p>Muốn AI giúp BA thật sự, requirement phải tiến hóa.</p>
+<p>Requirement không thể chỉ là paragraph.</p>
+<p>Requirement phải trở thành <strong>knowledge node</strong>.</p>
+<p>Một requirement thực ra chứa nhiều loại tri thức:</p>
+<p>Context Rule Entity Data Dependency Process Decision</p>
+<p>Khi requirement được cấu trúc như vậy, nó trở thành <strong>machine-readable knowledge</strong>.</p>
+<h2>BA-OS Trong 12 Tháng Tới</h2>
+<p>BA-OS mới chỉ là <strong>hạ tầng tri thức</strong>.</p>
+<p>Trong 12 tháng tới hệ thống sẽ tiến hóa theo ba hướng.</p>
+<h3>Automatic Context Retrieval</h3>
+<div class="flow-diagram">
+<p>Draft Requirement</p>
+<p>↓</p>
+<p>Vector Retrieval</p>
+<p>↓</p>
+<p>Related Requirements</p>
+<p>↓</p>
+<p>Related Entities</p>
+<p>↓</p>
+<p>Related Decisions</p>
+<p>↓</p>
+<p>Context Injection</p>
+</div>
+<h3>Requirement Stress Engine</h3>
+<div class="flow-diagram">
+<p>Requirement</p>
+<p>↓</p>
+<p>Edge Case Simulation</p>
+<p>↓</p>
+<p>Invalid State Detection</p>
+<p>↓</p>
+<p>Race Condition Detection</p>
+<p>↓</p>
+<p>Integration Failure Simulation</p>
+</div>
+<h3>Autonomous Impact Reasoning</h3>
+<div class="flow-diagram">
+<p>Requirement Change</p>
+<p>↓</p>
+<p>Graph Traversal</p>
+<p>↓</p>
+<p>Dependency Propagation</p>
+<p>↓</p>
+<p>Impact Prediction</p>
+<p>↓</p>
+<p>Risk Report</p>
+</div>
+<p>Khi ba hệ thống này kết hợp:</p>
+<div class="flow-diagram">
+<p>BA creates requirement</p>
+<p>↓</p>
+<p>system retrieves context</p>
+<p>↓</p>
+<p>AI analyzes conflicts</p>
+<p>↓</p>
+<p>AI detects dependencies</p>
+<p>↓</p>
+<p>AI predicts impact</p>
+<p>↓</p>
+<p>BA makes decision</p>
+</div>
+<p>BA không còn là document writer.</p>
+<p>BA trở thành <strong>system decision architect</strong>.</p>
+<h2>BA-OS Blueprint</h2>
+<p>Mày đã đọc đến đây rồi, và nếu mày thuộc nhóm số ít thực sự hiểu và muốn build ra cái BA-OS của riêng mày</p>
+<p>Tao gửi dưới đây là bản blueprint của cái BA-OS mà tụi tao đã build và đang sử dụng</p>
+<p>Không quảng cáo, không marketing</p>
+<h3>AI-Native Business Analysis Operating System (Enterprise Edition)</h3>
+<p>BA-OS defines a <strong>complete operating system for Business Analysis</strong>.</p>
+<p>It integrates:</p>
+<ul><li>Requirement engineering</li><li>AI reasoning</li><li>Semantic knowledge retrieval</li><li>Governance &amp; traceability</li><li>CI-style validation pipelines</li></ul>
+<p>Goal:</p>
+<pre><code>Transform requirements from documents → into an organizational reasoning system.
+</code></pre>
+<h2>1. System Philosophy</h2>
+<p>BA-OS v3 is based on five principles.</p>
+<h3>1. Requirements are Knowledge Nodes</h3>
+<p>Each requirement is an <strong>atomic knowledge unit</strong>.</p>
+<pre><code>1 requirement
+=
+1 rule
+=
+1 reasoning node
+</code></pre>
+<h3>2. Traceability is Mandatory</h3>
+<p>Every artifact has an ID.</p>
+<pre><code>REQ-xxx   Requirement
+RULE-xxx  Business Rule
+DATA-xxx  Data Entity
+UIF-xxx   UI Flow
+DEC-xxx   Decision
+SPEC-xxx  Technical Spec
+</code></pre>
+<h3>3. AI is a Reasoning Engine</h3>
+<p>AI is not used for writing documents.</p>
+<p>AI is used for:</p>
+<pre><code>analysis
+conflict detection
+dependency discovery
+impact reasoning
+</code></pre>
+<h3>4. Human BA Owns Judgment</h3>
+<p>AI generates reasoning.</p>
+<p>BA governs correctness.</p>
+<h3>5. Repository is Organizational Memory</h3>
+<p>The spec repository becomes:</p>
+<pre><code>organizational knowledge system
+</code></pre>
+<h2>2. BA-OS Architecture</h2>
+<pre><code>Stakeholder Input
+        ↓
+Requirement Extraction
+        ↓
+Requirement Structuring
+        ↓
+Requirement Stress Testing
+        ↓
+Conflict Detection
+        ↓
+Dependency Detection
+        ↓
+Specification Creation
+        ↓
+Feature Aggregation
+        ↓
+SRS Generation
+        ↓
+Knowledge Embedding
+        ↓
+Vector Knowledge Retrieval
+        ↓
+Impact Analysis
+</code></pre>
+<h2>3. Repository Architecture</h2>
+<pre><code>BA-OS/
+
+Requirement/
+ ├─ Analysis/
+ ├─ Elicitation/
+ ├─ decision-logs/
+ └─ Final/
+
+Rules/
+ ├─ BusinessRules/
+ └─ DomainRules/
+
+specs/
+ ├─ active/
+ ├─ Feature/
+ └─ SRS/
+
+knowledge/
+ ├─ embeddings/
+ └─ graph/
+
+.cursor/
+ ├─ rules/
+ ├─ skills/
+ └─ commands/
+</code></pre>
+<h2>4. Requirement Structure Standard</h2>
+<p>Each requirement must follow the atomic template.</p>
+<pre><code>REQ-142
+Version: 1.1
+Type: Business Rule
+
+Context
+When creating shipment order.
+
+Rule
+Shipment must not be created if available_stock &lt; reserved_stock.
+
+Entities
+Shipment
+Inventory
+
+Fields
+available_stock
+reserved_stock
+
+Dependencies
+Inventory Service
+
+Related Artifacts
+DATA-INV-02
+UIF-033
+RULE-INV-07
+</code></pre>
+<h2>5. Workflow Stages</h2>
+<h2>Stage B1 — Requirement Pre-Analysis</h2>
+<h3>Objective</h3>
+<p>Transform raw stakeholder requirement into draft analysis.</p>
+<h4>Command</h4>
+<pre><code>/analyze-req
+</code></pre>
+<h4>Rule</h4>
+<pre><code>requirement-analysis.mdc
+</code></pre>
+<h4>Skill</h4>
+<pre><code>requirement-analysis
+</code></pre>
+<h4>Output</h4>
+<pre><code>Requirement/Analysis/REQ-XXX-Draft.md
+</code></pre>
+<h2>Stage B2 — Requirement Elicitation</h2>
+<p>Resolve ambiguity.</p>
+<h4>Commands</h4>
+<pre><code>/extract-open-questions
+/elicit-req
+</code></pre>
+<h4>Rule</h4>
+<pre><code>requirement-elicitation.mdc
+</code></pre>
+<h4>Skill</h4>
+<pre><code>requirement-elicitation
+</code></pre>
+<p>Loop until:</p>
+<pre><code>All questions resolved
+</code></pre>
+<h2>Stage B3 — Decision Logs</h2>
+<p>Record architectural decisions.</p>
+<h4>Command</h4>
+<pre><code>/create-decision-log
+</code></pre>
+<h4>Rule</h4>
+<pre><code>requirement-decision-log.mdc
+</code></pre>
+<h4>Output</h4>
+<pre><code>ADR-REQ-XXX-YY.md
+</code></pre>
+<p>Decision logs store:</p>
+<pre><code>context
+decision
+rationale
+impact
+</code></pre>
+<h2>Stage B4 — Final Requirement</h2>
+<p>Generate the official requirement.</p>
+<h4>Command</h4>
+<pre><code>/update-req-final
+</code></pre>
+<h4>Rule</h4>
+<pre><code>requirement-final-update.mdc
+</code></pre>
+<h4>Skill</h4>
+<pre><code>requirement-final-update
+</code></pre>
+<p>Output:</p>
+<pre><code>Requirement/Final/REQ-XXX.md
+</code></pre>
+<h2>Stage B4.5 — Requirement Stress Testing</h2>
+<p>This is a <strong>critical stage</strong>.</p>
+<p>AI attempts to break the requirement.</p>
+<h4>Command</h4>
+<pre><code>/req-stress
+</code></pre>
+<h4>Skill</h4>
+<pre><code>requirement-stress-test
+</code></pre>
+<p>AI analyzes:</p>
+<pre><code>edge cases
+invalid states
+race conditions
+data conflicts
+integration failures
+</code></pre>
+<p>Output:</p>
+<pre><code>Stress Report
+</code></pre>
+<h2>Stage B4.6 — Requirement Conflict Detection</h2>
+<p>Detect conflicting requirements.</p>
+<h4>Command</h4>
+<pre><code>/req-conflict
+</code></pre>
+<h4>Skill</h4>
+<pre><code>requirement-conflict-analysis
+</code></pre>
+<p>Pipeline:</p>
+<pre><code>vector similarity search
+↓
+structural filtering
+↓
+AI reasoning
+</code></pre>
+<p>Output:</p>
+<pre><code>Conflict Report
+</code></pre>
+<h2>Stage B4.7 — Dependency Detection</h2>
+<p>Identify hidden dependencies.</p>
+<h4>Command</h4>
+<pre><code>/req-dependency
+</code></pre>
+<p>AI analyzes:</p>
+<pre><code>shared entities
+shared data fields
+service dependency
+workflow dependency
+</code></pre>
+<h2>Stage B5 — Feature Specification</h2>
+<p>Generate implementation spec.</p>
+<h4>Command</h4>
+<pre><code>/specs type=feature
+</code></pre>
+<h4>Rule</h4>
+<pre><code>speckit-feature-spec.mdc
+</code></pre>
+<h4>Skill</h4>
+<pre><code>feature-spec-discovery
+</code></pre>
+<p>Output:</p>
+<pre><code>specs/active/[task-id]-spec.md
+</code></pre>
+<h2>Stage B6 — Sync Spec to Azure DevOps</h2>
+<h4>Command</h4>
+<pre><code>!sync-ado SPEC_PATH WORK_ITEM_ID
+</code></pre>
+<h4>Rule</h4>
+<pre><code>speckit-to-workitem-azure-devops-html.mdc
+</code></pre>
+<h4>Skill</h4>
+<pre><code>ado-workitem-sync
+</code></pre>
+<h2>Stage B7 — Feature Aggregator</h2>
+<p>Combine specs into business feature.</p>
+<h4>Command</h4>
+<pre><code>aggregate-specs
+</code></pre>
+<h4>Rule</h4>
+<pre><code>feature-aggregator.mdc
+</code></pre>
+<p>Output:</p>
+<pre><code>specs/Feature/[feature-name].feature.md
+</code></pre>
+<h2>Stage B8 — SRS Generation</h2>
+<h4>Command</h4>
+<pre><code>generate-srs
+</code></pre>
+<h4>Rule</h4>
+<pre><code>SRS-generator.mdc
+</code></pre>
+<p>Output:</p>
+<pre><code>specs/SRS/SRS_MD/*.md
+</code></pre>
+<h2>Stage B9 — SRS Export</h2>
+<h4>Command</h4>
+<pre><code>export-srs
+</code></pre>
+<h4>Rule</h4>
+<pre><code>SRS-exporter.mdc
+</code></pre>
+<p>Output:</p>
+<pre><code>specs/SRS/SRS_Exported/*.docx
+</code></pre>
+<h2>6. BA Command System (BA-CLI)</h2>
+<p>BA-OS uses a command interface.</p>
+<table>
+<thead>
+<tr><th>Command</th><th>Function</th></tr>
+</thead>
+<tbody>
+<tr><td>/analyze-req</td><td>requirement analysis</td></tr>
+<tr><td>/extract-open-questions</td><td>extract elicitation questions</td></tr>
+<tr><td>/elicit-req</td><td>analyze stakeholder answers</td></tr>
+<tr><td>/create-decision-log</td><td>create ADR</td></tr>
+<tr><td>/update-req-final</td><td>finalize requirement</td></tr>
+<tr><td>/req-stress</td><td>requirement stress testing</td></tr>
+<tr><td>/req-conflict</td><td>detect requirement conflict</td></tr>
+<tr><td>/req-dependency</td><td>detect dependencies</td></tr>
+<tr><td>/specs type=feature</td><td>generate feature spec</td></tr>
+<tr><td>!sync-ado</td><td>sync spec to ADO</td></tr>
+<tr><td>aggregate-specs</td><td>build feature aggregator</td></tr>
+<tr><td>generate-srs</td><td>generate SRS markdown</td></tr>
+<tr><td>export-srs</td><td>export SRS docx</td></tr>
+</tbody>
+</table>
+<h2>7. Skill System</h2>
+<p>Skills perform AI reasoning.</p>
+<pre><code>requirement-analysis
+requirement-analysis-export
+requirement-elicitation
+requirement-final-update
+requirement-stress-test
+requirement-conflict-analysis
+feature-spec-discovery
+ado-workitem-sync
+</code></pre>
+<h2>8. Rule System</h2>
+<p>Rules enforce structure.</p>
+<pre><code>requirement-analysis
+requirement-analysis-html-export
+requirement-elicitation
+requirement-decision-log
+requirement-final-update
+speckit-feature-spec
+speckit-to-workitem-azure-devops-html
+feature-aggregator
+SRS-generator
+SRS-exporter
+</code></pre>
+<h2>9. Vector Knowledge Layer</h2>
+<p>All requirements are embedded.</p>
+<pre><code>1 requirement
+=
+1 embedding
+</code></pre>
+<p>Metadata example:</p>
+<pre><code>requirement_id
+entity
+data_fields
+module
+version
+status
+</code></pre>
+<p>Vector search enables:</p>
+<pre><code>similar requirement search
+dependency detection
+conflict discovery
+knowledge reuse
+</code></pre>
+<h2>10. Knowledge Graph Layer</h2>
+<p>Requirements form a graph.</p>
+<p>Nodes:</p>
+<pre><code>Requirement
+Entity
+Process
+UI Flow
+System
+Decision
+</code></pre>
+<p>Edges:</p>
+<pre><code>depends_on
+produces
+consumes
+conflicts_with
+validates
+</code></pre>
+<p>Graph reasoning enables:</p>
+<pre><code>impact prediction
+dependency tracing
+system analysis
+</code></pre>
+<h2>11. CI Pipeline for Requirements</h2>
+<p>Spec repository behaves like code repository.</p>
+<p>Pipeline:</p>
+<pre><code>spec commit
+      ↓
+requirement stress test
+      ↓
+conflict detection
+      ↓
+dependency scan
+      ↓
+impact analysis
+      ↓
+approval
+</code></pre>
+<h2>12. BA Skill Model</h2>
+<h3>Layer 1 — Analysis</h3>
+<pre><code>elicitation
+requirement structuring
+business rule analysis
+</code></pre>
+<h3>Layer 2 — System Thinking</h3>
+<pre><code>domain modeling
+service boundaries
+dependency reasoning
+data integrity
+</code></pre>
+<h3>Layer 3 — AI Orchestration</h3>
+<pre><code>context engineering
+semantic retrieval
+prompt orchestration
+AI validation
+</code></pre>
+<h2>Final Principle</h2>
+<p>Requirements are not documents. <strong>Requirements are structured knowledge nodes in a reasoning system.</strong></p>
         </div>
 
+        <div class="kit-subscription-wrapper" style="border-top: 1px solid var(--border); padding-top: 40px;">
+            <script async data-uid="5312ad6631" src="https://dirty-reality.kit.com/5312ad6631/index.js"></script>
+        </div>
+        
     </article>
 
     <div class="related-posts">
@@ -654,11 +823,11 @@ Requirements are structured knowledge.</p>
             Recent in BA
         </div>
 
-                <a href="bat-su-that-khong-dung-nhip-la-mo-song-doanh-nghiep.html">BẬT SỰ THẬT KHÔNG ĐÚNG NHỊP LÀ MỔ SỐNG DOANH NGHIỆP</a><br>
+        <a href="bat-su-that-khong-dung-nhip-la-mo-song-doanh-nghiep.html">BẬT SỰ THẬT KHÔNG ĐÚNG NHỊP LÀ MỔ SỐNG DOANH NGHIỆP</a><br>
+        <a href="ipa-x-requirement-lifecycle-combat-framework-cho-senior-ba.html">IPA x Requirement Lifecycle: Combat Framework cho Senior BA</a><br>
         <a href="ba-khong-thieu-framework-ho-thieu-business-acument.html">BA Không Thiếu Framework. Họ Thiếu Business Acumen.</a><br>
         <a href="dung-dung-suong-mu-de-che-mot-viec-may-chua-hieu-ro.html">ĐỪNG DÙNG SƯƠNG MÙ ĐỂ CHE VIỆC MÀY CHƯA HIỂU RÕ</a><br>
-        <a href="ipa-x-requirement-lifecycle-combat-framework-cho-senior-ba.html">IPA x Requirement Lifecycle: Combat Framework cho Senior BA</a><br>
-        <a href="requirement-la-vu-khi-van-de-la-ai-dang-cam-no.html">REQUIREMENT LÀ VŨ KHÍ, VẤN ĐỀ LÀ AI ĐANG CẦM NÓ</a><br>
+        <a href="requirement-la-vu-khi-van-de-la-ai-dang-cam-no.html">REQUIREMENT LÀ VŨ KHÍ VẤN ĐỀ LÀ AI ĐANG CẦM NÓ</a>
 
     </div>
 

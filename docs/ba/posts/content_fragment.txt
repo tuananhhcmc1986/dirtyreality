@@ -1,0 +1,8 @@
+﻿python3.exe : Python was not found; run without arguments to install from the Microsoft Store, or disable this 
+shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+At C:\Users\Anh T. Phan\AppData\Local\Temp\ps-script-aa260edc-900b-47ac-aa68-50a765859b2a.ps1:75 char:33
++ ... tyReality"; & "C:\Users\Anh T. Phan\AppData\Local\Microsoft\WindowsAp ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Python was not ...cution aliases.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

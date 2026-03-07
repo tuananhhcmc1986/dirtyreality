@@ -309,6 +309,42 @@ body {
 }
 
 
+/* Flow diagram: vertical layout, arrow between lines, left-aligned, bordered.
+   Frame fits diagram content, not full blog width. */
+.article-content .flow-diagram {
+    display: inline-block;
+    width: fit-content;
+    max-width: 100%;
+    margin: 1em 0;
+    padding: 1em 1.25em;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--bg);
+}
+.article-content .flow-diagram p {
+    margin: 0.25em 0;
+    text-align: left;
+}
+
+/* Tables in article */
+.article-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+    font-size: 0.95em;
+}
+.article-content table th,
+.article-content table td {
+    border: 1px solid var(--border);
+    padding: 8px 12px;
+    text-align: left;
+}
+.article-content table th {
+    background: var(--border);
+    font-weight: 600;
+}
+
+
 /* =========================
    FOOTER
    ========================= */
