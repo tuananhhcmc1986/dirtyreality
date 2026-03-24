@@ -1,0 +1,345 @@
+**Your Production Plan Is a Lie**  
+  
+Tao nói thẳng.  
+  
+Phần lớn hệ thống MES ngoài kia không chết vì thiếu feature.  
+Nó chết vì một giả định ngu:  
+  
+Thực tế sẽ chạy theo kế hoạch.  
+  
+Plan trên hệ thống lúc nào cũng đẹp.  
+Công suất chuẩn.  
+Thời gian chuẩn.  
+Logic sạch.  
+  
+Nhưng mày bước xuống sàn đi.  
+Nó vỡ ngay từ phút đầu.  
+  
+⸻  
+  
+**Khi cái “đúng” của system đụng cái “đéo quan tâm” của reality**  
+  
+Tao vừa ngồi với một khách, bàn về auto allocate lệnh sản xuất.  
+  
+Nghe quen:  
+	•	Cân theo công suất máy  
+	•	Tối ưu theo thời gian chạy  
+	•	Nhét rule để “chuẩn”  
+  
+Một cái plan textbook.  
+  
+Rồi thực tế tát thẳng:  
+	•	Có lệnh gấp → mày phải lục cả đống bước để sửa  
+	•	Máy hư → đéo ai biết khi nào xong để mà update  
+	•	Ca đêm → đéo có ai ngồi đó nhập system cho mày  
+  
+System không sai.  
+  
+Nhưng reality thì đéo cần biết system đúng hay sai.  
+  
+⸻  
+  
+**The moment the system breaks**  
+  
+2 giờ sáng.  
+  
+Một lệnh gấp nhảy vào.  
+Máy A đang chạy dở.  
+Máy B vừa báo lỗi.  
+  
+Không có quản đốc.  
+Chỉ có một ông trưởng ca đứng đó.  
+  
+System của mày đang chờ:  
+	•	Update downtime  
+	•	Recalculate plan  
+	•	Re-allocate lệnh  
+  
+Ông trưởng ca thì đang nhìn dây chuyền.  
+  
+Ông có 2 lựa chọn:  
+	1.	Dừng lại, mở system, chỉnh cho đúng  
+	2.	Quyết luôn, chạy cái cần chạy, nhập sau  
+  
+Mày biết câu trả lời rồi.  
+  
+Không phải vì ông ấy lười.  
+Mà vì system của mày không được thiết kế cho khoảnh khắc đó.  
+  
+⸻  
+  
+**Mày đang solve sai bài toán**  
+  
+Đây không phải chuyện feature.  
+  
+Đây là chuyện mày hiểu sai thế giới.  
+  
+System của mày assume:  
+	•	Plan là ổn định  
+	•	Data là đầy đủ  
+	•	Con người sẽ follow system  
+  
+Thực tế:  
+	•	Plan chỉ là đoán  
+	•	Data luôn thiếu và trễ  
+	•	Con người xử lý tại chỗ  
+  
+Mày đang cố control execution.  
+  
+Trong khi execution là thứ không control được.  
+  
+⸻  
+  
+**Càng thêm rule, càng chết nhanh**  
+  
+Giải pháp quen thuộc:  
+  
+Thêm rule.  
+  
+Chặt hơn.  
+Thông minh hơn.  
+Tự động hơn.  
+  
+Đổi lại:  
+	•	Override khó hơn  
+	•	Thao tác nặng hơn  
+	•	User bắt đầu né system  
+  
+Đến một lúc:  
+  
+Người ta làm xong rồi mới nhập.  
+Hoặc đéo nhập luôn.  
+  
+Nếu system bắt con người phải dừng lại để phục vụ nó,  
+thì mày không build tool.  
+  
+Mày build bottleneck.  
+  
+⸻  
+  
+**Every design is a trade-off**  
+  
+Không có system nào vừa:  
+	•	Tối ưu tuyệt đối  
+	•	Linh hoạt tuyệt đối  
+	•	Kiểm soát tuyệt đối  
+  
+Mày phải chọn.  
+  
+⸻  
+  
+**What we chose to sacrifice**  
+  
+Tao nói luôn.  
+  
+Bọn tao không cố:  
+	•	Giữ plan luôn đúng  
+	•	Re-plan realtime mọi thứ  
+	•	Control từng bước execution  
+  
+Bọn tao chấp nhận mất:  
+	•	“Độ đúng” tuyệt đối của plan  
+	•	Cảm giác control realtime  
+	•	Một phần consistency ban đầu  
+  
+⸻  
+  
+**Đổi lại, bọn tao lấy được gì**  
+	•	Execution không bị block  
+	•	Người vận hành không phải chờ system  
+	•	Reality được ghi nhận đúng như nó xảy ra  
+  
+Và có một thứ ít ai nói:  
+  
+Khi mày ép system luôn đúng,  
+mày đang ép con người phải giả vờ không sai.  
+  
+Kết quả:  
+	•	Data được nhập cho “đẹp”  
+	•	Lỗi bị che  
+	•	Hoặc system bị bỏ luôn  
+  
+Cho phép lệch — nhưng có kiểm soát —  
+không làm con người “thoải mái” hơn.  
+  
+Nó làm data trung thực hơn.  
+  
+⸻  
+  
+**Từ control sang capture**  
+  
+Mày không cần system kiểm soát reality.  
+  
+Mày cần system hiểu reality.  
+  
+Model cũ:  
+	•	System tạo plan  
+	•	User phải follow  
+	•	Lệch = lỗi  
+  
+Model này chết trên sàn.  
+  
+Model bọn tao chọn:  
+	•	System gợi ý plan  
+	•	User hành động theo thực tế  
+	•	Lệch = tín hiệu  
+  
+Không ép reality fit system.  
+Mà để system đọc được reality.  
+  
+⸻  
+  
+**Execution trước, system theo sau**  
+  
+Cách làm rất đơn giản:  
+	•	Bình thường → system tự sinh form theo plan  
+	•	Có biến → trưởng ca override ngay tại chỗ  
+  
+Flow:  
+	•	Chọn lệnh  
+	•	Chọn form (máy / công đoạn)  
+	•	Xác nhận  
+  
+Dưới 15 giây.  
+  
+Không re-plan.  
+Không lòng vòng.  
+Không cản việc.  
+  
+Con người làm trước.  
+System theo sau.  
+  
+⸻  
+  
+**Nhưng đừng ngu — linh hoạt mà không kiểm soát là tự sát**  
+  
+Cho user tự do không phải design.  
+  
+Đó là bỏ cuộc.  
+  
+Nếu ai cũng override:  
+	•	Sai machine  
+	•	Sai công đoạn  
+	•	Duplicate  
+	•	Data loạn  
+  
+→ Mày mất trust vào system.  
+  
+⸻  
+  
+**Control — nhưng đúng chỗ**  
+	•	Operator  
+→ Làm theo form system  
+	•	Trưởng ca  
+→ Override  
+→ Nhưng chỉ trong ca của nó  
+	•	Quản đốc  
+→ Duyệt  
+→ Chịu trách nhiệm  
+  
+⸻  
+  
+**Form cũng phải phân loại**  
+	•	Form system sinh → đi thẳng execution  
+	•	Form tạo tay → phải qua:  
+	•	Pending  
+	•	Review  
+	•	Approved / Rejected  
+  
+Chưa duyệt → chưa phải sự thật.  
+Duyệt rồi → mới được tính.  
+  
+⸻  
+  
+**Và bắt buộc phải có lý do**  
+  
+Không có chuyện override cho tiện.  
+  
+Mọi deviation phải có context:  
+	•	Máy hư  
+	•	Lệnh gấp  
+	•	Thiếu nguyên liệu  
+  
+Phần lớn system chỉ ghi nhận “cái gì đã xảy ra”.  
+  
+Nhưng thứ mày cần là:  
+  
+Tại sao nó xảy ra.  
+  
+Reason code không phải để làm đẹp báo cáo.  
+  
+Nó là thứ duy nhất giúp mày phân biệt:  
+	•	System đang thích nghi  
+	•	Hay system đang mất kiểm soát  
+  
+Sau này mày muốn optimize hay automate lại,  
+đây là thứ duy nhất đáng tin.  
+  
+⸻  
+  
+**Nghe cho rõ**  
+  
+Flexibility without control creates noise.  
+Control without flexibility kills execution.  
+  
+⸻  
+  
+**Plan và Reality — đừng cố làm chúng giống nhau**  
+  
+Plan là giả định.  
+Reality là thứ xảy ra.  
+  
+Mày cần cả hai:  
+	•	Một bảng kế hoạch  
+	•	Một bảng thực tế  
+  
+Đừng ép chúng giống nhau.  
+  
+Đặt chúng cạnh nhau.  
+Nhìn vào khoảng lệch.  
+  
+Khoảng lệch đó mới đáng tiền.  
+  
+⸻  
+  
+**Deviation — thứ mày nên nhìn, không phải xoá**  
+  
+Deviation không xấu.  
+	•	Ít → ổn  
+	•	Có lý do → thích nghi  
+	•	Nhiều + random → có vấn đề  
+  
+Thứ nguy hiểm không phải deviation.  
+  
+Mà là:  
+  
+Mày không biết vì sao nó xảy ra.  
+  
+⸻  
+  
+**Vai trò thực sự của MES**  
+  
+Một hệ thống MES tốt không đảm bảo plan được thực hiện.  
+  
+Nó làm một việc khó hơn:  
+	•	Ghi nhận reality  
+	•	Soi lệch  
+	•	Giải thích nguyên nhân  
+  
+Plan hoàn hảo thì dễ vẽ.  
+Reality lộn xộn thì luôn tồn tại.  
+  
+Mày không loại bỏ được nó.  
+  
+Nhưng mày có thể:  
+  
+Nhìn thấy nó.  
+Hiểu nó.  
+Và học từ nó.  
+  
+⸻  
+  
+A good MES does not enforce the plan.  
+It reveals why the plan fails.  
+  
+⸻
