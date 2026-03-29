@@ -107,8 +107,38 @@ toggle theme
 Also ensure:
 - `nav-back` element present
 - `style.css` reference present
-- ConvertKit subscription script present after `{{CONTENT}}`:
+- Google Sheets subscription form present after `{{CONTENT}}`:
   ```html
-  <script async data-uid="5312ad6631" src="https://dirty-reality.kit.com/5312ad6631/index.js"></script>
+  <div class="subscribe-wrapper" style="border-top: 1px solid var(--border); padding-top: 40px;">
+      <div class="subscribe-label">NHẬN BÀI MỚI QUA EMAIL</div>
+      <form class="subscribe-form" onsubmit="handleSubscribe(event)">
+          <input type="email" class="subscribe-input" placeholder="email@example.com" required>
+          <button type="submit" class="subscribe-btn">Đăng ký</button>
+      </form>
+      <div class="subscribe-msg"></div>
+  </div>
+
+  <script>
+  function handleSubscribe(e) {
+    e.preventDefault();
+    var form = e.target;
+    var email = form.querySelector('input').value;
+    var msg = form.parentElement.querySelector('.subscribe-msg');
+    var btn = form.querySelector('button');
+    btn.disabled = true;
+    btn.textContent = '...';
+    var url = 'https://script.google.com/macros/s/AKfycbxMbWXIe56bCpGt3oywPv_6NU8FH-UkMgkHbut3fxvneMF905yT4fKP9JLSlygbofNIhA/exec?email=' + encodeURIComponent(email) + '&source=dirtyreality.net';
+    fetch(url, { mode: 'no-cors' })
+      .then(function() {
+        form.style.display = 'none';
+        msg.textContent = 'Đã đăng ký! Cảm ơn bạn.';
+      })
+      .catch(function() {
+        btn.disabled = false;
+        btn.textContent = 'Đăng ký';
+        msg.textContent = 'Có lỗi, thử lại nhé.';
+      });
+  }
+  </script>
   ```
 - No duplicate script or toggle elements

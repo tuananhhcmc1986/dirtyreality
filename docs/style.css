@@ -1115,22 +1115,56 @@ html {
 }
 
 /* =========================
-   KIT SUBSCRIPTION BOX FIX
+   SUBSCRIBE FORM
    ========================= */
 
-   .kit-subscription-wrapper {
+.subscribe-wrapper {
     margin-top: 24px;
     margin-bottom: 40px;
-    min-height: 150px; /* Tránh giật trang khi script load */
 }
 
-/* Đảm bảo form hiển thị tốt trên nền tối */
-[data-theme="dark"] .formkit-form {
-    background: var(--bg) !important;
-    border-color: var(--border) !important;
+.subscribe-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    color: var(--subtext);
+    margin-bottom: 16px;
 }
 
-[data-theme="dark"] .formkit-header, 
-[data-theme="dark"] .formkit-subheader {
-    color: var(--text) !important;
+.subscribe-form {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.subscribe-input {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px 14px;
+    border: 1px solid var(--border);
+    background: var(--bg);
+    color: var(--text);
+    font-family: inherit;
+    font-size: 0.9rem;
+}
+
+.subscribe-btn {
+    padding: 10px 20px;
+    background: var(--text);
+    color: var(--bg);
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.subscribe-btn:hover { opacity: 0.8; }
+.subscribe-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.subscribe-msg {
+    font-size: 0.9rem;
+    color: var(--subtext);
+    margin-top: 12px;
+    min-height: 1.2em;
 }
