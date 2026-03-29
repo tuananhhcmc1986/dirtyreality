@@ -69,9 +69,9 @@ Edit `feed.xml`, insert inside `<channel>` after `<lastBuildDate>`:
 ```xml
 <item>
     <title>{{TITLE}}</title>
-    <link>https://yourdomain.com/dirtyreality/{{CATEGORY}}/posts/{{SLUG}}.html</link>
+    <link>https://dirtyreality.net/{{CATEGORY}}/posts/{{SLUG}}.html</link>
     <pubDate>{{DATE_RSS_FORMAT}}</pubDate>
-    <guid>https://yourdomain.com/dirtyreality/{{CATEGORY}}/posts/{{SLUG}}.html</guid>
+    <guid>https://dirtyreality.net/{{CATEGORY}}/posts/{{SLUG}}.html</guid>
     <description>Bài viết mới nhất trong chuyên mục {{CATEGORY}}</description>
 </item>
 ```
@@ -96,7 +96,7 @@ curl -s "https://script.google.com/macros/s/AKfycbxMbWXIe56bCpGt3oywPv_6NU8FH-Uk
 ## Constraints
 
 - Do NOT modify other files
-- Final URL must work at: `/dirtyreality/<category>/posts/<slug>.html`
+- Final URL must work at: `https://dirtyreality.net/<category>/posts/<slug>.html`
 
 ## Republish Mode
 
