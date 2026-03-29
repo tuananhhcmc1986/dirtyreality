@@ -531,13 +531,12 @@ Nó cần kỷ luật.</strong></p>
             <p>Sự thật không giết tổ chức.<br>
 Thiếu năng lực dẫn dắt mới làm điều đó.</p>
         </div>
-
-    
+        
         <div class="subscribe-wrapper" style="border-top: 1px solid var(--border); padding-top: 40px;">
-            <div class="subscribe-label">NHáº¬N BÃ€I Má»šI QUA EMAIL</div>
+            <div class="subscribe-label">NHẬN BÀI MỚI QUA EMAIL</div>
             <form class="subscribe-form" onsubmit="handleSubscribe(event)">
                 <input type="email" class="subscribe-input" placeholder="email@example.com" required>
-                <button type="submit" class="subscribe-btn">ÄÄƒng kÃ½</button>
+                <button type="submit" class="subscribe-btn">Đăng ký</button>
             </form>
             <div class="subscribe-msg"></div>
         </div>
@@ -555,12 +554,12 @@ Thiếu năng lực dẫn dắt mới làm điều đó.</p>
           fetch(url, { mode: 'no-cors' })
             .then(function() {
               form.style.display = 'none';
-              msg.textContent = 'ÄÃ£ Ä‘Äƒng kÃ½! Cáº£m Æ¡n báº¡n.';
+              msg.textContent = 'Đã đăng ký! Cảm ơn bạn.';
             })
             .catch(function() {
               btn.disabled = false;
-              btn.textContent = 'ÄÄƒng kÃ½';
-              msg.textContent = 'CÃ³ lá»—i, thá»­ láº¡i nhÃ©.';
+              btn.textContent = 'Đăng ký';
+              msg.textContent = 'Có lỗi, thử lại nhé.';
             });
         }
         </script>
