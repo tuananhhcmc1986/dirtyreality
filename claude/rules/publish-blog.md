@@ -78,6 +78,21 @@ Edit `feed.xml`, insert inside `<channel>` after `<lastBuildDate>`:
 
 Limit feed to latest 10 items.
 
+**7. Notify subscribers via email**
+
+Extract sapo from the markdown draft: take the first non-empty paragraph — the first block of text that is not a heading (does not start with `#`) and not a separator (`---`). Strip any markdown formatting (bold `**`, italic `*`, etc.) to get plain text.
+
+Then call the notification endpoint using Bash:
+
+```bash
+curl -s "https://script.google.com/macros/s/AKfycbxMbWXIe56bCpGt3oywPv_6NU8FH-UkMgkHbut3fxvneMF905yT4fKP9JLSlygbofNIhA/exec?action=notify&secret=dirtyrealitysgnngsytilaerytrid14061986&title={{URL_ENCODED_TITLE}}&url={{URL_ENCODED_POST_URL}}&sapo={{URL_ENCODED_SAPO}}"
+```
+
+- Post URL format: `https://dirtyreality.net/{{CATEGORY}}/posts/{{SLUG}}.html`
+- URL-encode all three params (title, url, sapo) before inserting into the curl command
+- Run the curl command using the Bash tool
+- This sends email to all subscribers recorded in the Google Sheet
+
 ## Constraints
 
 - Do NOT modify other files

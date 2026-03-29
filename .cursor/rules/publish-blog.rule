@@ -261,7 +261,31 @@ If missing during "REPUBLISH TEMPLATE UPGRADE MODE", re-inject it.
 
 
 
-STEP 18 — UPDATE RSS FEED
+STEP 18 — NOTIFY SUBSCRIBERS VIA EMAIL
+
+After publishing the post and updating the RSS feed:
+
+1. Extract sapo from the markdown draft:
+   - Take the first non-empty paragraph
+   - Skip lines that start with # (headings) or --- (separators)
+   - Strip markdown formatting (**, *, etc.) to plain text
+
+2. Call the notification endpoint using Bash curl:
+
+curl -s "https://script.google.com/macros/s/AKfycbxMbWXIe56bCpGt3oywPv_6NU8FH-UkMgkHbut3fxvneMF905yT4fKP9JLSlygbofNIhA/exec?action=notify&secret=dirtyrealitysgnngsytilaerytrid14061986&title={{URL_ENCODED_TITLE}}&url={{URL_ENCODED_POST_URL}}&sapo={{URL_ENCODED_SAPO}}"
+
+Post URL format:
+https://dirtyreality.net/{{CATEGORY}}/posts/{{SLUG}}.html
+
+Rules:
+- URL-encode all params before inserting into the curl command
+- Run using the Bash tool
+- Do NOT skip this step when publishing a new post
+- Skip this step only in Republish Mode (re-publishing an existing post)
+
+
+
+STEP 19 — UPDATE RSS FEED
 
 Edit file: 
 feed.xml
