@@ -38,12 +38,17 @@ Each paragraph → `<p>...</p>`
 - Format: `<a href="slug.html">Title</a>`
 
 **3. Apply template**
+
+First, extract the **sapo** from the markdown draft: take the first non-empty paragraph that is not a heading (does not start with `#`) and not a separator (`---`). Strip markdown formatting (`**`, `*`, etc.) to get plain text. This value is used as `{{DESCRIPTION}}` and reused in Step 7.
+
 Use `templates/post-template.html`, replace:
 - `{{TITLE}}`
 - `{{DATE}}`
 - `{{CATEGORY}}`
 - `{{CONTENT}}`
 - `{{RELATED_POSTS}}`
+- `{{DESCRIPTION}}` — the sapo extracted above (plain text, no markdown)
+- `{{SLUG}}` — the slug computed from the filename (e.g. `mes-khong-that-bai-vi-cong-nghe`)
 
 **4. Save file**
 `docs/<category>/posts/<slug>.html`
@@ -80,7 +85,7 @@ Limit feed to latest 10 items.
 
 **7. Notify subscribers via email**
 
-Extract sapo from the markdown draft: take the first non-empty paragraph — the first block of text that is not a heading (does not start with `#`) and not a separator (`---`). Strip any markdown formatting (bold `**`, italic `*`, etc.) to get plain text.
+Use the sapo already extracted in Step 3 as `{{DESCRIPTION}}`.
 
 Then call the notification endpoint using Bash:
 
