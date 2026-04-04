@@ -1,0 +1,438 @@
+# DMS & Trade Marketing: The System That Rewrites Reality
+
+## Mày không bị sales lách hệ thống — mày đang dùng sai hệ thống
+
+Doanh nghiệp luôn bắt đầu với một giả định rất “logic”:
+
+Sales lách hệ thống.  
+Nên cần siết hệ thống.
+
+Thế là họ thêm rule.  
+Thêm approval.  
+Thêm control.  
+Thêm dashboard.
+
+Một thời gian sau, một thứ rất lạ bắt đầu xuất hiện.
+
+Data ngày càng đẹp.  
+Thị trường ngày càng khó hiểu.
+
+Lúc này, mọi người bắt đầu đổ lỗi.
+
+Cho execution.  
+Cho con người.  
+Cho việc “không tuân thủ”.
+
+Nhưng vấn đề không nằm ở đó.
+
+Vấn đề là hệ thống của mày không model được thực tế.
+
+Đây không phải câu chuyện compliance.
+
+Đây là xung đột giữa hai thế giới.
+
+Headquarter muốn control bằng số.  
+Field vận hành bằng deal.
+
+DMS đứng ở giữa.
+
+Và nó buộc phải chọn một phiên bản của sự thật để ghi lại.
+
+---
+
+## Deal ngoài thị trường — thứ hệ thống không bao giờ hiểu hết
+
+Giá list là 100.  
+DMS ghi discount 10%.  
+Giá còn 90.
+
+Nhìn vào màn hình, mọi thứ rất rõ.
+
+Nhưng ngoài thị trường, một deal “bình thường” không bao giờ đơn giản như vậy.
+
+Nếu đạt sản lượng → thêm 5%.  
+Nếu trưng bày đẹp → thêm 3%.  
+Có thể support riêng → thêm 2%.  
+Hàng bán chậm → cho đổi.  
+Tháng này khó → “để tháng sau xử lý”.
+
+Bây giờ hỏi một câu rất đơn giản.
+
+Giá thật là bao nhiêu?
+
+Không có câu trả lời.
+
+Vì giá thật không phải là một con số.
+
+Nó là một cam kết kéo dài theo thời gian.  
+Phụ thuộc vào những hành vi… chưa xảy ra.
+
+DMS ghi invoice price.
+
+Nhưng thứ làm hàng chạy là một thứ khác.
+
+Một loại shadow price.
+
+Được tạo ra từ quan hệ.  
+Từ linh hoạt.  
+Từ những lời hứa không nằm trong bất kỳ field nào.
+
+Trade discount không phải pricing.
+
+Nó là currency của negotiation.
+
+---
+
+## Không có “một sự thật” — chỉ có nhiều sự thật va vào nhau
+
+Sales nhìn vào deal và thấy cơ hội đạt số.
+
+Distributor nhìn vào đó và tính margin thật.
+
+Brand nhìn dashboard và cần một con số đẹp.
+
+Retailer chỉ quan tâm một thứ:
+
+bán được hay không.
+
+Mỗi bên đều đúng.
+
+Theo logic của họ.
+
+Nhưng những “sự thật” đó không giống nhau.
+
+Thứ tồn tại ngoài thị trường không phải single source of truth.
+
+Nó là một trạng thái cân bằng tạm thời  
+giữa nhiều sự thật đang mâu thuẫn.
+
+DMS, bằng thiết kế của nó, buộc phải chọn một version.
+
+Và nó luôn chọn version dễ đo nhất.
+
+---
+
+## Khi thực tế bị buộc phải nói ngôn ngữ của hệ thống
+
+Vấn đề không phải hệ thống sai.
+
+Vấn đề là hệ thống và thực tế nói hai ngôn ngữ khác nhau.
+
+Hệ thống nói bằng transaction.  
+Thực tế vận hành bằng negotiation.
+
+Khi hai thứ này gặp nhau, một điều luôn xảy ra.
+
+Thực tế sẽ bị “dịch” lại.
+
+Không phải bằng cách phá rule.
+
+Mà bằng cách đi vòng quanh nó.
+
+---
+
+## Cách thực tế chui vào hệ thống — không ồn ào, nhưng rất hiệu quả
+
+Cuối tháng.
+
+Ngày 28–30.
+
+Một sales còn thiếu số.
+
+Anh ta gọi distributor:
+
+“Anh lấy thêm đi, tháng sau em xử lý.”
+
+Đơn hàng được đẩy xuống.  
+DMS ghi nhận doanh số tăng.  
+KPI đạt.
+
+Một tháng sau?
+
+Distributor trả hàng.  
+Hoặc đơn giản là ngừng nhập.
+
+Hệ thống ghi một điểm.
+
+Thực tế là một vòng đời.
+
+Có mở.  
+Có đóng.
+
+---
+
+Một chương trình chiết khấu:
+
+100 thùng → 10%.  
+50 thùng → 5%.
+
+Sales không phá rule.
+
+Họ chỉ chơi với cấu trúc.
+
+Tách đơn.  
+Gộp đơn.  
+Sắp xếp lại.
+
+System thấy order hợp lệ.
+
+Nhưng intent đã bị bẻ cong hoàn toàn.
+
+---
+
+Một chương trình trưng bày yêu cầu đủ POSM.
+
+Sales setup đủ.  
+Chụp hình.  
+Upload.
+
+Rồi dọn.
+
+DMS ghi:
+
+“Execution completed.”
+
+Nếu mày nhìn data, mọi thứ hoàn hảo.
+
+Nếu mày quay lại cửa hàng 2 tiếng sau?
+
+Không còn gì.
+
+Hệ thống đo snapshot.
+
+Thị trường vận hành bằng hành vi kéo dài.
+
+---
+
+Có những deal không bao giờ đi vào DMS.
+
+Distributor nói margin không đủ.
+
+Sales trả lời:
+
+“Anh cứ lấy đi, em support riêng.”
+
+“Support riêng” không có field.
+
+Nó nằm ở cuộc gọi.  
+Tin nhắn.  
+Mối quan hệ.
+
+DMS chỉ ghi cái nó thấy.
+
+Phần làm deal xảy ra — nằm ngoài hệ thống.
+
+---
+
+Và rồi có những deal được “rửa”.
+
+Một deal phức tạp:
+
+chiết khấu + hỗ trợ + cam kết đổi trả
+
+→ được map thành:
+
+một ít discount  
+một ít promotion  
+một ít adjustment  
+
+Nhìn vào hệ thống, mọi thứ hợp lệ.
+
+Nhưng thứ mày thấy không phải deal.
+
+Nó là một phiên bản đã được dịch.
+
+Đủ sạch để hệ thống chấp nhận.
+
+---
+
+## Vấn đề không phải hành vi — mà là cách mày hiểu data
+
+Sau tất cả, doanh nghiệp vẫn tin:
+
+data phản ánh thực tế.
+
+Không.
+
+Data chỉ phản ánh những gì hệ thống cho phép tồn tại.
+
+Không có field cho “support riêng”?
+
+Data sẽ không có nó.
+
+Không phải vì nó không tồn tại.
+
+Mà vì nó không được phép tồn tại.
+
+Rule không tạo ra control.
+
+Rule chỉ tạo ra một biên giới rõ ràng  
+để mọi người tối ưu xung quanh.
+
+Càng nhiều rule → càng nhiều workaround.
+
+User dùng hệ thống không có nghĩa là họ tin nó.
+
+Phần lớn chỉ là compliance.
+
+Nhập đủ.  
+Đúng format.  
+Để không bị lỗi.
+
+Nguy hiểm nhất là khi tất cả những thứ này được dùng để forecast.
+
+Một forecast build trên:
+
+push cuối tháng  
+return  
+deal ẩn  
+
+không phải là dự báo.
+
+Nó là một cách rất tự tin  
+để lặp lại sai lầm.
+
+---
+
+## Sai lầm thật sự — system nói bằng scheme, sales bán bằng deal
+
+DMS tách promotion thành scheme.
+
+Không sai.
+
+Nó cần làm vậy để xử lý dữ liệu.
+
+Nhưng nó dừng ở đó.
+
+Sales không bán scheme.
+
+Họ không nói:
+
+“Anh được scheme A + B – C.”
+
+Họ nói:
+
+“Anh lấy gói này, margin khoảng 15%, em lo hết.”
+
+Đó là deal.
+
+Một thực thể hoàn chỉnh.
+
+DMS chỉ thấy mảnh rời.
+
+Sai lầm không nằm ở việc tách.
+
+Sai lầm là không ghép lại.
+
+---
+
+## Nếu build đúng, DMS phải nhìn thấy deal
+
+Hãy tưởng tượng một màn hình.
+
+Sales build deal như ngoài đời.
+
+Chọn:
+
+discount từ scheme A  
+rebate từ scheme B  
+thêm manual support  
+thêm điều kiện đổi trả  
+
+Hệ thống trả về:
+
+effective margin.
+
+Không phải từng mảnh.
+
+Mà là toàn bộ bức tranh.
+
+Bên dưới, system vẫn lưu component.
+
+Nhưng với người dùng, nó là một deal.
+
+Đó là cách đưa reality vào system.
+
+Thay vì ép reality phải bẻ cong.
+
+---
+
+## Đừng chặn hành vi — hãy làm nó lộ ra
+
+Đừng block deal.
+
+Hãy làm nó visible.
+
+Một đơn hàng bất thường ngày 29?
+
+Đừng chặn.
+
+Gắn nhãn:
+
+“High likelihood of return next cycle.”
+
+Distributor có 40% doanh số dồn 3 ngày cuối tháng?
+
+Không phải lỗi.
+
+Đó là pattern.
+
+System tốt không cố ngăn mọi thứ sai.
+
+Nó làm cho thứ “lệch” trở nên rõ.
+
+---
+
+## Nếu không cho data “bẩn” vào — nó sẽ sống bên ngoài
+
+Không có chỗ cho exception?
+
+Exception không biến mất.
+
+Nó chuyển sang:
+
+tin nhắn  
+Excel  
+trí nhớ  
+
+Kết quả:
+
+System sạch.  
+Nhưng mù.
+
+Cho phép:
+
+manual support  
+override có trace  
+
+không làm hệ thống yếu đi.
+
+Nó là cách duy nhất để hệ thống thấy được thực tế.
+
+---
+
+## Cuối cùng — mọi thứ vẫn quay về incentive
+
+Mày có thể build system tốt hơn.
+
+Visualize tốt hơn.
+
+Detect pattern tốt hơn.
+
+Nhưng nếu thưởng vẫn dựa trên sell-in ngắn hạn,
+
+thì push cuối tháng sẽ không biến mất.
+
+System không sửa được hành vi.
+
+Incentive mới sửa được hành vi.
+
+---
+
+## DMS không phản ánh thực tế — nó lọc thực tế
+
+DMS không phải gương.
+
+Nó là filter.
+
+Và sales là những người hiểu rõ cách chỉnh filter đó nhất.
