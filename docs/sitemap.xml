@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://dirtyreality.net/</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- About -->
+  <url>
+    <loc>https://dirtyreality.net/about.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Category indexes -->
+  <url>
+    <loc>https://dirtyreality.net/mes/</loc>
+    <lastmod>2026-03-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://dirtyreality.net/dms/</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://dirtyreality.net/ba/</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://dirtyreality.net/linh-tinh/</loc>
+    <lastmod>2026-03-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- MES posts -->
+  <url>
+    <loc>https://dirtyreality.net/mes/posts/mes-khong-that-bai-vi-cong-nghe.html</loc>
+    <lastmod>2026-02-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dirtyreality.net/mes/posts/mes-se-bi-be-cong.html</loc>
+    <lastmod>2026-02-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dirtyreality.net/mes/posts/your-production-plan-is-a-lie.html</loc>
+    <lastmod>2026-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dirtyreality.net/mes/posts/top-5-cach-truong-ca-quan-doc-qua-mat-mes.html</loc>
+    <lastmod>2026-02-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dirtyreality.net/mes/posts/so-lieu-khong-biet-noi-doi-nhung-nguoi-giu-so-lieu-thi-biet.html</loc>
+    <lastmod>2026-02-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dirtyreality.net/mes/posts/cmms-trong-nha-may-cu.html</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dirtyreality.net/mes/posts/kho-khong-ban-nguoi-dung-tren-kho-moi-can-soi-lai.html</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- DMS posts -->
+  <url>
+    <loc>https://dirtyreality.net/dms/posts/dms-va-trade-marketing-the-system-that-rewrite-reality.html</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dirtyreality.net/dms/posts/he-thong-phan-phoi-nay-khong-bi-hong-no-duoc-thiet-ke-de-trong-nhu-dang-tang-truong.html</loc>
+    <lastmod>2026-02-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- BA posts -->
+  <url>
+    <loc>https://dirtyreality.net/ba/posts/requirement-la-vu-khi-van-de-la-ai-dang-cam-no.html</loc>
+    <lastmod>2026-02-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dirtyreality.net/ba/posts/elicitation-khong-that-bai-vi-stakeholders-no-that-bai-vi-ba.html</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dirtyreality.net/ba/posts/artifact-trong-elicitation-cang-dep-kha-nang-cao-no-cang-vo-dung.html</loc>
+    <lastmod>2026-02-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dirtyreality.net/ba/posts/ba-khong-thieu-framework-ho-thieu-business-acument.html</loc>
+    <lastmod>2026-02-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dirtyreality.net/ba/posts/ipa-x-requirement-lifecycle-combat-framework-cho-senior-ba.html</loc>
+    <lastmod>2026-02-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dirtyreality.net/ba/posts/dung-dung-suong-mu-de-che-mot-viec-may-chua-hieu-ro.html</loc>
+    <lastmod>2026-02-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dirtyreality.net/ba/posts/bat-su-that-khong-dung-nhip-la-mo-song-doanh-nghiep.html</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dirtyreality.net/ba/posts/automate-workflow-cho-ba-voi-ai.html</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dirtyreality.net/ba/posts/ba-sau-ky-nguyen-ai.html</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Linh Tinh posts -->
+  <url>
+    <loc>https://dirtyreality.net/linh-tinh/posts/dirty-reality-manifesto.html</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dirtyreality.net/linh-tinh/posts/day-la-bai-le-ra-tao-phai-doc-10-nam-truoc.html</loc>
+    <lastmod>2026-02-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dirtyreality.net/linh-tinh/posts/shadow-price.html</loc>
+    <lastmod>2026-02-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dirtyreality.net/linh-tinh/posts/amor-fati-khi-may-khong-con-duoc-quyen-oan-han.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dirtyreality.net/linh-tinh/posts/neu-4-triet-gia-cam-smart-phone-hom-nay.html</loc>
+    <lastmod>2026-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dirtyreality.net/linh-tinh/posts/nietzsche-va-cai-phan-tao-khong-the-gia-vo-khong-thay.html</loc>
+    <lastmod>2026-02-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>

@@ -83,7 +83,27 @@ Edit `feed.xml`, insert inside `<channel>` after `<lastBuildDate>`:
 
 Limit feed to latest 10 items.
 
-**7. Notify subscribers via email**
+**7. Update sitemap**
+
+Edit `docs/sitemap.xml`:
+
+- Convert the post date from `dd/mm/yyyy` → `YYYY-MM-DD` for use as `<lastmod>`
+- **New post:** insert a new `<url>` block before the closing `</urlset>` tag:
+
+```xml
+  <url>
+    <loc>https://dirtyreality.net/{{CATEGORY}}/posts/{{SLUG}}.html</loc>
+    <lastmod>{{DATE_ISO}}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+```
+
+- **Republish:** update the `<lastmod>` of the existing entry for this URL instead of inserting a duplicate
+- Update the `<lastmod>` of the matching category index entry (e.g. `https://dirtyreality.net/{{CATEGORY}}/`) if `{{DATE_ISO}}` is more recent than the current value
+- Update the `<lastmod>` of the homepage entry (`https://dirtyreality.net/`) if `{{DATE_ISO}}` is more recent than the current value
+
+**8. Notify subscribers via email**
 
 Use the sapo already extracted in Step 3 as `{{DESCRIPTION}}`.
 
@@ -100,7 +120,8 @@ curl -s "https://script.google.com/macros/s/AKfycbxMbWXIe56bCpGt3oywPv_6NU8FH-Uk
 
 ## Constraints
 
-- Do NOT modify other files
+- Only modify the files touched by the steps above: the post HTML, `docs/<category>/index.html`, `docs/feed.xml`, `docs/sitemap.xml`
+- Do NOT modify any other files
 - Final URL must work at: `https://dirtyreality.net/<category>/posts/<slug>.html`
 
 ## Republish Mode
@@ -109,6 +130,7 @@ If `docs/<category>/posts/<slug>.html` already exists:
 - Overwrite file content using latest template
 - Do NOT create duplicate entry in index — check first, only add if slug missing
 - If slug already exists in `feed.xml`, update the existing `<item>` instead of creating duplicate
+- If slug already exists in `sitemap.xml`, update the existing `<lastmod>` instead of inserting duplicate
 
 ## Template Requirements
 
