@@ -1,0 +1,291 @@
+# Học BA bằng AI: Mày đang học nghề hay học cách giả làm BA?
+
+Dạo này tao thấy đầy mấy lớp “học BA bằng AI”.
+
+Kiểu:
+
+- “Viết BRD trong 5 phút”
+- “Không cần kinh nghiệm vẫn làm BA”
+- “Chỉ cần ChatGPT là đi làm được”
+
+Tao nói thẳng:
+
+Mấy cái đó không dạy làm BA.  
+Nó dạy mày cách giả làm BA.
+
+---
+
+BA không phải là thằng viết document.
+
+BA là thằng xác định đúng vấn đề cần giải.
+
+Hiểu sai vấn đề,  
+viết BRD đẹp cỡ nào,  
+vẫn là rác.
+
+---
+
+Mấy lớp đó dạy gì?
+
+- Prompt → ra User Story  
+- Prompt → ra Acceptance Criteria  
+- Prompt → ra BRD  
+- Tool → output  
+- Template → format  
+
+Nhìn rất “chuyên nghiệp”.
+
+---
+
+Nhưng cái quan trọng nhất thì không dạy:
+
+- Vấn đề thật là gì?  
+- Stakeholder đang hiểu sai ở đâu?  
+- Constraint nằm chỗ nào?  
+- Trade-off giữa các lựa chọn là gì?  
+- Khi nào không nên viết gì cả?  
+
+---
+
+Nó dạy mày viết cho đúng format.
+
+Nhưng không dạy mày hiểu  
+mình đang giải cái gì.
+
+---
+
+Và đây là lúc mọi thứ bắt đầu lệch.
+
+---
+
+Flow ngoài đời nó như này:
+
+1. Stakeholder nói một câu rất mơ hồ  
+2. Mày quăng vào AI  
+3. AI generate ra một đống requirement “nghe có lý”  
+4. Mày tin  
+5. Team build theo  
+
+---
+
+Vấn đề không phải là viết sai requirement.
+
+Mà là:
+
+Requirement đó đáng ra không nên tồn tại.
+
+---
+
+AI luôn assume input là đúng.
+
+Nó không biết thiếu context.  
+Nó cũng không biết câu hỏi có đúng hay không.
+
+Nó chỉ làm một việc:
+
+Tối ưu output  
+từ một premise có thể đã sai.
+
+---
+
+Nếu mày không nhận ra điều đó,  
+mày không dùng AI.
+
+Mày đang bị AI dắt.
+
+---
+
+Ví dụ đơn giản:
+
+Stakeholder nói:  
+“Tôi cần một dashboard để theo dõi KPI.”
+
+---
+
+BA kiểu “AI-trained” sẽ:
+
+- Prompt vào  
+- Generate:
+  - User story  
+  - KPI definition  
+  - Dashboard layout  
+- Xong  
+
+---
+
+Nhìn ổn. Rất ổn.
+
+---
+
+Nhưng BA thật sẽ dừng lại:
+
+- KPI này để quyết định cái gì?  
+- Ai sẽ dùng dashboard này?  
+- Thiếu data hay thiếu action?  
+
+---
+
+Và rất nhiều case,  
+vấn đề không phải thiếu dashboard.
+
+Mà là:
+
+Không ai biết phải làm gì với KPI đó.
+
+---
+
+Kết quả:
+
+- Dashboard đẹp  
+- Data đầy đủ  
+- Visual xịn  
+
+Và business… vẫn không đổi.
+
+---
+
+Team build đúng thứ được yêu cầu.
+
+Nhưng không ai check  
+yêu cầu đó có đúng không.
+
+---
+
+Đây mới là chỗ BA có giá trị.
+
+Không phải viết cho đúng.
+
+Mà là dám nói:
+
+“Cái này sai.”  
+“Cái này không nên làm.”
+
+---
+
+Artifact đẹp không giết project ngay.
+
+Nó giết từ từ.
+
+Bằng cách làm mọi người tin  
+mọi thứ đang ổn.
+
+---
+
+Khác biệt giữa hai loại BA:
+
+### BA thật:
+
+- Bắt đầu từ problem  
+- Không tin input mù quáng  
+- Dám challenge stakeholder  
+- Artifact chỉ là tool  
+
+### BA “AI-trained”:
+
+- Bắt đầu từ prompt  
+- Assume input đúng  
+- Tối ưu output cho bài toán có thể sai  
+- Sống trong template  
+
+---
+
+Một bên sửa bài toán.
+
+Một bên giải bài toán sai  
+cho thật đẹp.
+
+---
+
+Nếu mày muốn làm BA thật,
+
+con đường không đẹp như mấy course kia đâu.
+
+Nó chậm. Khó chịu. Và nhiều lúc thấy mình ngu.
+
+---
+
+Mày sẽ bắt đầu từ junior.
+
+Không phải để lấy title.  
+Mà để bị ném vào mớ thứ mày không hiểu.
+
+- Stakeholder nói mơ hồ  
+- Dev hỏi ngược  
+- Không có đáp án sẵn  
+
+---
+
+Và mày sẽ sai.
+
+- Sai vì hiểu thiếu  
+- Sai vì đoán bừa  
+- Sai vì tưởng mình hiểu rồi  
+
+---
+
+Nhưng đó mới là training thật.
+
+Nếu mày chịu nhìn lại.
+
+---
+
+Sau mỗi task, đừng hỏi:
+
+“Mình viết đúng format chưa?”
+
+Hỏi:
+
+- “Mình đã hiểu sai cái gì?”  
+- “Mình đã assume cái gì mà chưa verify?”  
+- “Cái mình làm có thay đổi outcome không?”  
+
+---
+
+Mày không tiến bộ vì làm nhiều.
+
+Mày tiến bộ vì hiểu  
+tại sao mình sai.
+
+---
+
+Còn AI?
+
+Dùng.
+
+Nhưng dùng sau.
+
+---
+
+Sau khi mày hiểu problem.  
+Sau khi mày có góc nhìn riêng.
+
+---
+
+Lúc đó AI là leverage.
+
+Trước đó, nó chỉ là lớp sơn.
+
+Sơn càng đẹp,  
+mày càng khó nhận ra mình đang sai.
+
+---
+
+Và quay lại câu hỏi gốc:
+
+Không phải:
+
+“Mày viết có hay không?”
+
+Mà là:
+
+“Mày có đang giải đúng vấn đề không?”
+
+---
+
+Muốn làm BA,
+
+đừng hỏi “nên học tool nào”.
+
+Hỏi:
+
+“Mày có dám nói stakeholder đang sai không?”

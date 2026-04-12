@@ -4,7 +4,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://dirtyreality.net/</loc>
-    <lastmod>2026-04-04</lastmod>
+    <lastmod>2026-04-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -33,7 +33,7 @@
 
   <url>
     <loc>https://dirtyreality.net/ba/</loc>
-    <lastmod>2026-03-07</lastmod>
+    <lastmod>2026-04-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -170,6 +170,13 @@
   <url>
     <loc>https://dirtyreality.net/ba/posts/ba-sau-ky-nguyen-ai.html</loc>
     <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dirtyreality.net/ba/posts/hoc-ba-bang-ai-may-dang-hoc-nghe-hay-hoc-cach-gia-lam-ba.html</loc>
+    <lastmod>2026-04-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
