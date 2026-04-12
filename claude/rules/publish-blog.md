@@ -50,10 +50,83 @@ Use `templates/post-template.html`, replace:
 - `{{DESCRIPTION}}` — the sapo extracted above (plain text, no markdown)
 - `{{SLUG}}` — the slug computed from the filename (e.g. `mes-khong-that-bai-vi-cong-nghe`)
 
-**4. Save file**
+**4. SEO Metadata**
+
+Sau khi áp template, bổ sung các thẻ SEO vào `<head>` của file HTML vừa tạo:
+
+**4.1 Title tag**
+```html
+<title>{{TITLE}} | Dirty Reality</title>
+```
+
+**4.2 Meta description**
+Dùng sapo đã extract ở Bước 3, cắt tối đa 160 ký tự (không cắt giữa từ):
+```html
+<meta name="description" content="{{DESCRIPTION_160}}">
+```
+
+**4.3 Canonical URL**
+```html
+<link rel="canonical" href="https://dirtyreality.net/{{CATEGORY}}/posts/{{SLUG}}.html">
+```
+
+**4.4 Open Graph tags**
+```html
+<meta property="og:type" content="article">
+<meta property="og:title" content="{{TITLE}}">
+<meta property="og:description" content="{{DESCRIPTION_160}}">
+<meta property="og:url" content="https://dirtyreality.net/{{CATEGORY}}/posts/{{SLUG}}.html">
+<meta property="og:image" content="https://dirtyreality.net/og-default.png">
+<meta property="og:site_name" content="Dirty Reality">
+<meta property="article:published_time" content="{{DATE_ISO}}">
+```
+
+> Nếu bài viết có chứa thẻ `<img>` trong content, lấy `src` của ảnh đầu tiên làm `og:image` thay cho ảnh mặc định.
+
+**4.5 Twitter Card tags**
+```html
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{TITLE}}">
+<meta name="twitter:description" content="{{DESCRIPTION_160}}">
+<meta name="twitter:image" content="https://dirtyreality.net/og-default.png">
+```
+
+**4.6 JSON-LD Structured Data**
+
+Chèn khối sau vào cuối `<head>`:
+```html
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{TITLE}}",
+  "description": "{{DESCRIPTION_160}}",
+  "url": "https://dirtyreality.net/{{CATEGORY}}/posts/{{SLUG}}.html",
+  "datePublished": "{{DATE_ISO}}",
+  "dateModified": "{{DATE_ISO}}",
+  "author": {
+    "@type": "Person",
+    "name": "Dirty Reality"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Dirty Reality",
+    "url": "https://dirtyreality.net"
+  }
+}
+</script>
+```
+
+**4.7 Quy tắc bổ sung**
+- Tất cả các thẻ meta SEO phải nằm trong `<head>`, trước `</head>`
+- Không trùng lặp thẻ `<title>` — nếu template đã có, cập nhật thay vì thêm mới
+- `{{DATE_ISO}}` = ngày bài viết chuyển từ `dd/mm/yyyy` → `YYYY-MM-DD` (đồng nhất với Bước 7)
+- `{{DESCRIPTION_160}}` = sapo cắt tối đa 160 ký tự, giữ nguyên tiếng Việt có dấu
+
+**5. Save file**
 `docs/<category>/posts/<slug>.html`
 
-**5. Update category index**
+**6. Update category index**
 Edit `docs/<category>/index.html`, inside `<div class="posts">`, insert:
 
 ```html
@@ -68,7 +141,7 @@ Edit `docs/<category>/index.html`, inside `<div class="posts">`, insert:
 </div>
 ```
 
-**6. Update RSS feed**
+**7. Update RSS feed**
 Edit `feed.xml`, insert inside `<channel>` after `<lastBuildDate>`:
 
 ```xml
@@ -83,7 +156,7 @@ Edit `feed.xml`, insert inside `<channel>` after `<lastBuildDate>`:
 
 Limit feed to latest 10 items.
 
-**7. Update sitemap**
+**8. Update sitemap**
 
 Edit `docs/sitemap.xml`:
 
@@ -103,7 +176,7 @@ Edit `docs/sitemap.xml`:
 - Update the `<lastmod>` of the matching category index entry (e.g. `https://dirtyreality.net/{{CATEGORY}}/`) if `{{DATE_ISO}}` is more recent than the current value
 - Update the `<lastmod>` of the homepage entry (`https://dirtyreality.net/`) if `{{DATE_ISO}}` is more recent than the current value
 
-**8. Notify subscribers via email**
+**9. Notify subscribers via email**
 
 Use the sapo already extracted in Step 3 as `{{DESCRIPTION}}`.
 
