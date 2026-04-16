@@ -49,9 +49,64 @@
             FEATURED
         </div>
 
-        <a href="mes/posts/mes-khong-that-bai-vi-cong-nghe.html" class="featured-link">
-            MES không thất bại vì công nghệ →
+        <a href="ba/posts/hoc-ba-bang-ai-may-dang-hoc-nghe-hay-hoc-cach-gia-lam-ba.html" class="featured-link" id="featured-post">
+            Học BA bằng AI: Mày đang học nghề hay học cách giả làm BA? →
         </a>
+
+        <script>
+        (function updateFeaturedPost() {
+          var featured = document.getElementById('featured-post');
+          if (!featured || !window.fetch || !window.DOMParser) {
+            return;
+          }
+
+          function textFrom(parent, tagName) {
+            var node = parent.getElementsByTagName(tagName)[0];
+            return node ? node.textContent.trim() : '';
+          }
+
+          function relativePostUrl(rawUrl) {
+            var url = new URL(rawUrl, window.location.href);
+            var path = url.pathname.replace(/^\/dirtyreality\//, '/');
+            return path.replace(/^\//, '');
+          }
+
+          fetch('feed.xml', { cache: 'no-cache' })
+            .then(function(response) {
+              if (!response.ok) {
+                throw new Error('Cannot load feed');
+              }
+              return response.text();
+            })
+            .then(function(feedText) {
+              var feed = new DOMParser().parseFromString(feedText, 'application/xml');
+              var items = Array.prototype.slice.call(feed.getElementsByTagName('item'));
+              var latest = items.reduce(function(best, item) {
+                var timestamp = Date.parse(textFrom(item, 'pubDate'));
+                if (!Number.isFinite(timestamp)) {
+                  return best;
+                }
+                return !best || timestamp > best.timestamp ? { item: item, timestamp: timestamp } : best;
+              }, null);
+
+              if (!latest) {
+                return;
+              }
+
+              var title = textFrom(latest.item, 'title');
+              var link = textFrom(latest.item, 'link');
+              if (!title || !link) {
+                return;
+              }
+
+              featured.href = relativePostUrl(link);
+              featured.textContent = title + ' \u2192';
+            })
+            .catch(function() {
+              // Keep the static fallback when the feed cannot be loaded.
+            });
+        })();
+        </script>
 
         <div class="section-label">
             CATEGORIES

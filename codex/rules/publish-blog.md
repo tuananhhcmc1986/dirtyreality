@@ -166,6 +166,8 @@ Edit `docs/feed.xml`, insert inside `<channel>` after `<lastBuildDate>`:
 </item>
 ```
 
+XML-escape RSS text values before writing them (`&` → `&amp;`, `<` → `&lt;`, `>` → `&gt;`) so `docs/feed.xml` remains parseable.
+
 Limit feed to latest 10 items.
 
 **8. Update sitemap**
